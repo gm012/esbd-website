@@ -1,45 +1,22 @@
 // =========================================================
 // ESBD
 // MAIN JAVASCRIPT
-// ALTO LAB BUILD
+// ALTO LAB / STAGE 2
 // =========================================================
 
+const header = document.getElementById("siteHeader");
+const menuButton = document.getElementById("menuButton");
+const mobileDrawer = document.getElementById("mobileDrawer");
+const backToTop = document.getElementById("backToTop");
+const scrollProgress = document.getElementById("scrollProgress");
+const currentYear = document.getElementById("currentYear");
+const heroVideo = document.querySelector(".hero-video");
+const ambientVideos = document.querySelectorAll(".ambient-video");
+const heroDashboard = document.getElementById("heroDashboard");
 
-// =========================================================
-// ELEMENTS
-// =========================================================
-
-const header =
-    document.getElementById("siteHeader");
-
-const menuButton =
-    document.getElementById("menuButton");
-
-const mobileDrawer =
-    document.getElementById("mobileDrawer");
-
-const backToTop =
-    document.getElementById("backToTop");
-
-const scrollProgress =
-    document.getElementById("scrollProgress");
-
-const currentYear =
-    document.getElementById("currentYear");
-
-const heroVideo =
-    document.querySelector(".hero-video");
-
-const ambientVideos =
-    document.querySelectorAll(".ambient-video");
-
-const heroDashboard =
-    document.getElementById("heroDashboard");
-
-const prefersReducedMotion =
-    window.matchMedia(
-        "(prefers-reduced-motion: reduce)"
-    ).matches;
+const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+).matches;
 
 
 // =========================================================
@@ -47,8 +24,7 @@ const prefersReducedMotion =
 // =========================================================
 
 if (currentYear) {
-    currentYear.textContent =
-        new Date().getFullYear();
+    currentYear.textContent = new Date().getFullYear();
 }
 
 
@@ -56,72 +32,37 @@ if (currentYear) {
 // HEADER HIDE / SHOW
 // =========================================================
 
-let previousScrollY =
-    window.scrollY;
-
-let scrollAccumulator =
-    0;
-
-let previousDirection =
-    null;
-
+let previousScrollY = window.scrollY;
+let scrollAccumulator = 0;
+let previousDirection = null;
 
 function updateHeader() {
-
     if (!header) {
         return;
     }
 
-    const currentScrollY =
-        Math.max(
-            window.scrollY,
-            0
-        );
+    const currentScrollY = Math.max(window.scrollY, 0);
 
     const drawerOpen =
         mobileDrawer &&
-        mobileDrawer.classList.contains(
-            "open"
-        );
+        mobileDrawer.classList.contains("open");
 
     if (currentScrollY > 35) {
-
-        header.classList.add(
-            "scrolled"
-        );
-
+        header.classList.add("scrolled");
     } else {
-
-        header.classList.remove(
-            "scrolled"
-        );
-
+        header.classList.remove("scrolled");
     }
 
     if (drawerOpen) {
-
-        header.classList.remove(
-            "hidden"
-        );
-
-        previousScrollY =
-            currentScrollY;
-
+        header.classList.remove("hidden");
+        previousScrollY = currentScrollY;
         return;
     }
 
     if (currentScrollY < 120) {
-
-        header.classList.remove(
-            "hidden"
-        );
-
-        scrollAccumulator =
-            0;
-
-        previousScrollY =
-            currentScrollY;
-
+        header.classList.remove("hidden");
+        scrollAccumulator = 0;
+        previousScrollY = currentScrollY;
         return;
     }
 
@@ -138,49 +79,30 @@ function updateHeader() {
             ? "down"
             : "up";
 
-    if (
-        direction !==
-        previousDirection
-    ) {
-
-        scrollAccumulator =
-            0;
+    if (direction !== previousDirection) {
+        scrollAccumulator = 0;
     }
 
-    scrollAccumulator +=
-        Math.abs(difference);
+    scrollAccumulator += Math.abs(difference);
 
     if (
         direction === "down" &&
         scrollAccumulator > 28
     ) {
-
-        header.classList.add(
-            "hidden"
-        );
-
-        scrollAccumulator =
-            0;
+        header.classList.add("hidden");
+        scrollAccumulator = 0;
     }
 
     if (
         direction === "up" &&
         scrollAccumulator > 10
     ) {
-
-        header.classList.remove(
-            "hidden"
-        );
-
-        scrollAccumulator =
-            0;
+        header.classList.remove("hidden");
+        scrollAccumulator = 0;
     }
 
-    previousDirection =
-        direction;
-
-    previousScrollY =
-        currentScrollY;
+    previousDirection = direction;
+    previousScrollY = currentScrollY;
 }
 
 
@@ -189,7 +111,6 @@ function updateHeader() {
 // =========================================================
 
 function updateScrollProgress() {
-
     if (!scrollProgress) {
         return;
     }
@@ -199,18 +120,12 @@ function updateScrollProgress() {
         window.innerHeight;
 
     if (documentHeight <= 0) {
-
-        scrollProgress.style.width =
-            "0%";
-
+        scrollProgress.style.width = "0%";
         return;
     }
 
     const percentage =
-        (
-            window.scrollY /
-            documentHeight
-        ) * 100;
+        (window.scrollY / documentHeight) * 100;
 
     scrollProgress.style.width =
         `${percentage}%`;
@@ -222,32 +137,21 @@ function updateScrollProgress() {
 // =========================================================
 
 function updateBackToTop() {
-
     if (!backToTop) {
         return;
     }
 
     if (window.scrollY > 650) {
-
-        backToTop.classList.add(
-            "visible"
-        );
-
+        backToTop.classList.add("visible");
     } else {
-
-        backToTop.classList.remove(
-            "visible"
-        );
+        backToTop.classList.remove("visible");
     }
 }
 
-
 if (backToTop) {
-
     backToTop.addEventListener(
         "click",
         () => {
-
             window.scrollTo({
                 top: 0,
                 behavior:
@@ -255,34 +159,9 @@ if (backToTop) {
                         ? "auto"
                         : "smooth"
             });
-
         }
     );
 }
-
-
-// =========================================================
-// SCROLL EVENTS
-// =========================================================
-
-window.addEventListener(
-    "scroll",
-    () => {
-
-        updateHeader();
-        updateScrollProgress();
-        updateBackToTop();
-
-    },
-    {
-        passive: true
-    }
-);
-
-
-updateHeader();
-updateScrollProgress();
-updateBackToTop();
 
 
 // =========================================================
@@ -290,7 +169,6 @@ updateBackToTop();
 // =========================================================
 
 function openMenu() {
-
     if (
         !menuButton ||
         !mobileDrawer
@@ -298,17 +176,9 @@ function openMenu() {
         return;
     }
 
-    menuButton.classList.add(
-        "active"
-    );
-
-    mobileDrawer.classList.add(
-        "open"
-    );
-
-    document.body.classList.add(
-        "menu-open"
-    );
+    menuButton.classList.add("active");
+    mobileDrawer.classList.add("open");
+    document.body.classList.add("menu-open");
 
     menuButton.setAttribute(
         "aria-expanded",
@@ -321,16 +191,11 @@ function openMenu() {
     );
 
     if (header) {
-
-        header.classList.remove(
-            "hidden"
-        );
+        header.classList.remove("hidden");
     }
 }
 
-
 function closeMenu() {
-
     if (
         !menuButton ||
         !mobileDrawer
@@ -338,17 +203,9 @@ function closeMenu() {
         return;
     }
 
-    menuButton.classList.remove(
-        "active"
-    );
-
-    mobileDrawer.classList.remove(
-        "open"
-    );
-
-    document.body.classList.remove(
-        "menu-open"
-    );
+    menuButton.classList.remove("active");
+    mobileDrawer.classList.remove("open");
+    document.body.classList.remove("menu-open");
 
     menuButton.setAttribute(
         "aria-expanded",
@@ -361,158 +218,83 @@ function closeMenu() {
     );
 }
 
-
 function toggleMenu() {
-
     if (!mobileDrawer) {
         return;
     }
 
     const isOpen =
-        mobileDrawer.classList.contains(
-            "open"
-        );
+        mobileDrawer.classList.contains("open");
 
     if (isOpen) {
-
         closeMenu();
-
     } else {
-
         openMenu();
-
     }
 }
 
-
 if (menuButton) {
-
     menuButton.addEventListener(
         "click",
         toggleMenu
     );
 }
 
-
-// =========================================================
-// MOBILE DRAWER LINKS
-// =========================================================
-
 if (mobileDrawer) {
-
     const drawerLinks =
-        mobileDrawer.querySelectorAll(
-            "a"
-        );
+        mobileDrawer.querySelectorAll("a");
 
     drawerLinks.forEach(
         (link) => {
-
             link.addEventListener(
                 "click",
                 closeMenu
             );
-
         }
     );
 }
 
-
-// =========================================================
-// ESCAPE CLOSES MENU
-// =========================================================
-
 document.addEventListener(
     "keydown",
     (event) => {
-
-        if (
-            event.key ===
-            "Escape"
-        ) {
-
+        if (event.key === "Escape") {
             closeMenu();
         }
-
     }
 );
 
 
 // =========================================================
-// DESKTOP RESET
-// =========================================================
-
-window.addEventListener(
-    "resize",
-    () => {
-
-        if (
-            window.innerWidth >
-            820
-        ) {
-
-            closeMenu();
-        }
-
-    }
-);
-
-
-// =========================================================
-// VIDEO PLAYBACK HELPER
+// VIDEO PLAYBACK
 // =========================================================
 
 function attemptVideoPlayback(video) {
-
     if (!video) {
         return;
     }
 
-    video.muted =
-        true;
+    video.muted = true;
 
     const playPromise =
         video.play();
 
-    if (
-        playPromise !==
-        undefined
-    ) {
-
+    if (playPromise !== undefined) {
         playPromise.catch(
             () => {
-                // Autoplay fallback.
+                // Browser autoplay fallback.
             }
         );
     }
 }
 
-
-// =========================================================
-// HERO VIDEO
-// =========================================================
-
 if (heroVideo) {
-
-    if (
-        heroVideo.readyState >=
-        2
-    ) {
-
-        attemptVideoPlayback(
-            heroVideo
-        );
-
+    if (heroVideo.readyState >= 2) {
+        attemptVideoPlayback(heroVideo);
     } else {
-
         heroVideo.addEventListener(
             "loadeddata",
             () => {
-
-                attemptVideoPlayback(
-                    heroVideo
-                );
-
+                attemptVideoPlayback(heroVideo);
             },
             {
                 once: true
@@ -523,42 +305,22 @@ if (heroVideo) {
     heroVideo.addEventListener(
         "error",
         () => {
-
             console.error(
                 "Could not load images/esbd-hero.mp4"
             );
-
         }
     );
 }
 
-
-// =========================================================
-// WHITE TEXTURE VIDEOS
-// =========================================================
-
 ambientVideos.forEach(
     (video) => {
-
-        if (
-            video.readyState >=
-            2
-        ) {
-
-            attemptVideoPlayback(
-                video
-            );
-
+        if (video.readyState >= 2) {
+            attemptVideoPlayback(video);
         } else {
-
             video.addEventListener(
                 "loadeddata",
                 () => {
-
-                    attemptVideoPlayback(
-                        video
-                    );
-
+                    attemptVideoPlayback(video);
                 },
                 {
                     once: true
@@ -569,14 +331,11 @@ ambientVideos.forEach(
         video.addEventListener(
             "error",
             () => {
-
                 console.error(
                     "Could not load images/w-background.mp4"
                 );
-
             }
         );
-
     }
 );
 
@@ -590,37 +349,21 @@ const revealElements =
         ".reveal, .reveal-left, .reveal-right"
     );
 
-
-if (
-    "IntersectionObserver" in window
-) {
-
+if ("IntersectionObserver" in window) {
     const revealObserver =
         new IntersectionObserver(
             (
                 entries,
                 observer
             ) => {
-
                 entries.forEach(
                     (entry) => {
-
-                        if (
-                            entry.isIntersecting
-                        ) {
-
-                            entry.target.classList.add(
-                                "in"
-                            );
-
-                            observer.unobserve(
-                                entry.target
-                            );
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("in");
+                            observer.unobserve(entry.target);
                         }
-
                     }
                 );
-
             },
             {
                 threshold: 0.12,
@@ -629,320 +372,25 @@ if (
             }
         );
 
-
     revealElements.forEach(
         (element) => {
-
-            revealObserver.observe(
-                element
-            );
-
+            revealObserver.observe(element);
         }
     );
-
 } else {
-
     revealElements.forEach(
         (element) => {
-
-            element.classList.add(
-                "in"
-            );
-
+            element.classList.add("in");
         }
     );
 }
 
 
 // =========================================================
-// ALTO LAB
-// RUNTIME EXPERIENCE STYLES
-// =========================================================
-
-function installAltoLabStyles() {
-
-    if (
-        document.getElementById(
-            "altoLabRuntimeStyles"
-        )
-    ) {
-        return;
-    }
-
-    const style =
-        document.createElement(
-            "style"
-        );
-
-    style.id =
-        "altoLabRuntimeStyles";
-
-    style.textContent = `
-
-        /* =============================================
-           CINEMATIC PAGE TRANSITION
-        ============================================== */
-
-        .alto-page-transition {
-            position: fixed;
-            inset: 0;
-            z-index: 999999;
-            display: grid;
-            place-items: center;
-            pointer-events: none;
-            background:
-                radial-gradient(
-                    circle at 72% 35%,
-                    rgba(25, 197, 232, 0.18),
-                    transparent 34%
-                ),
-                linear-gradient(
-                    135deg,
-                    #02141f 0%,
-                    #03293b 52%,
-                    #041b29 100%
-                );
-            transform: translateY(101%);
-            transition:
-                transform 0.62s cubic-bezier(.76, 0, .24, 1);
-        }
-
-        .alto-page-transition.is-entering {
-            transform: translateY(0);
-        }
-
-        .alto-page-transition.is-leaving {
-            transform: translateY(-101%);
-        }
-
-        .alto-transition-inner {
-            position: relative;
-            display: grid;
-            gap: 14px;
-            text-align: center;
-            color: white;
-        }
-
-        .alto-transition-index {
-            color: rgba(255, 255, 255, 0.40);
-            font-family: "Inter", sans-serif;
-            font-size: 8px;
-            font-weight: 800;
-            letter-spacing: 0.20em;
-            text-transform: uppercase;
-        }
-
-        .alto-transition-title {
-            font-family: "Space Grotesk", sans-serif;
-            font-size: clamp(30px, 5vw, 58px);
-            font-weight: 500;
-            letter-spacing: -0.055em;
-            line-height: 0.95;
-        }
-
-        .alto-transition-line {
-            width: 84px;
-            height: 1px;
-            margin: 10px auto 0;
-            overflow: hidden;
-            background: rgba(255, 255, 255, 0.14);
-        }
-
-        .alto-transition-line::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 100%;
-            background: #19c5e8;
-            transform: translateX(-100%);
-            animation:
-                altoTransitionLine 0.72s
-                cubic-bezier(.76, 0, .24, 1)
-                forwards;
-        }
-
-        @keyframes altoTransitionLine {
-            to {
-                transform: translateX(100%);
-            }
-        }
-
-
-        /* =============================================
-           HERO THERMAL GLASS
-        ============================================== */
-
-        #heroDashboard {
-            --lab-x: 50%;
-            --lab-y: 50%;
-            transform: none !important;
-            rotate: 0deg !important;
-            transform-style: flat !important;
-            isolation: isolate;
-        }
-
-        #heroDashboard::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            z-index: 8;
-            pointer-events: none;
-            border-radius: inherit;
-            opacity: 0;
-            background:
-                radial-gradient(
-                    circle 180px
-                    at var(--lab-x) var(--lab-y),
-                    rgba(255, 255, 255, 0.17),
-                    rgba(255, 255, 255, 0.045) 36%,
-                    transparent 70%
-                );
-            transition:
-                opacity 0.28s ease;
-        }
-
-        #heroDashboard:hover::after {
-            opacity: 1;
-        }
-
-
-        /* =============================================
-           LIVE TEMPERATURE
-        ============================================== */
-
-        .lab-live-telemetry {
-            position: absolute;
-            left: 50%;
-            bottom: 17px;
-            z-index: 9;
-            width: calc(100% - 48px);
-            transform: translateX(-50%);
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-            gap: 18px;
-            pointer-events: none;
-        }
-
-        .lab-live-temp {
-            display: grid;
-            gap: 4px;
-        }
-
-        .lab-live-temp-label {
-            color: rgba(255,255,255,0.28);
-            font-size: 6px;
-            font-weight: 800;
-            letter-spacing: 0.15em;
-        }
-
-        .lab-live-temp-value {
-            color: rgba(255,255,255,0.88);
-            font-family: "Space Grotesk", sans-serif;
-            font-size: 13px;
-            font-weight: 500;
-        }
-
-        .lab-live-temp-value em {
-            color: #74dbef;
-            font-style: normal;
-        }
-
-        .lab-temp-trace {
-            height: 25px;
-            flex: 1;
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
-            gap: 3px;
-            opacity: 0.72;
-        }
-
-        .lab-temp-trace span {
-            width: 2px;
-            min-height: 3px;
-            border-radius: 999px;
-            background:
-                linear-gradient(
-                    180deg,
-                    #8ce5f3,
-                    rgba(25,197,232,0.18)
-                );
-            transform-origin: bottom;
-            transition:
-                height 0.65s
-                cubic-bezier(.22, 1, .36, 1);
-        }
-
-
-        /* =============================================
-           INTERACTIVE CARD LIGHT
-        ============================================== */
-
-        .alto-reactive-card {
-            --card-x: 50%;
-            --card-y: 50%;
-            position: relative;
-            isolation: isolate;
-        }
-
-        .alto-reactive-card::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            z-index: 20;
-            border-radius: inherit;
-            pointer-events: none;
-            opacity: 0;
-            background:
-                radial-gradient(
-                    circle 220px
-                    at var(--card-x) var(--card-y),
-                    rgba(25, 197, 232, 0.105),
-                    transparent 68%
-                );
-            transition:
-                opacity 0.3s ease;
-        }
-
-        .alto-reactive-card:hover::after {
-            opacity: 1;
-        }
-
-
-        /* =============================================
-           MOTION ACCESSIBILITY
-        ============================================== */
-
-        @media (prefers-reduced-motion: reduce) {
-
-            .alto-page-transition,
-            .alto-transition-line::after,
-            .lab-temp-trace span {
-                animation: none !important;
-                transition: none !important;
-            }
-
-        }
-
-    `;
-
-    document.head.appendChild(
-        style
-    );
-}
-
-
-installAltoLabStyles();
-
-
-// =========================================================
-// ALTO LAB
-// CINEMATIC PAGE TRANSITIONS
+// ALTO LAB / CINEMATIC PAGE TRANSITIONS
 // =========================================================
 
 function createPageTransition() {
-
     if (
         document.querySelector(
             ".alto-page-transition"
@@ -952,17 +400,13 @@ function createPageTransition() {
     }
 
     const transition =
-        document.createElement(
-            "div"
-        );
+        document.createElement("div");
 
     transition.className =
         "alto-page-transition";
 
     transition.innerHTML = `
-
         <div class="alto-transition-inner">
-
             <span class="alto-transition-index">
                 ESBD / COLD CHAIN SYSTEM
             </span>
@@ -972,28 +416,20 @@ function createPageTransition() {
             </strong>
 
             <span class="alto-transition-line"></span>
-
         </div>
-
     `;
 
-    document.body.appendChild(
-        transition
-    );
+    document.body.appendChild(transition);
 }
 
-
 createPageTransition();
-
 
 const pageTransition =
     document.querySelector(
         ".alto-page-transition"
     );
 
-
 function revealCurrentPage() {
-
     if (
         !pageTransition ||
         prefersReducedMotion
@@ -1007,13 +443,10 @@ function revealCurrentPage() {
 
     requestAnimationFrame(
         () => {
-
             requestAnimationFrame(
                 () => {
-
                     setTimeout(
                         () => {
-
                             pageTransition.classList.add(
                                 "is-leaving"
                             );
@@ -1021,45 +454,33 @@ function revealCurrentPage() {
                             pageTransition.classList.remove(
                                 "is-entering"
                             );
-
                         },
                         160
                     );
-
                 }
             );
-
         }
     );
 
     setTimeout(
         () => {
-
             pageTransition.classList.remove(
                 "is-leaving"
             );
-
         },
         900
     );
 }
 
-
 window.addEventListener(
     "pageshow",
-    () => {
-
-        revealCurrentPage();
-
-    }
+    revealCurrentPage
 );
-
 
 function shouldTransitionLink(
     link,
     event
 ) {
-
     if (
         prefersReducedMotion ||
         !pageTransition
@@ -1101,15 +522,12 @@ function shouldTransitionLink(
     let destination;
 
     try {
-
         destination =
             new URL(
                 link.href,
                 window.location.href
             );
-
     } catch {
-
         return false;
     }
 
@@ -1122,7 +540,7 @@ function shouldTransitionLink(
 
     if (
         destination.pathname ===
-        window.location.pathname &&
+            window.location.pathname &&
         destination.hash
     ) {
         return false;
@@ -1131,11 +549,9 @@ function shouldTransitionLink(
     return true;
 }
 
-
 document.addEventListener(
     "click",
     (event) => {
-
         const link =
             event.target.closest("a");
 
@@ -1154,9 +570,6 @@ document.addEventListener(
 
         event.preventDefault();
 
-        const destination =
-            link.href;
-
         const transitionTitle =
             pageTransition.querySelector(
                 ".alto-transition-title"
@@ -1171,7 +584,6 @@ document.addEventListener(
             transitionTitle &&
             readableLabel
         ) {
-
             transitionTitle.textContent =
                 readableLabel;
         }
@@ -1186,26 +598,20 @@ document.addEventListener(
 
         setTimeout(
             () => {
-
                 window.location.href =
-                    destination;
-
+                    link.href;
             },
             470
         );
-
     }
 );
 
 
 // =========================================================
-// ALTO LAB
-// HERO DASHBOARD GLASS LIGHT
-// NO TILT
+// ALTO LAB / HERO GLASS LIGHT — NO TILT
 // =========================================================
 
 if (heroDashboard) {
-
     heroDashboard.style.setProperty(
         "transform",
         "none",
@@ -1218,15 +624,11 @@ if (heroDashboard) {
         "important"
     );
 
-
-    let pointerFrame =
-        null;
-
+    let pointerFrame = null;
 
     heroDashboard.addEventListener(
         "pointermove",
         (event) => {
-
             if (
                 prefersReducedMotion ||
                 window.innerWidth <= 820
@@ -1243,9 +645,9 @@ if (heroDashboard) {
             pointerFrame =
                 requestAnimationFrame(
                     () => {
-
                         const rect =
-                            heroDashboard.getBoundingClientRect();
+                            heroDashboard
+                                .getBoundingClientRect();
 
                         const x =
                             (
@@ -1274,18 +676,14 @@ if (heroDashboard) {
                             "--lab-y",
                             `${y}%`
                         );
-
                     }
                 );
-
         }
     );
-
 
     heroDashboard.addEventListener(
         "pointerleave",
         () => {
-
             heroDashboard.style.setProperty(
                 "--lab-x",
                 "50%"
@@ -1295,20 +693,17 @@ if (heroDashboard) {
                 "--lab-y",
                 "50%"
             );
-
         }
     );
 }
 
 
 // =========================================================
-// ALTO LAB
-// LIVE THERMAL TELEMETRY
+// ALTO LAB / LIVE THERMAL TELEMETRY
 // VISUAL SIMULATION ONLY
 // =========================================================
 
 function createThermalTelemetry() {
-
     if (!heroDashboard) {
         return;
     }
@@ -1322,17 +717,13 @@ function createThermalTelemetry() {
     }
 
     const telemetry =
-        document.createElement(
-            "div"
-        );
+        document.createElement("div");
 
     telemetry.className =
         "lab-live-telemetry";
 
     telemetry.innerHTML = `
-
         <div class="lab-live-temp">
-
             <span class="lab-live-temp-label">
                 LIVE SIMULATION
             </span>
@@ -1340,19 +731,15 @@ function createThermalTelemetry() {
             <strong class="lab-live-temp-value">
                 <em>4.2</em>°C
             </strong>
-
         </div>
 
         <div
             class="lab-temp-trace"
             aria-hidden="true"
         ></div>
-
     `;
 
-    heroDashboard.appendChild(
-        telemetry
-    );
+    heroDashboard.appendChild(telemetry);
 
     const trace =
         telemetry.querySelector(
@@ -1368,143 +755,396 @@ function createThermalTelemetry() {
         i < 22;
         i += 1
     ) {
-
         const bar =
-            document.createElement(
-                "span"
-            );
+            document.createElement("span");
 
         bar.style.height =
             `${6 + Math.random() * 14}px`;
 
-        trace.appendChild(
-            bar
-        );
+        trace.appendChild(bar);
     }
 }
-
 
 createThermalTelemetry();
 
 
-const thermalValue =
-    document.querySelector(
-        ".lab-live-temp-value em"
+// =========================================================
+// ALTO LAB / COLD CHAIN JOURNEY
+// =========================================================
+
+const journeySection =
+    document.getElementById(
+        "coldChainJourney"
     );
 
-const thermalBars =
-    Array.from(
-        document.querySelectorAll(
-            ".lab-temp-trace span"
+const journeyViewport =
+    journeySection
+        ? journeySection.querySelector(
+            ".journey-viewport"
         )
+        : null;
+
+const journeyButtons =
+    journeySection
+        ? Array.from(
+            journeySection.querySelectorAll(
+                "[data-journey-stage]"
+            )
+        )
+        : [];
+
+const journeyPanels =
+    journeySection
+        ? Array.from(
+            journeySection.querySelectorAll(
+                "[data-journey-panel]"
+            )
+        )
+        : [];
+
+const journeyImages =
+    journeySection
+        ? Array.from(
+            journeySection.querySelectorAll(
+                "[data-journey-image]"
+            )
+        )
+        : [];
+
+const journeyStageCounter =
+    document.getElementById(
+        "journeyStageCounter"
     );
 
+const journeyStageName =
+    document.getElementById(
+        "journeyStageName"
+    );
 
-let simulatedTemperature =
-    4.2;
+const journeySystemState =
+    document.getElementById(
+        "journeySystemState"
+    );
 
+const journeyTemperature =
+    document.getElementById(
+        "journeyTemperature"
+    );
 
-function updateThermalTelemetry() {
+const journeyMiniTrace =
+    document.getElementById(
+        "journeyMiniTrace"
+    );
 
-    if (
-        !thermalValue ||
-        prefersReducedMotion
-    ) {
-        return;
-    }
+const journeyStageNames = [
+    "PACK",
+    "LOAD",
+    "TRANSPORT",
+    "MONITOR",
+    "DELIVER"
+];
 
-    const movement =
-        (
-            Math.random() -
-            0.5
-        ) * 0.26;
+const journeySystemStates = [
+    "PREPARED",
+    "LOADED",
+    "IN TRANSIT",
+    "MEASURABLE",
+    "REUSABLE"
+];
 
-    simulatedTemperature +=
-        movement;
-
-    simulatedTemperature =
-        Math.min(
-            4.8,
-            Math.max(
-                3.8,
-                simulatedTemperature
-            )
-        );
-
-    thermalValue.textContent =
-        simulatedTemperature.toFixed(1);
-
-    if (
-        thermalBars.length
-    ) {
-
-        const firstBar =
-            thermalBars.shift();
-
-        thermalBars.push(
-            firstBar
-        );
-
-        thermalBars.forEach(
-            (
-                bar,
-                index
-            ) => {
-
-                const phase =
-                    (
-                        index /
-                        thermalBars.length
-                    ) * Math.PI * 2;
-
-                const base =
-                    10 +
-                    Math.sin(phase) * 4;
-
-                const temperatureOffset =
-                    (
-                        simulatedTemperature -
-                        4.2
-                    ) * 9;
-
-                const noise =
-                    Math.random() * 5;
-
-                const height =
-                    Math.max(
-                        4,
-                        Math.min(
-                            24,
-                            base +
-                            temperatureOffset +
-                            noise
-                        )
-                    );
-
-                bar.style.height =
-                    `${height}px`;
-
-            }
-        );
-    }
-}
+let journeyActiveStage = 0;
+let journeyStart = 0;
+let journeyDistance = 1;
+let journeyFrame = null;
 
 
-if (
-    thermalValue &&
-    !prefersReducedMotion
+// =========================================================
+// HELPERS
+// =========================================================
+
+function clamp(
+    value,
+    minimum,
+    maximum
 ) {
-
-    setInterval(
-        updateThermalTelemetry,
-        1350
+    return Math.min(
+        maximum,
+        Math.max(
+            minimum,
+            value
+        )
     );
 }
 
 
 // =========================================================
-// ALTO LAB
-// REACTIVE CARD LIGHT
+// JOURNEY TRACE
+// =========================================================
+
+function createJourneyTrace() {
+    if (!journeyMiniTrace) {
+        return;
+    }
+
+    if (journeyMiniTrace.children.length) {
+        return;
+    }
+
+    for (
+        let i = 0;
+        i < 34;
+        i += 1
+    ) {
+        const bar =
+            document.createElement("span");
+
+        bar.style.height =
+            `${5 + Math.random() * 13}px`;
+
+        journeyMiniTrace.appendChild(
+            bar
+        );
+    }
+}
+
+createJourneyTrace();
+
+
+// =========================================================
+// JOURNEY STAGE
+// =========================================================
+
+function setJourneyStage(
+    stageIndex,
+    positionOverride = null
+) {
+    if (!journeySection) {
+        return;
+    }
+
+    const index =
+        clamp(
+            Number(stageIndex) || 0,
+            0,
+            journeyStageNames.length - 1
+        );
+
+    journeyActiveStage = index;
+
+    journeyButtons.forEach(
+        (
+            button,
+            buttonIndex
+        ) => {
+            const isActive =
+                buttonIndex === index;
+
+            button.classList.toggle(
+                "active",
+                isActive
+            );
+
+            button.setAttribute(
+                "aria-pressed",
+                isActive
+                    ? "true"
+                    : "false"
+            );
+        }
+    );
+
+    journeyPanels.forEach(
+        (
+            panel,
+            panelIndex
+        ) => {
+            panel.classList.toggle(
+                "active",
+                panelIndex === index
+            );
+        }
+    );
+
+    journeyImages.forEach(
+        (
+            image,
+            imageIndex
+        ) => {
+            image.classList.toggle(
+                "active",
+                imageIndex === index
+            );
+        }
+    );
+
+    if (journeyViewport) {
+        journeyViewport.dataset.journeyActive =
+            String(index);
+    }
+
+    if (journeyStageCounter) {
+        journeyStageCounter.textContent =
+            `${String(index + 1).padStart(2, "0")} / 05`;
+    }
+
+    if (journeyStageName) {
+        journeyStageName.textContent =
+            journeyStageNames[index];
+    }
+
+    if (journeySystemState) {
+        journeySystemState.textContent =
+            journeySystemStates[index];
+    }
+
+    if (positionOverride !== null) {
+        journeySection.style.setProperty(
+            "--journey-position",
+            `${positionOverride}%`
+        );
+    }
+}
+
+
+// =========================================================
+// JOURNEY MEASUREMENT
+// =========================================================
+
+function measureJourney() {
+    if (!journeySection) {
+        return;
+    }
+
+    const rect =
+        journeySection
+            .getBoundingClientRect();
+
+    journeyStart =
+        window.scrollY +
+        rect.top;
+
+    journeyDistance =
+        Math.max(
+            1,
+            journeySection.offsetHeight -
+            window.innerHeight
+        );
+}
+
+
+// =========================================================
+// JOURNEY SCROLL
+// =========================================================
+
+function updateJourneyFromScroll() {
+    if (!journeySection) {
+        return;
+    }
+
+    const progress =
+        clamp(
+            (
+                window.scrollY -
+                journeyStart
+            ) /
+            journeyDistance,
+            0,
+            0.9999
+        );
+
+    const position =
+        10 +
+        progress * 80;
+
+    const stageIndex =
+        Math.min(
+            journeyStageNames.length - 1,
+            Math.floor(
+                progress *
+                journeyStageNames.length
+            )
+        );
+
+    journeySection.style.setProperty(
+        "--journey-position",
+        `${position}%`
+    );
+
+    if (
+        stageIndex !==
+        journeyActiveStage
+    ) {
+        setJourneyStage(stageIndex);
+    }
+}
+
+function requestJourneyUpdate() {
+    if (
+        !journeySection ||
+        journeyFrame
+    ) {
+        return;
+    }
+
+    journeyFrame =
+        requestAnimationFrame(
+            () => {
+                updateJourneyFromScroll();
+                journeyFrame = null;
+            }
+        );
+}
+
+
+// =========================================================
+// JOURNEY BUTTONS
+// =========================================================
+
+journeyButtons.forEach(
+    (
+        button,
+        index
+    ) => {
+        button.addEventListener(
+            "click",
+            () => {
+                if (!journeySection) {
+                    return;
+                }
+
+                const targetProgress =
+                    (
+                        index +
+                        0.5
+                    ) /
+                    journeyStageNames.length;
+
+                const targetScroll =
+                    journeyStart +
+                    journeyDistance *
+                    targetProgress;
+
+                window.scrollTo({
+                    top: targetScroll,
+                    behavior:
+                        prefersReducedMotion
+                            ? "auto"
+                            : "smooth"
+                });
+            }
+        );
+    }
+);
+
+if (journeySection) {
+    measureJourney();
+    setJourneyStage(0, 10);
+    updateJourneyFromScroll();
+}
+
+
+// =========================================================
+// ALTO LAB / REACTIVE CARD LIGHT
 // =========================================================
 
 const reactiveCards =
@@ -1519,19 +1159,15 @@ const reactiveCards =
         ].join(",")
     );
 
-
 reactiveCards.forEach(
     (card) => {
-
         card.classList.add(
             "alto-reactive-card"
         );
 
-
         card.addEventListener(
             "pointermove",
             (event) => {
-
                 if (
                     prefersReducedMotion ||
                     window.innerWidth <= 820
@@ -1569,15 +1205,12 @@ reactiveCards.forEach(
                     "--card-y",
                     `${y}%`
                 );
-
             }
         );
-
 
         card.addEventListener(
             "pointerleave",
             () => {
-
                 card.style.setProperty(
                     "--card-x",
                     "50%"
@@ -1587,9 +1220,197 @@ reactiveCards.forEach(
                     "--card-y",
                     "50%"
                 );
-
             }
         );
-
     }
 );
+
+
+// =========================================================
+// ALTO LAB / SHARED TELEMETRY TICK
+// =========================================================
+
+const thermalValue =
+    document.querySelector(
+        ".lab-live-temp-value em"
+    );
+
+const thermalBars =
+    Array.from(
+        document.querySelectorAll(
+            ".lab-temp-trace span"
+        )
+    );
+
+const journeyTraceBars =
+    journeyMiniTrace
+        ? Array.from(
+            journeyMiniTrace.querySelectorAll(
+                "span"
+            )
+        )
+        : [];
+
+let simulatedTemperature = 4.2;
+
+
+// =========================================================
+// TRACE ANIMATION
+// =========================================================
+
+function updateTraceBars(
+    bars,
+    temperature
+) {
+    if (!bars.length) {
+        return;
+    }
+
+    bars.forEach(
+        (
+            bar,
+            index
+        ) => {
+            const phase =
+                (
+                    index /
+                    bars.length
+                ) *
+                Math.PI *
+                2;
+
+            const base =
+                10 +
+                Math.sin(phase) * 4;
+
+            const temperatureOffset =
+                (
+                    temperature -
+                    4.2
+                ) * 9;
+
+            const noise =
+                Math.random() * 5;
+
+            const height =
+                clamp(
+                    base +
+                    temperatureOffset +
+                    noise,
+                    4,
+                    24
+                );
+
+            bar.style.height =
+                `${height}px`;
+        }
+    );
+}
+
+
+// =========================================================
+// TEMPERATURE SIMULATION
+// =========================================================
+
+function updateThermalTelemetry() {
+    const movement =
+        (
+            Math.random() -
+            0.5
+        ) * 0.26;
+
+    simulatedTemperature += movement;
+
+    simulatedTemperature =
+        clamp(
+            simulatedTemperature,
+            3.8,
+            4.8
+        );
+
+    if (thermalValue) {
+        thermalValue.textContent =
+            simulatedTemperature.toFixed(1);
+    }
+
+    if (journeyTemperature) {
+        journeyTemperature.textContent =
+            `${simulatedTemperature.toFixed(1)}°C`;
+    }
+
+    updateTraceBars(
+        thermalBars,
+        simulatedTemperature
+    );
+
+    updateTraceBars(
+        journeyTraceBars,
+        simulatedTemperature
+    );
+}
+
+if (
+    (
+        thermalValue ||
+        journeyTemperature
+    ) &&
+    !prefersReducedMotion
+) {
+    setInterval(
+        updateThermalTelemetry,
+        1350
+    );
+}
+
+
+// =========================================================
+// GLOBAL SCROLL / RESIZE EVENTS
+// =========================================================
+
+function handleScroll() {
+    updateHeader();
+    updateScrollProgress();
+    updateBackToTop();
+    requestJourneyUpdate();
+}
+
+window.addEventListener(
+    "scroll",
+    handleScroll,
+    {
+        passive: true
+    }
+);
+
+window.addEventListener(
+    "resize",
+    () => {
+        if (window.innerWidth > 820) {
+            closeMenu();
+        }
+
+        if (journeySection) {
+            measureJourney();
+            updateJourneyFromScroll();
+        }
+    }
+);
+
+window.addEventListener(
+    "load",
+    () => {
+        if (journeySection) {
+            measureJourney();
+            updateJourneyFromScroll();
+        }
+    }
+);
+
+
+// =========================================================
+// INITIAL STATE
+// =========================================================
+
+updateHeader();
+updateScrollProgress();
+updateBackToTop();
