@@ -1,0 +1,4341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Single Pallet Porter – Recyclable | ESBD</title>
+
+    <meta
+        name="description"
+        content="Discover the recyclable Single Pallet Porter from ESBD. A heavy-duty corrugated cardboard payload optimisation system designed to protect palletised goods and create a secure second cargo level."
+    >
+
+
+    <!-- =========================================================
+         FONTS
+    ========================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================================
+         ICONS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+
+    <!-- =========================================================
+         GLOBAL ESBD CSS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- =========================================================
+         RECYCLABLE PALLET PORTER PAGE CSS
+    ========================================================== -->
+
+    <style>
+
+        /* =========================================================
+           PAGE
+        ========================================================= */
+
+        .recyclable-page {
+            background: #f4f9fb;
+        }
+
+        .recyclable-page main {
+            overflow: hidden;
+        }
+
+
+        /* =========================================================
+           COMMON
+        ========================================================= */
+
+        .recyclable-kicker {
+            display: inline-flex;
+            align-items: center;
+
+            padding: 8px 14px;
+            margin-bottom: 24px;
+
+            color: var(--blue);
+
+            background: #e4f5fa;
+
+            border:
+                1px solid
+                rgba(0, 139, 182, 0.10);
+
+            border-radius: 999px;
+
+            font-size: 8px;
+            font-weight: 800;
+
+            letter-spacing: 0.14em;
+
+            text-transform: uppercase;
+        }
+
+
+        .recyclable-title {
+            max-width: 800px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            color: var(--text);
+
+            font-size:
+                clamp(44px, 5vw, 70px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -0.055em;
+        }
+
+
+        .recyclable-title em {
+            display: block;
+
+            color: var(--blue);
+
+            font-style: normal;
+        }
+
+
+        .recyclable-copy {
+            max-width: 640px;
+
+            margin-top: 28px;
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+            line-height: 1.95;
+        }
+
+
+        .recyclable-copy +
+        .recyclable-copy {
+            margin-top: 16px;
+        }
+
+
+        /* =========================================================
+           NATURAL IMAGE SYSTEM
+           NO PILL / NO FRAME
+        ========================================================= */
+
+        .recyclable-image {
+            position: relative;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background: transparent;
+
+            border: none;
+            border-radius: 0;
+
+            box-shadow: none;
+
+            overflow: visible;
+        }
+
+
+        .recyclable-image img {
+            width: 100%;
+            height: auto;
+
+            max-width: 100%;
+
+            display: block;
+
+            border: none;
+            border-radius: 0;
+
+            box-shadow: none;
+
+            object-fit: initial;
+            object-position: center;
+        }
+
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .recyclable-hero {
+            position: relative;
+
+            min-height: 100svh;
+
+            padding:
+                180px
+                0
+                90px;
+
+            display: flex;
+
+            align-items: center;
+
+            color: var(--white);
+
+            background:
+
+                radial-gradient(
+                    circle at 76% 36%,
+                    rgba(25, 197, 232, 0.17),
+                    transparent 28%
+                ),
+
+                radial-gradient(
+                    circle at 20% 82%,
+                    rgba(0, 139, 182, 0.15),
+                    transparent 34%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #031a29 0%,
+                    #062b40 55%,
+                    #083c54 100%
+                );
+
+            overflow: hidden;
+        }
+
+
+        .recyclable-hero-grid {
+            position: absolute;
+
+            inset: 0;
+
+            opacity: 0.065;
+
+            background-image:
+
+                linear-gradient(
+                    rgba(255, 255, 255, 0.12) 1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.12) 1px,
+                    transparent 1px
+                );
+
+            background-size: 72px 72px;
+
+            pointer-events: none;
+        }
+
+
+        .recyclable-hero-glow {
+            position: absolute;
+
+            width: 620px;
+            height: 620px;
+
+            right: -170px;
+            top: -160px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(25, 197, 232, 0.16),
+                    transparent 68%
+                );
+
+            pointer-events: none;
+        }
+
+
+        .recyclable-hero-layout {
+            position: relative;
+
+            z-index: 2;
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 0.92fr)
+                minmax(420px, 1.08fr);
+
+            gap: 84px;
+
+            align-items: center;
+        }
+
+
+        .recyclable-hero-copy {
+            max-width: 690px;
+        }
+
+
+        .recyclable-eyebrow {
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 9px 15px;
+
+            color: var(--cyan-soft);
+
+            background:
+                rgba(255, 255, 255, 0.07);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.13);
+
+            border-radius: 999px;
+
+            backdrop-filter: blur(12px);
+
+            font-size: 9px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.15em;
+
+            text-transform: uppercase;
+        }
+
+
+        .recyclable-eyebrow i {
+            color: var(--cyan);
+
+            font-size: 8px;
+        }
+
+
+        .recyclable-hero h1 {
+            max-width: 800px;
+
+            margin-top: 32px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                clamp(52px, 6vw, 84px);
+
+            font-weight: 500;
+
+            line-height: 0.94;
+
+            letter-spacing: -0.065em;
+        }
+
+
+        .recyclable-hero h1 span {
+            display: block;
+
+            color: #8be7f5;
+        }
+
+
+        .recyclable-hero-lead {
+            max-width: 630px;
+
+            margin-top: 30px;
+
+            color:
+                rgba(255, 255, 255, 0.72);
+
+            font-size: 15px;
+
+            line-height: 1.9;
+        }
+
+
+        .recyclable-hero-actions {
+            margin-top: 34px;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+
+        .recyclable-hero-tags {
+            margin-top: 32px;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+        }
+
+
+        .recyclable-hero-tag {
+            min-height: 33px;
+
+            padding: 0 13px;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            color:
+                rgba(255, 255, 255, 0.68);
+
+            background:
+                rgba(255, 255, 255, 0.055);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.09);
+
+            border-radius: 999px;
+
+            font-size: 9px;
+
+            font-weight: 600;
+        }
+
+
+        .recyclable-hero-tag i {
+            color: var(--cyan);
+
+            font-size: 8px;
+        }
+
+
+        .recyclable-hero-visual {
+            position: relative;
+
+            min-height: 570px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .recyclable-hero-image {
+            position: absolute;
+
+            inset:
+                34px
+                0
+                34px
+                30px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .recyclable-hero-image img {
+            width: auto;
+            height: auto;
+
+            max-width: 100%;
+            max-height: 500px;
+        }
+
+
+        .recyclable-floating-card {
+            position: absolute;
+
+            z-index: 4;
+
+            padding: 16px 18px;
+
+            color: var(--white);
+
+            background:
+                rgba(2, 25, 38, 0.90);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.11);
+
+            border-radius: 16px;
+
+            backdrop-filter: blur(18px);
+
+            box-shadow:
+                0 20px 45px
+                rgba(0, 0, 0, 0.22);
+        }
+
+
+        .recyclable-floating-card span {
+            display: block;
+
+            margin-bottom: 7px;
+
+            color: var(--cyan);
+
+            font-size: 6px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.16em;
+        }
+
+
+        .recyclable-floating-card strong {
+            font-size: 10px;
+
+            font-weight: 600;
+        }
+
+
+        .recyclable-floating-one {
+            top: 12px;
+            left: 0;
+        }
+
+
+        .recyclable-floating-two {
+            right: -18px;
+            bottom: 18px;
+        }
+
+
+        /* =========================================================
+           INTRO
+        ========================================================= */
+
+        .recyclable-intro {
+            padding: 145px 0;
+
+            background: #ffffff;
+        }
+
+
+        .recyclable-intro-layout {
+            display: grid;
+
+            grid-template-columns:
+                1fr
+                1fr;
+
+            gap: 95px;
+
+            align-items: center;
+        }
+
+
+        /* =========================================================
+           RECYCLABLE PRODUCT DIAGRAM
+        ========================================================= */
+
+        .recyclable-diagram-shell {
+            position: relative;
+
+            padding: 42px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #eef8fb,
+                    #ffffff
+                );
+
+            border:
+                1px solid
+                rgba(0, 139, 182, 0.12);
+
+            border-radius: 30px;
+
+            overflow: hidden;
+        }
+
+
+        .recyclable-diagram-shell::before {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            opacity: 0.4;
+
+            background-image:
+
+                linear-gradient(
+                    rgba(0, 139, 182, 0.06) 1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(0, 139, 182, 0.06) 1px,
+                    transparent 1px
+                );
+
+            background-size: 32px 32px;
+        }
+
+
+        .recyclable-product-svg {
+            position: relative;
+
+            z-index: 2;
+
+            width: 100%;
+            height: auto;
+
+            display: block;
+        }
+
+
+        .recyclable-diagram-label {
+            position: relative;
+
+            z-index: 2;
+
+            margin-top: 24px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 15px;
+
+            color: var(--muted);
+
+            font-size: 8px;
+
+            font-weight: 700;
+
+            letter-spacing: 0.08em;
+
+            text-transform: uppercase;
+        }
+
+
+        /* =========================================================
+           KEY FACTS
+        ========================================================= */
+
+        .recyclable-key-facts {
+            padding:
+                0
+                0
+                135px;
+
+            background: #ffffff;
+        }
+
+
+        .recyclable-facts-shell {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 12px;
+        }
+
+
+        .recyclable-fact-card {
+            min-height: 190px;
+
+            padding: 25px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: space-between;
+
+            background: var(--off);
+
+            border:
+                1px solid
+                var(--line);
+
+            border-radius: 20px;
+        }
+
+
+        .recyclable-fact-icon {
+            width: 40px;
+            height: 40px;
+
+            display: grid;
+
+            place-items: center;
+
+            color: var(--white);
+
+            background: var(--blue);
+
+            border-radius: 50%;
+
+            font-size: 11px;
+        }
+
+
+        .recyclable-fact-card strong {
+            margin-top: 24px;
+
+            color: var(--text);
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size: 17px;
+
+            font-weight: 500;
+        }
+
+
+        .recyclable-fact-card p {
+            margin-top: 8px;
+
+            color: var(--muted);
+
+            font-size: 10px;
+
+            line-height: 1.65;
+        }
+
+
+        /* =========================================================
+           LONG HAUL / RECYCLING
+        ========================================================= */
+
+        .recyclable-route {
+            position: relative;
+
+            padding: 145px 0;
+
+            color: var(--white);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--navy),
+                    var(--navy-mid)
+                );
+
+            overflow: hidden;
+        }
+
+
+        .recyclable-route::before {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            opacity: 0.055;
+
+            background-image:
+
+                linear-gradient(
+                    rgba(255, 255, 255, 0.1) 1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.1) 1px,
+                    transparent 1px
+                );
+
+            background-size: 74px 74px;
+        }
+
+
+        .recyclable-route-layout {
+            position: relative;
+
+            z-index: 2;
+
+            display: grid;
+
+            grid-template-columns:
+                0.95fr
+                1.05fr;
+
+            gap: 85px;
+
+            align-items: center;
+        }
+
+
+        .recyclable-route
+        .recyclable-kicker {
+            color: var(--cyan-soft);
+
+            background:
+                rgba(255, 255, 255, 0.07);
+
+            border-color:
+                rgba(255, 255, 255, 0.11);
+        }
+
+
+        .recyclable-route
+        .recyclable-title {
+            color: var(--white);
+        }
+
+
+        .recyclable-route
+        .recyclable-copy {
+            color:
+                rgba(255, 255, 255, 0.62);
+        }
+
+
+        .recyclable-route-visual {
+            padding: 35px;
+
+            background:
+                rgba(255, 255, 255, 0.045);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.09);
+
+            border-radius: 28px;
+        }
+
+
+        .recyclable-route-svg {
+            width: 100%;
+            height: auto;
+
+            display: block;
+        }
+
+
+        .recyclable-route-points {
+            margin-top: 38px;
+
+            display: grid;
+
+            gap: 10px;
+        }
+
+
+        .recyclable-route-point {
+            padding: 20px;
+
+            display: grid;
+
+            grid-template-columns:
+                auto
+                1fr;
+
+            gap: 17px;
+
+            align-items: start;
+
+            background:
+                rgba(255, 255, 255, 0.055);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.09);
+
+            border-radius: 18px;
+        }
+
+
+        .recyclable-route-number {
+            width: 35px;
+            height: 35px;
+
+            display: grid;
+
+            place-items: center;
+
+            color: var(--cyan);
+
+            border:
+                1px solid
+                rgba(25, 197, 232, 0.25);
+
+            border-radius: 50%;
+
+            font-size: 8px;
+
+            font-weight: 800;
+        }
+
+
+        .recyclable-route-point strong {
+            display: block;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size: 17px;
+
+            font-weight: 500;
+        }
+
+
+        .recyclable-route-point p {
+            margin-top: 7px;
+
+            color:
+                rgba(255, 255, 255, 0.50);
+
+            font-size: 10px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================================================
+           CAPACITY
+        ========================================================= */
+
+        .recyclable-capacity {
+            padding: 145px 0;
+
+            background: #f4f9fb;
+        }
+
+
+        .recyclable-capacity-layout {
+            display: grid;
+
+            grid-template-columns:
+                1.05fr
+                0.95fr;
+
+            gap: 90px;
+
+            align-items: center;
+        }
+
+
+        .recyclable-capacity-svg-shell {
+            padding: 38px;
+
+            background: #ffffff;
+
+            border:
+                1px solid
+                var(--line);
+
+            border-radius: 28px;
+
+            box-shadow: var(--shadow);
+        }
+
+
+        .recyclable-capacity-svg {
+            width: 100%;
+            height: auto;
+
+            display: block;
+        }
+
+
+        .recyclable-capacity-points {
+            margin-top: 36px;
+
+            display: grid;
+
+            gap: 10px;
+        }
+
+
+        .recyclable-capacity-point {
+            padding: 18px 20px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            background: #ffffff;
+
+            border:
+                1px solid
+                var(--line);
+
+            border-radius: 16px;
+        }
+
+
+        .recyclable-capacity-point i {
+            width: 36px;
+            height: 36px;
+
+            flex: 0 0 auto;
+
+            display: grid;
+
+            place-items: center;
+
+            color: var(--white);
+
+            background: var(--blue);
+
+            border-radius: 50%;
+
+            font-size: 10px;
+        }
+
+
+        .recyclable-capacity-point strong {
+            display: block;
+
+            color: var(--text);
+
+            font-size: 11px;
+        }
+
+
+        .recyclable-capacity-point span {
+            display: block;
+
+            margin-top: 4px;
+
+            color: var(--muted);
+
+            font-size: 9px;
+
+            line-height: 1.5;
+        }
+
+
+        /* =========================================================
+           BENEFITS
+        ========================================================= */
+
+        .recyclable-benefits-section {
+            padding:
+                0
+                0
+                145px;
+
+            background: #f4f9fb;
+        }
+
+
+        .recyclable-benefits-heading {
+            max-width: 800px;
+        }
+
+
+        .recyclable-benefits-grid {
+            margin-top: 60px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(5, 1fr);
+
+            gap: 12px;
+        }
+
+
+        .recyclable-benefit {
+            min-height: 230px;
+
+            padding: 26px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: space-between;
+
+            background: #ffffff;
+
+            border:
+                1px solid
+                var(--line);
+
+            border-radius: 22px;
+
+            box-shadow: var(--shadow);
+        }
+
+
+        .recyclable-benefit-icon {
+            width: 46px;
+            height: 46px;
+
+            display: grid;
+
+            place-items: center;
+
+            color: var(--blue);
+
+            background: #e6f6fa;
+
+            border-radius: 50%;
+
+            font-size: 13px;
+        }
+
+
+        .recyclable-benefit strong {
+            display: block;
+
+            margin-top: 32px;
+
+            color: var(--text);
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size: 18px;
+
+            font-weight: 500;
+
+            line-height: 1.15;
+        }
+
+
+        .recyclable-benefit p {
+            margin-top: 8px;
+
+            color: var(--muted);
+
+            font-size: 9px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================================================
+           3 STEP ASSEMBLY
+        ========================================================= */
+
+        .recyclable-assembly {
+            padding: 145px 0;
+
+            background: #ffffff;
+        }
+
+
+        .recyclable-assembly-heading {
+            max-width: 820px;
+        }
+
+
+        .recyclable-assembly-grid {
+            margin-top: 70px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 18px;
+        }
+
+
+        .recyclable-assembly-card {
+            position: relative;
+
+            min-height: 470px;
+
+            padding: 28px;
+
+            background: var(--off);
+
+            border:
+                1px solid
+                var(--line);
+
+            border-radius: 26px;
+
+            overflow: hidden;
+        }
+
+
+        .recyclable-assembly-card::after {
+            content: "";
+
+            position: absolute;
+
+            width: 200px;
+            height: 200px;
+
+            right: -100px;
+            bottom: -100px;
+
+            border:
+                1px solid
+                rgba(0, 139, 182, 0.11);
+
+            border-radius: 50%;
+        }
+
+
+        .recyclable-assembly-number {
+            width: 42px;
+            height: 42px;
+
+            display: grid;
+
+            place-items: center;
+
+            color: var(--white);
+
+            background: var(--blue);
+
+            border-radius: 50%;
+
+            font-size: 8px;
+
+            font-weight: 800;
+        }
+
+
+        .recyclable-assembly-svg {
+            width: 100%;
+            height: 220px;
+
+            margin-top: 30px;
+
+            display: block;
+        }
+
+
+        .recyclable-assembly-card h3 {
+            margin-top: 22px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            color: var(--text);
+
+            font-size: 22px;
+
+            font-weight: 500;
+
+            letter-spacing: -0.03em;
+        }
+
+
+        .recyclable-assembly-card p {
+            margin-top: 9px;
+
+            color: var(--muted);
+
+            font-size: 10px;
+
+            line-height: 1.7;
+        }
+
+
+        .recyclable-repeat {
+            margin-top: 25px;
+
+            padding: 18px 22px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            gap: 12px;
+
+            color: var(--blue);
+
+            background: #e9f7fb;
+
+            border:
+                1px solid
+                rgba(0, 139, 182, 0.10);
+
+            border-radius: 16px;
+
+            font-size: 10px;
+
+            font-weight: 700;
+
+            text-align: center;
+        }
+
+
+        /* =========================================================
+           HANDLING
+        ========================================================= */
+
+        .recyclable-handling {
+            padding:
+                0
+                0
+                145px;
+
+            background: #ffffff;
+        }
+
+
+        .recyclable-handling-layout {
+            display: grid;
+
+            grid-template-columns:
+                0.95fr
+                1.05fr;
+
+            gap: 85px;
+
+            align-items: center;
+        }
+
+
+        .recyclable-handling-image {
+            width: 100%;
+        }
+
+
+        .recyclable-handling-points {
+            margin-top: 34px;
+
+            display: grid;
+
+            gap: 10px;
+        }
+
+
+        .recyclable-handling-point {
+            padding: 18px 20px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            background: var(--off);
+
+            border:
+                1px solid
+                var(--line);
+
+            border-radius: 16px;
+        }
+
+
+        .recyclable-handling-point i {
+            width: 36px;
+            height: 36px;
+
+            flex: 0 0 auto;
+
+            display: grid;
+
+            place-items: center;
+
+            color: var(--white);
+
+            background: var(--blue);
+
+            border-radius: 50%;
+
+            font-size: 10px;
+        }
+
+
+        .recyclable-handling-point strong {
+            color: var(--text);
+
+            font-size: 11px;
+        }
+
+
+        /* =========================================================
+           SPECIFICATION
+        ========================================================= */
+
+        .recyclable-specification {
+            padding: 145px 0;
+
+            background: #f4f9fb;
+        }
+
+
+        .recyclable-spec-shell {
+            display: grid;
+
+            grid-template-columns:
+                0.8fr
+                1.2fr;
+
+            gap: 70px;
+
+            padding: 55px;
+
+            background: #ffffff;
+
+            border:
+                1px solid
+                var(--line);
+
+            border-radius: 32px;
+
+            box-shadow: var(--shadow);
+        }
+
+
+        .recyclable-spec-intro h3 {
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                clamp(32px, 4vw, 48px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -0.05em;
+        }
+
+
+        .recyclable-spec-intro p {
+            margin-top: 20px;
+
+            color: var(--muted);
+
+            font-size: 12px;
+
+            line-height: 1.8;
+        }
+
+
+        .recyclable-spec-list {
+            display: grid;
+        }
+
+
+        .recyclable-spec-row {
+            padding: 20px 0;
+
+            display: grid;
+
+            grid-template-columns:
+                0.8fr
+                1.2fr;
+
+            gap: 30px;
+
+            border-bottom:
+                1px solid
+                var(--line);
+        }
+
+
+        .recyclable-spec-row:first-child {
+            padding-top: 0;
+        }
+
+
+        .recyclable-spec-row:last-child {
+            padding-bottom: 0;
+
+            border-bottom: none;
+        }
+
+
+        .recyclable-spec-row span {
+            color: var(--muted-light);
+
+            font-size: 7px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.12em;
+
+            text-transform: uppercase;
+        }
+
+
+        .recyclable-spec-row strong {
+            color: var(--text);
+
+            font-size: 11px;
+
+            font-weight: 650;
+
+            line-height: 1.65;
+        }
+
+
+        /* =========================================================
+           FINAL CTA
+        ========================================================= */
+
+        .recyclable-final {
+            padding:
+                0
+                0
+                100px;
+
+            background: #f4f9fb;
+        }
+
+
+        .recyclable-final-card {
+            position: relative;
+
+            padding: 72px;
+
+            color: var(--white);
+
+            background:
+                linear-gradient(
+                    125deg,
+                    #007fa7,
+                    #00a4ce,
+                    #20c6e4
+                );
+
+            border-radius: 38px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 35px 90px
+                rgba(0, 139, 182, 0.24);
+        }
+
+
+        .recyclable-final-card::after {
+            content: "";
+
+            position: absolute;
+
+            width: 430px;
+            height: 430px;
+
+            right: -110px;
+            bottom: -180px;
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.16);
+
+            border-radius: 50%;
+
+            box-shadow:
+
+                0 0 0 50px
+                rgba(255, 255, 255, 0.055),
+
+                0 0 0 100px
+                rgba(255, 255, 255, 0.025);
+        }
+
+
+        .recyclable-final-content {
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 800px;
+        }
+
+
+        .recyclable-final-content span {
+            font-size: 8px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.16em;
+        }
+
+
+        .recyclable-final-content h2 {
+            margin-top: 18px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                clamp(42px, 5vw, 67px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -0.055em;
+        }
+
+
+        .recyclable-final-content p {
+            max-width: 650px;
+
+            margin-top: 20px;
+
+            color:
+                rgba(255, 255, 255, 0.78);
+
+            font-size: 13px;
+
+            line-height: 1.8;
+        }
+
+
+        .recyclable-final-actions {
+            margin-top: 30px;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+
+        /* =========================================================
+           RESPONSIVE
+        ========================================================= */
+
+        @media (max-width: 1180px) {
+
+            .recyclable-hero-layout {
+                gap: 45px;
+            }
+
+
+            .recyclable-facts-shell {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .recyclable-benefits-grid {
+                grid-template-columns:
+                    repeat(3, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 980px) {
+
+            .recyclable-hero {
+                min-height: auto;
+
+                padding:
+                    160px
+                    0
+                    80px;
+            }
+
+
+            .recyclable-hero-layout,
+            .recyclable-intro-layout,
+            .recyclable-route-layout,
+            .recyclable-capacity-layout,
+            .recyclable-handling-layout,
+            .recyclable-spec-shell {
+                grid-template-columns: 1fr;
+            }
+
+
+            .recyclable-hero-visual {
+                min-height: 500px;
+            }
+
+
+            .recyclable-hero-image {
+                inset: 20px 0;
+            }
+
+
+            .recyclable-assembly-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .recyclable-hero {
+                padding:
+                    135px
+                    0
+                    60px;
+            }
+
+
+            .recyclable-hero h1 {
+                font-size:
+                    clamp(44px, 13vw, 64px);
+            }
+
+
+            .recyclable-hero-visual {
+                min-height: 400px;
+            }
+
+
+            .recyclable-hero-image {
+                inset: 0;
+            }
+
+
+            .recyclable-hero-image img {
+                max-height: 380px;
+            }
+
+
+            .recyclable-floating-one {
+                left: 10px;
+                top: -12px;
+            }
+
+
+            .recyclable-floating-two {
+                right: 10px;
+                bottom: -12px;
+            }
+
+
+            .recyclable-intro,
+            .recyclable-route,
+            .recyclable-capacity,
+            .recyclable-assembly,
+            .recyclable-specification {
+                padding:
+                    95px
+                    0;
+            }
+
+
+            .recyclable-facts-shell,
+            .recyclable-benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .recyclable-benefit {
+                min-height: 180px;
+            }
+
+
+            .recyclable-spec-shell {
+                padding: 32px 24px;
+
+                gap: 40px;
+            }
+
+
+            .recyclable-spec-row {
+                grid-template-columns: 1fr;
+
+                gap: 8px;
+            }
+
+
+            .recyclable-handling {
+                padding-bottom: 95px;
+            }
+
+
+            .recyclable-benefits-section {
+                padding-bottom: 95px;
+            }
+
+
+            .recyclable-final {
+                padding-bottom: 70px;
+            }
+
+
+            .recyclable-final-card {
+                padding: 52px 28px;
+
+                border-radius: 28px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="recyclable-page">
+
+
+    <!-- =========================================================
+         SCROLL PROGRESS
+    ========================================================== -->
+
+    <div id="scrollProgress"></div>
+
+
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
+
+    <header
+        class="site-header"
+        id="siteHeader"
+    >
+
+        <div class="nav-shell">
+
+
+            <a
+                href="index.html"
+                class="brand"
+                aria-label="ESBD Home"
+            >
+
+                <img
+                    src="images/logo.png"
+                    alt="ESBD"
+                >
+
+            </a>
+
+
+            <div class="nav-pill">
+
+                <nav
+                    class="desktop-nav"
+                    aria-label="Primary navigation"
+                >
+
+                    <a href="clients.html">
+                        Clients
+                    </a>
+
+                    <a href="features.html">
+                        Features
+                    </a>
+
+                    <a href="products.html">
+                        Products
+                    </a>
+
+
+                    <!-- SOLARIS -->
+
+                    <div class="nav-dropdown">
+
+                        <a
+                            href="solaris.html"
+                            class="nav-dropdown-toggle"
+                        >
+
+                            Solaris
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </a>
+
+
+                        <div class="nav-dropdown-menu">
+
+                            <a href="solaris-5-10-25.html">
+                                Solaris 5, 10 &amp; 25
+                            </a>
+
+                            <a href="solaris-s20.html">
+                                Solaris S20
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PALLET PORTER -->
+
+                    <div class="nav-dropdown">
+
+                        <a
+                            href="pallet-porter.html"
+                            class="nav-dropdown-toggle"
+                        >
+
+                            Pallet Porter
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </a>
+
+
+                        <div class="nav-dropdown-menu">
+
+                            <a href="single-pallet-porter-reusable.html">
+                                Single Pallet Porter – Reusable
+                            </a>
+
+                            <a
+                                href="single-pallet-porter-recyclable.html"
+                                aria-current="page"
+                            >
+                                Single Pallet Porter – Recyclable
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="why-us.html">
+                        Why Us
+                    </a>
+
+
+                    <a
+                        href="contact.html"
+                        class="nav-cta"
+                    >
+
+                        Contact Us
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+                </nav>
+
+
+                <button
+                    class="menu-btn"
+                    id="menuButton"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                >
+
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             MOBILE DRAWER
+        ====================================================== -->
+
+        <div
+            class="mobile-drawer"
+            id="mobileDrawer"
+        >
+
+            <a href="clients.html">
+
+                <span>
+                    01
+                </span>
+
+                Clients
+
+            </a>
+
+
+            <a href="features.html">
+
+                <span>
+                    02
+                </span>
+
+                Features
+
+            </a>
+
+
+            <a href="products.html">
+
+                <span>
+                    03
+                </span>
+
+                Products
+
+            </a>
+
+
+            <details class="mobile-submenu">
+
+                <summary>
+
+                    <span class="mobile-nav-number">
+                        04
+                    </span>
+
+                    <strong>
+                        Solaris
+                    </strong>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </summary>
+
+
+                <div class="mobile-submenu-links">
+
+                    <a href="solaris.html">
+                        Solaris Overview
+                    </a>
+
+                    <a href="solaris-5-10-25.html">
+                        Solaris 5, 10 &amp; 25
+                    </a>
+
+                    <a href="solaris-s20.html">
+                        Solaris S20
+                    </a>
+
+                </div>
+
+            </details>
+
+
+            <details class="mobile-submenu">
+
+                <summary>
+
+                    <span class="mobile-nav-number">
+                        05
+                    </span>
+
+                    <strong>
+                        Pallet Porter
+                    </strong>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </summary>
+
+
+                <div class="mobile-submenu-links">
+
+                    <a href="pallet-porter.html">
+                        Pallet Porter Overview
+                    </a>
+
+                    <a href="single-pallet-porter-reusable.html">
+                        Single Pallet Porter – Reusable
+                    </a>
+
+                    <a href="single-pallet-porter-recyclable.html">
+                        Single Pallet Porter – Recyclable
+                    </a>
+
+                </div>
+
+            </details>
+
+
+            <a href="why-us.html">
+
+                <span>
+                    06
+                </span>
+
+                Why Us
+
+            </a>
+
+
+            <a
+                href="contact.html"
+                class="mobile-drawer-cta"
+            >
+
+                Contact Us
+
+                <span>
+                    ↗
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         MAIN
+    ========================================================== -->
+
+    <main>
+
+
+        <!-- =====================================================
+             HERO
+             REUSES PALLET PORTER IMAGE 05
+        ====================================================== -->
+
+        <section class="recyclable-hero">
+
+            <div class="recyclable-hero-grid"></div>
+
+            <div class="recyclable-hero-glow"></div>
+
+
+            <div class="container">
+
+                <div class="recyclable-hero-layout">
+
+
+                    <div class="recyclable-hero-copy reveal-left">
+
+                        <div class="recyclable-eyebrow">
+
+                            <i class="fa-solid fa-recycle"></i>
+
+                            Pallet Porter / Recyclable
+
+                        </div>
+
+
+                        <h1>
+
+                            Build the second level.
+
+                            <span>
+                                Recycle it when you're done.
+                            </span>
+
+                        </h1>
+
+
+                        <p class="recyclable-hero-lead">
+
+                            Single Pallet Porter – Recyclable is built
+                            from heavy-duty corrugated cardboard to protect
+                            palletised goods while creating a secure second
+                            cargo level above them.
+
+                            Designed for single or limited reuse, it is suited
+                            to long-haul distribution where returning the system
+                            to the warehouse is not practical or financially viable.
+
+                        </p>
+
+
+                        <div class="recyclable-hero-actions">
+
+                            <a
+                                href="#recyclable-assembly"
+                                class="btn btn-primary"
+                            >
+
+                                See How It Works
+
+                                <i class="fa-solid fa-arrow-down"></i>
+
+                            </a>
+
+
+                            <a
+                                href="contact.html"
+                                class="btn btn-glass"
+                            >
+
+                                Talk to ESBD
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="recyclable-hero-tags">
+
+                            <span class="recyclable-hero-tag">
+
+                                <i class="fa-solid fa-recycle"></i>
+
+                                Recyclable
+
+                            </span>
+
+
+                            <span class="recyclable-hero-tag">
+
+                                <i class="fa-solid fa-weight-hanging"></i>
+
+                                500kg Capacity
+
+                            </span>
+
+
+                            <span class="recyclable-hero-tag">
+
+                                <i class="fa-solid fa-user"></i>
+
+                                One-Person Assembly
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="recyclable-hero-visual reveal-right">
+
+
+                        <div
+                            class="recyclable-image
+                                   recyclable-hero-image"
+                        >
+
+                            <img
+                                src="images/pallet-porter-05.jpg"
+                                alt="Single Pallet Porter recyclable corrugated cardboard payload solution"
+                            >
+
+                        </div>
+
+
+                        <div
+                            class="recyclable-floating-card
+                                   recyclable-floating-one"
+                        >
+
+                            <span>
+                                2ND LEVEL
+                            </span>
+
+                            <strong>
+                                Up to 500kg
+                            </strong>
+
+                        </div>
+
+
+                        <div
+                            class="recyclable-floating-card
+                                   recyclable-floating-two"
+                        >
+
+                            <span>
+                                MATERIAL
+                            </span>
+
+                            <strong>
+                                Heavy-Duty Corrugated Cardboard
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             WHAT IT DOES
+             SVG EXPLAINER
+        ====================================================== -->
+
+        <section class="recyclable-intro">
+
+            <div class="container">
+
+                <div class="recyclable-intro-layout">
+
+
+                    <div
+                        class="recyclable-diagram-shell
+                               reveal-left"
+                    >
+
+                        <svg
+                            class="recyclable-product-svg"
+                            viewBox="0 0 620 500"
+                            role="img"
+                            aria-label="Diagram showing recyclable Pallet Porter surrounding a pallet and supporting a second load"
+                        >
+
+
+                            <!-- LOWER PALLET -->
+
+                            <rect
+                                x="185"
+                                y="365"
+                                width="250"
+                                height="25"
+                                rx="4"
+                                fill="#cda674"
+                            />
+
+                            <rect
+                                x="205"
+                                y="390"
+                                width="36"
+                                height="22"
+                                fill="#b48758"
+                            />
+
+                            <rect
+                                x="292"
+                                y="390"
+                                width="36"
+                                height="22"
+                                fill="#b48758"
+                            />
+
+                            <rect
+                                x="379"
+                                y="390"
+                                width="36"
+                                height="22"
+                                fill="#b48758"
+                            />
+
+
+                            <!-- CARGO -->
+
+                            <rect
+                                x="212"
+                                y="242"
+                                width="86"
+                                height="118"
+                                rx="4"
+                                fill="#bdcdd4"
+                            />
+
+                            <rect
+                                x="305"
+                                y="242"
+                                width="95"
+                                height="118"
+                                rx="4"
+                                fill="#d0dbe0"
+                            />
+
+
+                            <!-- CARDBOARD SLEEVE -->
+
+                            <path
+                                d="
+                                M160 180
+                                L160 365
+                                L190 365
+                                L190 212
+                                L430 212
+                                L430 365
+                                L460 365
+                                L460 180
+                                Z
+                                "
+                                fill="#d8bd92"
+                                fill-opacity="0.30"
+                                stroke="#b78c57"
+                                stroke-width="12"
+                                stroke-linejoin="round"
+                            />
+
+
+                            <!-- TOP PAD -->
+
+                            <rect
+                                x="155"
+                                y="160"
+                                width="310"
+                                height="28"
+                                rx="5"
+                                fill="#cfaa75"
+                            />
+
+
+                            <!-- TOP PALLET -->
+
+                            <rect
+                                x="165"
+                                y="112"
+                                width="290"
+                                height="25"
+                                rx="4"
+                                fill="#cda674"
+                            />
+
+                            <rect
+                                x="186"
+                                y="137"
+                                width="34"
+                                height="20"
+                                fill="#b48758"
+                            />
+
+                            <rect
+                                x="293"
+                                y="137"
+                                width="34"
+                                height="20"
+                                fill="#b48758"
+                            />
+
+                            <rect
+                                x="400"
+                                y="137"
+                                width="34"
+                                height="20"
+                                fill="#b48758"
+                            />
+
+
+                            <!-- ARROW -->
+
+                            <path
+                                d="M515 290 L515 175"
+                                fill="none"
+                                stroke="#19c5e8"
+                                stroke-width="5"
+                                stroke-linecap="round"
+                            />
+
+                            <path
+                                d="M500 193 L515 173 L530 193"
+                                fill="none"
+                                stroke="#19c5e8"
+                                stroke-width="5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+
+                            <text
+                                x="515"
+                                y="320"
+                                fill="#008bb6"
+                                font-family="Inter, sans-serif"
+                                font-size="12"
+                                font-weight="700"
+                                text-anchor="middle"
+                            >
+                                2ND LEVEL
+                            </text>
+
+
+                        </svg>
+
+
+                        <div class="recyclable-diagram-label">
+
+                            <span>
+                                Protected Payload
+                            </span>
+
+                            <span>
+                                500kg Above
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="reveal-right">
+
+                        <div class="recyclable-kicker">
+
+                            01 / What It Does
+
+                        </div>
+
+
+                        <h2 class="recyclable-title">
+
+                            Protect below.
+
+                            <em>
+                                Carry more above.
+                            </em>
+
+                        </h2>
+
+
+                        <p class="recyclable-copy">
+
+                            The recyclable Pallet Porter forms a
+                            heavy-duty corrugated sleeve around an existing
+                            palletised load.
+
+                        </p>
+
+
+                        <p class="recyclable-copy">
+
+                            Once the top load pad is fitted, the structure
+                            creates a secure second level capable of
+                            supporting another pallet above.
+
+                            The lower goods stay protected while unused
+                            vertical freight space becomes usable payload
+                            capacity.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             KEY FACTS
+        ====================================================== -->
+
+        <section class="recyclable-key-facts">
+
+            <div class="container">
+
+                <div class="recyclable-facts-shell">
+
+
+                    <div class="recyclable-fact-card reveal">
+
+                        <div class="recyclable-fact-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Simple to Use
+                            </strong>
+
+                            <p>
+                                Straightforward preparation and installation around palletised goods.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="recyclable-fact-card reveal delay-1">
+
+                        <div class="recyclable-fact-icon">
+                            <i class="fa-solid fa-ruler-combined"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Custom Sizes
+                            </strong>
+
+                            <p>
+                                Custom dimensions are available for varying freight requirements.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="recyclable-fact-card reveal delay-2">
+
+                        <div class="recyclable-fact-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                One-Person Assembly
+                            </strong>
+
+                            <p>
+                                Designed to be opened and fitted around the load by one operator.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="recyclable-fact-card reveal">
+
+                        <div class="recyclable-fact-icon">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Efficient Stacking
+                            </strong>
+
+                            <p>
+                                Creates a secure platform for additional palletised freight.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="recyclable-fact-card reveal delay-1">
+
+                        <div class="recyclable-fact-icon">
+                            <i class="fa-solid fa-compress"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Small Handling Footprint
+                            </strong>
+
+                            <p>
+                                Delivered flat packed for efficient handling before assembly.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="recyclable-fact-card reveal delay-2">
+
+                        <div class="recyclable-fact-icon">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Palletised Goods
+                            </strong>
+
+                            <p>
+                                Designed around standard pallet-based logistics.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="recyclable-fact-card reveal">
+
+                        <div class="recyclable-fact-icon">
+                            <i class="fa-solid fa-warehouse"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Warehouse Assembly
+                            </strong>
+
+                            <p>
+                                Assemble inside the warehouse before moving by forklift.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             LONG HAUL / RECYCLABILITY
+             SVG
+        ====================================================== -->
+
+        <section class="recyclable-route">
+
+            <div class="container">
+
+                <div class="recyclable-route-layout">
+
+
+                    <div
+                        class="recyclable-route-visual
+                               reveal-left"
+                    >
+
+                        <svg
+                            class="recyclable-route-svg"
+                            viewBox="0 0 600 520"
+                            role="img"
+                            aria-label="Diagram illustrating long haul distribution and recycling"
+                        >
+
+
+                            <!-- WAREHOUSE -->
+
+                            <rect
+                                x="55"
+                                y="180"
+                                width="145"
+                                height="145"
+                                rx="8"
+                                fill="rgba(255,255,255,0.08)"
+                                stroke="#19c5e8"
+                                stroke-width="3"
+                            />
+
+                            <path
+                                d="M45 180 L128 115 L210 180"
+                                fill="none"
+                                stroke="#19c5e8"
+                                stroke-width="5"
+                                stroke-linejoin="round"
+                            />
+
+                            <rect
+                                x="105"
+                                y="250"
+                                width="48"
+                                height="75"
+                                fill="rgba(25,197,232,0.18)"
+                            />
+
+
+                            <!-- ROUTE -->
+
+                            <path
+                                d="M205 255 C280 195 330 310 400 250"
+                                fill="none"
+                                stroke="rgba(255,255,255,0.35)"
+                                stroke-width="4"
+                                stroke-dasharray="10 10"
+                            />
+
+
+                            <!-- TRUCK -->
+
+                            <rect
+                                x="248"
+                                y="212"
+                                width="112"
+                                height="60"
+                                rx="7"
+                                fill="rgba(255,255,255,0.13)"
+                                stroke="#8be7f5"
+                                stroke-width="3"
+                            />
+
+                            <path
+                                d="M360 232 L400 232 L422 253 L422 272 L360 272 Z"
+                                fill="rgba(255,255,255,0.13)"
+                                stroke="#8be7f5"
+                                stroke-width="3"
+                            />
+
+                            <circle
+                                cx="285"
+                                cy="284"
+                                r="14"
+                                fill="#19c5e8"
+                            />
+
+                            <circle
+                                cx="390"
+                                cy="284"
+                                r="14"
+                                fill="#19c5e8"
+                            />
+
+
+                            <!-- RECYCLING -->
+
+                            <circle
+                                cx="490"
+                                cy="250"
+                                r="72"
+                                fill="rgba(25,197,232,0.08)"
+                                stroke="#19c5e8"
+                                stroke-width="3"
+                            />
+
+
+                            <path
+                                d="
+                                M490 192
+                                C520 192 541 208 551 229
+
+                                M551 229
+                                L539 218
+
+                                M551 229
+                                L554 213
+                                "
+                                fill="none"
+                                stroke="#19c5e8"
+                                stroke-width="6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+
+                            <path
+                                d="
+                                M542 277
+                                C526 304 496 314 471 304
+
+                                M471 304
+                                L486 299
+
+                                M471 304
+                                L480 316
+                                "
+                                fill="none"
+                                stroke="#19c5e8"
+                                stroke-width="6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+
+                            <path
+                                d="
+                                M441 262
+                                C431 233 441 208 462 196
+
+                                M462 196
+                                L454 210
+
+                                M462 196
+                                L447 195
+                                "
+                                fill="none"
+                                stroke="#19c5e8"
+                                stroke-width="6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+
+                            <!-- LABELS -->
+
+                            <text
+                                x="128"
+                                y="360"
+                                fill="#ffffff"
+                                font-family="Inter, sans-serif"
+                                font-size="11"
+                                font-weight="700"
+                                text-anchor="middle"
+                            >
+                                ORIGIN
+                            </text>
+
+                            <text
+                                x="334"
+                                y="335"
+                                fill="#ffffff"
+                                font-family="Inter, sans-serif"
+                                font-size="11"
+                                font-weight="700"
+                                text-anchor="middle"
+                            >
+                                LONG-HAUL
+                            </text>
+
+                            <text
+                                x="490"
+                                y="360"
+                                fill="#8be7f5"
+                                font-family="Inter, sans-serif"
+                                font-size="11"
+                                font-weight="700"
+                                text-anchor="middle"
+                            >
+                                RECYCLE
+                            </text>
+
+
+                        </svg>
+
+                    </div>
+
+
+                    <div class="reveal-right">
+
+                        <div class="recyclable-kicker">
+
+                            02 / Built for Long-Haul
+
+                        </div>
+
+
+                        <h2 class="recyclable-title">
+
+                            When return logistics
+
+                            <em>
+                                don't make sense.
+                            </em>
+
+                        </h2>
+
+
+                        <p class="recyclable-copy">
+
+                            Not every freight route returns to its point
+                            of origin.
+
+                            Single Pallet Porter – Recyclable is designed
+                            for single or limited reuse, making it suited
+                            to long-haul operations where returning a
+                            reusable system would not be practical or
+                            financially viable.
+
+                        </p>
+
+
+                        <div class="recyclable-route-points">
+
+
+                            <div class="recyclable-route-point">
+
+                                <div class="recyclable-route-number">
+                                    01
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Use Where You Need It
+                                    </strong>
+
+                                    <p>
+
+                                        Assemble around the pallet before
+                                        dispatch and use the second level
+                                        throughout the freight journey.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="recyclable-route-point">
+
+                                <div class="recyclable-route-number">
+                                    02
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        No Return Loop Required
+                                    </strong>
+
+                                    <p>
+
+                                        Suited to routes where recovering
+                                        and returning the packaging is
+                                        impractical.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="recyclable-route-point">
+
+                                <div class="recyclable-route-number">
+                                    03
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Recycle After Use
+                                    </strong>
+
+                                    <p>
+
+                                        The heavy-duty corrugated cardboard
+                                        construction can be recycled through
+                                        standard curbside recycling schemes.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             500KG CAPACITY
+             SVG
+        ====================================================== -->
+
+        <section class="recyclable-capacity">
+
+            <div class="container">
+
+                <div class="recyclable-capacity-layout">
+
+
+                    <div class="reveal-left">
+
+                        <div class="recyclable-kicker">
+
+                            03 / 2nd Level Capacity
+
+                        </div>
+
+
+                        <h2 class="recyclable-title">
+
+                            Up to 500kg.
+
+                            <em>
+                                Above every unit.
+                            </em>
+
+                        </h2>
+
+
+                        <p class="recyclable-copy">
+
+                            Once assembled around the palletised load
+                            and fitted with its top load pad, each
+                            recyclable Pallet Porter can support up to
+                            500kg on the second level.
+
+                        </p>
+
+
+                        <div class="recyclable-capacity-points">
+
+
+                            <div class="recyclable-capacity-point">
+
+                                <i class="fa-solid fa-shield-halved"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Protect the Lower Load
+                                    </strong>
+
+                                    <span>
+                                        The sleeve surrounds and protects the palletised cargo.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="recyclable-capacity-point">
+
+                                <i class="fa-solid fa-layer-group"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Create the 2nd Level
+                                    </strong>
+
+                                    <span>
+                                        The top load pad creates a supporting platform above the goods.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="recyclable-capacity-point">
+
+                                <i class="fa-solid fa-boxes-stacked"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Maximise Available Cube
+                                    </strong>
+
+                                    <span>
+                                        Use vertical space that would otherwise travel empty.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="recyclable-capacity-svg-shell
+                               reveal-right"
+                    >
+
+                        <svg
+                            class="recyclable-capacity-svg"
+                            viewBox="0 0 600 500"
+                            role="img"
+                            aria-label="Diagram illustrating 500 kilogram second level capacity"
+                        >
+
+
+                            <!-- SLEEVE -->
+
+                            <path
+                                d="
+                                M150 170
+                                L150 385
+                                L190 385
+                                L190 210
+                                L410 210
+                                L410 385
+                                L450 385
+                                L450 170
+                                Z
+                                "
+                                fill="#d8bd92"
+                                fill-opacity="0.30"
+                                stroke="#b78c57"
+                                stroke-width="14"
+                                stroke-linejoin="round"
+                            />
+
+
+                            <!-- LOWER LOAD -->
+
+                            <rect
+                                x="210"
+                                y="245"
+                                width="80"
+                                height="105"
+                                rx="4"
+                                fill="#bccdd4"
+                            />
+
+                            <rect
+                                x="298"
+                                y="245"
+                                width="92"
+                                height="105"
+                                rx="4"
+                                fill="#d0dbe0"
+                            />
+
+
+                            <!-- LOWER PALLET -->
+
+                            <rect
+                                x="190"
+                                y="365"
+                                width="220"
+                                height="20"
+                                rx="3"
+                                fill="#cda674"
+                            />
+
+
+                            <!-- TOP PAD -->
+
+                            <rect
+                                x="160"
+                                y="150"
+                                width="280"
+                                height="24"
+                                rx="4"
+                                fill="#cfaa75"
+                            />
+
+
+                            <!-- WEIGHT -->
+
+                            <circle
+                                cx="300"
+                                cy="78"
+                                r="50"
+                                fill="#e9f7fb"
+                                stroke="#008bb6"
+                                stroke-width="2"
+                            />
+
+                            <text
+                                x="300"
+                                y="73"
+                                fill="#08354b"
+                                font-family="Space Grotesk, sans-serif"
+                                font-size="27"
+                                font-weight="600"
+                                text-anchor="middle"
+                            >
+                                500
+                            </text>
+
+                            <text
+                                x="300"
+                                y="94"
+                                fill="#008bb6"
+                                font-family="Inter, sans-serif"
+                                font-size="10"
+                                font-weight="800"
+                                text-anchor="middle"
+                            >
+                                KG
+                            </text>
+
+
+                            <path
+                                d="M300 142 L300 126"
+                                stroke="#008bb6"
+                                stroke-width="4"
+                                stroke-linecap="round"
+                            />
+
+
+                        </svg>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             BENEFITS
+        ====================================================== -->
+
+        <section class="recyclable-benefits-section">
+
+            <div class="container">
+
+
+                <div class="recyclable-benefits-heading reveal">
+
+                    <div class="recyclable-kicker">
+
+                        04 / Business Impact
+
+                    </div>
+
+
+                    <h2 class="recyclable-title">
+
+                        More payload.
+
+                        <em>
+                            Less wasted capacity.
+                        </em>
+
+                    </h2>
+
+
+                    <p class="recyclable-copy">
+
+                        Better freight utilisation means using more
+                        of the transport space you already have while
+                        protecting the palletised goods below.
+
+                    </p>
+
+                </div>
+
+
+                <div class="recyclable-benefits-grid">
+
+
+                    <div class="recyclable-benefit reveal">
+
+                        <div class="recyclable-benefit-icon">
+
+                            <i class="fa-solid fa-gas-pump"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Save Fuel Costs
+                            </strong>
+
+                            <p>
+                                Increase the amount of cargo moved within existing transport capacity.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="recyclable-benefit reveal delay-1">
+
+                        <div class="recyclable-benefit-icon">
+
+                            <i class="fa-solid fa-leaf"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Reduce CO₂ Emissions
+                            </strong>
+
+                            <p>
+                                Better utilisation can reduce transport demand per unit moved.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="recyclable-benefit reveal delay-2">
+
+                        <div class="recyclable-benefit-icon">
+
+                            <i class="fa-solid fa-truck"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Less Truck Rolls
+                            </strong>
+
+                            <p>
+                                More usable payload space can reduce unnecessary freight movements.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="recyclable-benefit reveal">
+
+                        <div class="recyclable-benefit-icon">
+
+                            <i class="fa-solid fa-boxes-stacked"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Maximise Cube
+                            </strong>
+
+                            <p>
+                                Turn unused vertical space into productive second-level capacity.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="recyclable-benefit reveal delay-1">
+
+                        <div class="recyclable-benefit-icon">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Protect Cargo
+                            </strong>
+
+                            <p>
+                                Keep the additional pallet from resting directly on the goods below.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             3 STEP ASSEMBLY
+        ====================================================== -->
+
+        <section
+            class="recyclable-assembly"
+            id="recyclable-assembly"
+        >
+
+            <div class="container">
+
+
+                <div class="recyclable-assembly-heading reveal">
+
+                    <div class="recyclable-kicker">
+
+                        05 / Simple 3-Step Assembly
+
+                    </div>
+
+
+                    <h2 class="recyclable-title">
+
+                        Flat packed to freight ready.
+
+                        <em>
+                            In three moves.
+                        </em>
+
+                    </h2>
+
+                </div>
+
+
+                <div class="recyclable-assembly-grid">
+
+
+                    <!-- STEP 01 -->
+
+                    <div class="recyclable-assembly-card reveal">
+
+                        <div class="recyclable-assembly-number">
+                            01
+                        </div>
+
+
+                        <svg
+                            class="recyclable-assembly-svg"
+                            viewBox="0 0 340 220"
+                            role="img"
+                            aria-label="Flat pack Pallet Porter sleeve being opened"
+                        >
+
+                            <!-- FLAT PACK -->
+
+                            <rect
+                                x="70"
+                                y="88"
+                                width="85"
+                                height="105"
+                                rx="3"
+                                fill="#d8bd92"
+                                stroke="#b78c57"
+                                stroke-width="4"
+                            />
+
+
+                            <!-- OPEN SLEEVE -->
+
+                            <path
+                                d="
+                                M195 70
+                                L250 95
+                                L250 190
+                                L195 165
+                                Z
+                                "
+                                fill="#dcc39b"
+                                stroke="#b78c57"
+                                stroke-width="4"
+                            />
+
+                            <path
+                                d="
+                                M195 70
+                                L165 90
+                                L165 185
+                                L195 165
+                                "
+                                fill="#cfa976"
+                                stroke="#b78c57"
+                                stroke-width="4"
+                            />
+
+
+                            <!-- ARROW -->
+
+                            <path
+                                d="M130 55 C165 25 205 28 225 55"
+                                fill="none"
+                                stroke="#19c5e8"
+                                stroke-width="4"
+                                stroke-linecap="round"
+                            />
+
+                            <path
+                                d="M214 42 L227 56 L208 58"
+                                fill="none"
+                                stroke="#19c5e8"
+                                stroke-width="4"
+                                stroke-linejoin="round"
+                            />
+
+
+                        </svg>
+
+
+                        <h3>
+                            Open the Sleeve
+                        </h3>
+
+
+                        <p>
+
+                            Open out the flat-packed corrugated
+                            Pallet Porter sleeve ready to receive
+                            the palletised load.
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- STEP 02 -->
+
+                    <div class="recyclable-assembly-card reveal delay-1">
+
+                        <div class="recyclable-assembly-number">
+                            02
+                        </div>
+
+
+                        <svg
+                            class="recyclable-assembly-svg"
+                            viewBox="0 0 340 220"
+                            role="img"
+                            aria-label="Pallet Porter sleeve placed over product pallet"
+                        >
+
+                            <!-- PALLET -->
+
+                            <rect
+                                x="105"
+                                y="170"
+                                width="130"
+                                height="17"
+                                rx="3"
+                                fill="#cda674"
+                            />
+
+                            <rect
+                                x="118"
+                                y="187"
+                                width="25"
+                                height="15"
+                                fill="#b48758"
+                            />
+
+                            <rect
+                                x="198"
+                                y="187"
+                                width="25"
+                                height="15"
+                                fill="#b48758"
+                            />
+
+
+                            <!-- LOAD -->
+
+                            <rect
+                                x="120"
+                                y="105"
+                                width="46"
+                                height="60"
+                                rx="3"
+                                fill="#bccdd4"
+                            />
+
+                            <rect
+                                x="171"
+                                y="105"
+                                width="48"
+                                height="60"
+                                rx="3"
+                                fill="#d0dbe0"
+                            />
+
+
+                            <!-- SLEEVE -->
+
+                            <path
+                                d="
+                                M87 70
+                                L87 178
+                                L110 178
+                                L110 94
+                                L230 94
+                                L230 178
+                                L253 178
+                                L253 70
+                                Z
+                                "
+                                fill="#d8bd92"
+                                fill-opacity="0.32"
+                                stroke="#b78c57"
+                                stroke-width="10"
+                                stroke-linejoin="round"
+                            />
+
+
+                            <!-- DOWN ARROW -->
+
+                            <path
+                                d="M170 20 L170 55"
+                                stroke="#19c5e8"
+                                stroke-width="4"
+                                stroke-linecap="round"
+                            />
+
+                            <path
+                                d="M158 44 L170 57 L182 44"
+                                fill="none"
+                                stroke="#19c5e8"
+                                stroke-width="4"
+                                stroke-linejoin="round"
+                            />
+
+
+                        </svg>
+
+
+                        <h3>
+                            Place Over the Pallet
+                        </h3>
+
+
+                        <p>
+
+                            Position the open sleeve around the
+                            palletised goods to create the
+                            protective structure.
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- STEP 03 -->
+
+                    <div class="recyclable-assembly-card reveal delay-2">
+
+                        <div class="recyclable-assembly-number">
+                            03
+                        </div>
+
+
+                        <svg
+                            class="recyclable-assembly-svg"
+                            viewBox="0 0 340 220"
+                            role="img"
+                            aria-label="Top load pad fitted and second pallet stacked above"
+                        >
+
+                            <!-- LOWER PALLET -->
+
+                            <rect
+                                x="112"
+                                y="190"
+                                width="116"
+                                height="14"
+                                rx="3"
+                                fill="#cda674"
+                            />
+
+
+                            <!-- SLEEVE -->
+
+                            <path
+                                d="
+                                M90 100
+                                L90 190
+                                L115 190
+                                L115 120
+                                L225 120
+                                L225 190
+                                L250 190
+                                L250 100
+                                "
+                                fill="none"
+                                stroke="#b78c57"
+                                stroke-width="12"
+                            />
+
+
+                            <!-- TOP PAD -->
+
+                            <rect
+                                x="82"
+                                y="82"
+                                width="176"
+                                height="18"
+                                rx="3"
+                                fill="#cfaa75"
+                            />
+
+
+                            <!-- SECOND PALLET -->
+
+                            <rect
+                                x="78"
+                                y="55"
+                                width="184"
+                                height="18"
+                                rx="3"
+                                fill="#cda674"
+                            />
+
+
+                            <!-- BOXES -->
+
+                            <rect
+                                x="105"
+                                y="15"
+                                width="55"
+                                height="40"
+                                rx="3"
+                                fill="#bccdd4"
+                            />
+
+                            <rect
+                                x="165"
+                                y="15"
+                                width="68"
+                                height="40"
+                                rx="3"
+                                fill="#d0dbe0"
+                            />
+
+
+                        </svg>
+
+
+                        <h3>
+                            Fit, Load &amp; Stack
+                        </h3>
+
+
+                        <p>
+
+                            Fit the top load pad, forklift the
+                            assembled unit into the truck or container
+                            and place the next pallet above.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="recyclable-repeat reveal">
+
+                    <i class="fa-solid fa-arrow-right-long"></i>
+
+                    Repeat the process down the length of the trailer or container.
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             HANDLING
+             REUSES PALLET PORTER 06
+        ====================================================== -->
+
+        <section class="recyclable-handling">
+
+            <div class="container">
+
+                <div class="recyclable-handling-layout">
+
+
+                    <div
+                        class="recyclable-image
+                               recyclable-handling-image
+                               reveal-left"
+                    >
+
+                        <img
+                            src="images/pallet-porter-06.jpg"
+                            alt="Forklift loading palletised freight into a truck"
+                        >
+
+                    </div>
+
+
+                    <div class="reveal-right">
+
+                        <div class="recyclable-kicker">
+
+                            06 / Designed for Handling
+
+                        </div>
+
+
+                        <h2 class="recyclable-title">
+
+                            Assemble inside.
+
+                            <em>
+                                Forklift into position.
+                            </em>
+
+                        </h2>
+
+
+                        <p class="recyclable-copy">
+
+                            The recyclable Pallet Porter is assembled
+                            around the palletised goods inside the warehouse
+                            before the complete unit is moved into the
+                            truck or container by forklift.
+
+                        </p>
+
+
+                        <div class="recyclable-handling-points">
+
+
+                            <div class="recyclable-handling-point">
+
+                                <i class="fa-solid fa-box-open"></i>
+
+                                <strong>
+                                    Delivered flat packed
+                                </strong>
+
+                            </div>
+
+
+                            <div class="recyclable-handling-point">
+
+                                <i class="fa-solid fa-user"></i>
+
+                                <strong>
+                                    One-person assembly
+                                </strong>
+
+                            </div>
+
+
+                            <div class="recyclable-handling-point">
+
+                                <i class="fa-solid fa-warehouse"></i>
+
+                                <strong>
+                                    Assembled around the load inside the warehouse
+                                </strong>
+
+                            </div>
+
+
+                            <div class="recyclable-handling-point">
+
+                                <i class="fa-solid fa-truck-ramp-box"></i>
+
+                                <strong>
+                                    Forklifted into the truck or container
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SPECIFICATION
+        ====================================================== -->
+
+        <section class="recyclable-specification">
+
+            <div class="container">
+
+                <div class="recyclable-spec-shell reveal">
+
+
+                    <div class="recyclable-spec-intro">
+
+                        <div class="recyclable-kicker">
+
+                            07 / Specification
+
+                        </div>
+
+
+                        <h3>
+                            Single Pallet Porter – Recyclable.
+                        </h3>
+
+
+                        <p>
+
+                            Lightweight corrugated construction designed
+                            for freight routes where a reusable return loop
+                            is not required.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="recyclable-spec-list">
+
+
+                        <div class="recyclable-spec-row">
+
+                            <span>
+                                Material
+                            </span>
+
+                            <strong>
+                                Heavy-duty corrugated cardboard
+                            </strong>
+
+                        </div>
+
+
+                        <div class="recyclable-spec-row">
+
+                            <span>
+                                Design
+                            </span>
+
+                            <strong>
+                                Lightweight
+                            </strong>
+
+                        </div>
+
+
+                        <div class="recyclable-spec-row">
+
+                            <span>
+                                Security
+                            </span>
+
+                            <strong>
+                                Logos and tamper-evident
+                            </strong>
+
+                        </div>
+
+
+                        <div class="recyclable-spec-row">
+
+                            <span>
+                                Size
+                            </span>
+
+                            <strong>
+
+                                Euro, Standard UK Pallet and
+                                Standard US Pallet.
+                                Custom sizes also available.
+
+                            </strong>
+
+                        </div>
+
+
+                        <div class="recyclable-spec-row">
+
+                            <span>
+                                Internal Height
+                            </span>
+
+                            <strong>
+                                Customisable
+                            </strong>
+
+                        </div>
+
+
+                        <div class="recyclable-spec-row">
+
+                            <span>
+                                2nd Level Capacity
+                            </span>
+
+                            <strong>
+                                500kg on each unit
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FINAL CTA
+        ====================================================== -->
+
+        <section class="recyclable-final">
+
+            <div class="container">
+
+                <div class="recyclable-final-card reveal">
+
+                    <div class="recyclable-final-content">
+
+                        <span>
+                            PALLET PORTER / RECYCLABLE
+                        </span>
+
+
+                        <h2>
+
+                            More capacity.
+                            Without the return journey.
+
+                        </h2>
+
+
+                        <p>
+
+                            Talk to ESBD about your pallet dimensions,
+                            freight routes and long-haul distribution needs.
+
+                            We can help you explore where the recyclable
+                            Pallet Porter can protect payloads, maximise
+                            cube and create a second cargo level without
+                            requiring a closed return loop.
+
+                        </p>
+
+
+                        <div class="recyclable-final-actions">
+
+                            <a
+                                href="contact.html"
+                                class="btn btn-white"
+                            >
+
+                                Talk to ESBD
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+
+                            <a
+                                href="pallet-porter.html"
+                                class="btn btn-outline-white"
+                            >
+
+                                Pallet Porter Overview
+
+                            </a>
+
+
+                            <a
+                                href="single-pallet-porter-reusable.html"
+                                class="btn btn-outline-white"
+                            >
+
+                                Reusable
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-shell">
+
+
+                <div class="footer-main">
+
+
+                    <div class="footer-brand">
+
+                        <a
+                            href="index.html"
+                            aria-label="ESBD Home"
+                        >
+
+                            <img
+                                src="images/logo.png"
+                                alt="ESBD"
+                            >
+
+                        </a>
+
+
+                        <p>
+
+                            Reusable thermal packaging solutions
+                            supporting temperature-sensitive
+                            cold-chain distribution.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="footer-col">
+
+                        <span>
+                            NAVIGATION
+                        </span>
+
+                        <a href="clients.html">
+                            Clients
+                        </a>
+
+                        <a href="features.html">
+                            Features
+                        </a>
+
+                        <a href="products.html">
+                            Products
+                        </a>
+
+                        <a href="why-us.html">
+                            Why Us
+                        </a>
+
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-col">
+
+                        <span>
+                            PRODUCTS
+                        </span>
+
+                        <a href="solaris.html">
+                            Solaris
+                        </a>
+
+                        <a href="pallet-porter.html">
+                            Pallet Porter
+                        </a>
+
+                        <a href="single-pallet-porter-reusable.html">
+                            Pallet Porter – Reusable
+                        </a>
+
+                        <a href="single-pallet-porter-recyclable.html">
+                            Pallet Porter – Recyclable
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-col">
+
+                        <span>
+                            CONNECT
+                        </span>
+
+                        <a href="contact.html">
+                            Contact ESBD ↗
+                        </a>
+
+
+                        <a
+                            href="https://www.linkedin.com/company/es-business-development/"
+                            class="footer-linkedin"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="ES Business Development on LinkedIn"
+                            title="LinkedIn"
+                        >
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.352V9h3.414v1.561h.047c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.371 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9H7.12v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+
+                            </svg>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-bottom">
+
+                    <span>
+
+                        © <span id="currentYear"></span>
+                        ESBD. All rights reserved.
+
+                    </span>
+
+                    <span>
+                        Taking your packaging further.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         BACK TO TOP
+    ========================================================== -->
+
+    <button
+        id="backToTop"
+        type="button"
+        aria-label="Back to top"
+    >
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

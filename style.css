@@ -520,6 +520,353 @@ button {
 }
 
 /* =========================================================
+   PRODUCT NAVIGATION DROPDOWNS
+========================================================= */
+
+.nav-dropdown {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+/* Invisible hover bridge between button and dropdown */
+
+.nav-dropdown::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 14px;
+
+}
+
+
+/* =========================================================
+   DROPDOWN PARENT BUTTON
+========================================================= */
+
+.nav-dropdown-toggle {
+
+    min-height: 44px;
+
+    padding: 0 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    color: #4d6470;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+
+.nav-dropdown-toggle i {
+
+    color: var(--blue);
+
+    font-size: 8px;
+
+    transition:
+        transform 0.25s ease;
+
+}
+
+
+.nav-dropdown:hover .nav-dropdown-toggle,
+.nav-dropdown:focus-within .nav-dropdown-toggle {
+
+    color: var(--blue);
+
+    background: #eaf8fc;
+
+}
+
+
+.nav-dropdown:hover .nav-dropdown-toggle i,
+.nav-dropdown:focus-within .nav-dropdown-toggle i {
+
+    transform: rotate(180deg);
+
+}
+
+
+/* =========================================================
+   DROPDOWN PANEL
+========================================================= */
+
+.nav-dropdown-menu {
+
+    position: absolute;
+
+    top: calc(100% + 10px);
+    left: 50%;
+
+    z-index: 1100;
+
+    min-width: 250px;
+
+    padding: 8px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border: 1px solid rgba(8, 53, 75, 0.09);
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(24px) saturate(1.4);
+
+    -webkit-backdrop-filter: blur(24px) saturate(1.4);
+
+    box-shadow:
+        0 22px 60px rgba(1, 35, 52, 0.15);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform:
+        translate(-50%, -8px);
+
+    transition:
+        opacity 0.22s ease,
+        visibility 0.22s ease,
+        transform 0.3s var(--ease);
+
+}
+
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transform:
+        translate(-50%, 0);
+
+}
+
+
+/* =========================================================
+   DROPDOWN LINKS
+========================================================= */
+
+.nav-dropdown-menu a {
+
+    min-height: 42px;
+
+    padding: 0 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    color: var(--muted);
+
+    border-radius: 12px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.nav-dropdown-menu a:hover,
+.nav-dropdown-menu a:focus {
+
+    color: var(--blue);
+
+    background: #eaf8fc;
+
+    transform: translateX(3px);
+
+}
+
+
+/* =========================================================
+   MOBILE PRODUCT SUBMENUS
+========================================================= */
+
+.mobile-submenu {
+
+    border-bottom: 1px solid var(--line);
+
+}
+
+
+.mobile-submenu summary {
+
+    min-height: 78px;
+
+    padding: 0 8px;
+
+    display: grid;
+
+    grid-template-columns:
+        auto
+        1fr
+        auto;
+
+    align-items: center;
+
+    gap: 18px;
+
+    color: var(--text);
+
+    cursor: pointer;
+
+    list-style: none;
+
+}
+
+
+.mobile-submenu summary::-webkit-details-marker {
+
+    display: none;
+
+}
+
+
+.mobile-submenu .mobile-nav-number {
+
+    color: var(--blue);
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.14em;
+
+}
+
+
+.mobile-submenu summary strong {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 32px;
+
+    font-weight: 500;
+
+    letter-spacing: -0.04em;
+
+}
+
+
+.mobile-submenu summary > i {
+
+    color: var(--blue);
+
+    font-size: 12px;
+
+    transition:
+        transform 0.3s var(--ease);
+
+}
+
+
+.mobile-submenu[open] summary > i {
+
+    transform: rotate(180deg);
+
+}
+
+
+/* =========================================================
+   MOBILE CHILD LINKS
+========================================================= */
+
+.mobile-submenu-links {
+
+    padding:
+        0
+        8px
+        20px
+        45px;
+
+    display: grid;
+
+    gap: 6px;
+
+}
+
+
+.mobile-submenu-links a {
+
+    padding: 13px 15px;
+
+    color: var(--muted);
+
+    background: rgba(255, 255, 255, 0.62);
+
+    border: 1px solid rgba(8, 53, 75, 0.07);
+
+    border-radius: 12px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+
+}
+
+
+.mobile-submenu-links a:hover {
+
+    color: var(--blue);
+
+    background: #ffffff;
+
+}
+
+/* =========================================================
    BUTTONS
 ========================================================= */
 
@@ -7677,4 +8024,52 @@ button {
         padding-top: 18px;
     }
 
+}
+
+
+/* =========================================================
+   SOLARIS REAL IMAGE FRAMING
+========================================================= */
+
+.solaris-real-image {
+    display: grid;
+    place-items: center;
+}
+
+.solaris-real-image img {
+    width: 90%;
+    height: 90%;
+
+    display: block;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/* HERO IMAGE */
+.solaris-hero-image img {
+    width: 88%;
+    height: 88%;
+}
+
+
+/* WHAT IS SOLARIS */
+.solaris-intro-image img {
+    width: 92%;
+    height: 92%;
+}
+
+
+/* ENGINEERING IMAGE */
+.solaris-engineering-image img {
+    width: 90%;
+    height: 90%;
+}
+
+
+/* SUSTAINABILITY IMAGE */
+.solaris-sustainability-image img {
+    width: 92%;
+    height: 92%;
 }

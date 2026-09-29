@@ -1,0 +1,3969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Solaris | ESBD Thermal Protection</title>
+
+    <meta
+        name="description"
+        content="Discover Solaris paper-based recyclable thermal pallet protection from ESBD, designed for temperature-sensitive goods throughout the cold chain."
+    >
+
+
+    <!-- =========================================================
+         FONTS
+    ========================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================================
+         ICONS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+
+    <!-- =========================================================
+         GLOBAL ESBD CSS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- =========================================================
+         SOLARIS PAGE
+    ========================================================== -->
+
+    <style>
+
+        /* =========================================================
+           PAGE
+        ========================================================= */
+
+        .solaris-page {
+            background: #f4f9fb;
+        }
+
+        .solaris-page main {
+            overflow: hidden;
+        }
+
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .solaris-hero {
+            position: relative;
+
+            min-height: 100svh;
+
+            padding: 180px 0 90px;
+
+            display: flex;
+            align-items: center;
+
+            color: var(--white);
+
+            background:
+                radial-gradient(
+                    circle at 76% 35%,
+                    rgba(25, 197, 232, 0.16),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 20% 80%,
+                    rgba(0, 139, 182, 0.15),
+                    transparent 32%
+                ),
+                linear-gradient(
+                    135deg,
+                    #031a29 0%,
+                    #062b40 56%,
+                    #07364d 100%
+                );
+
+            overflow: hidden;
+        }
+
+        .solaris-hero-grid {
+            position: absolute;
+            inset: 0;
+
+            opacity: 0.065;
+
+            background-image:
+                linear-gradient(
+                    rgba(255, 255, 255, 0.12) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.12) 1px,
+                    transparent 1px
+                );
+
+            background-size: 72px 72px;
+
+            pointer-events: none;
+        }
+
+        .solaris-hero-glow {
+            position: absolute;
+
+            width: 620px;
+            height: 620px;
+
+            right: -170px;
+            top: -160px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(25, 197, 232, 0.15),
+                    transparent 68%
+                );
+
+            filter: blur(8px);
+
+            pointer-events: none;
+        }
+
+        .solaris-hero-layout {
+            position: relative;
+            z-index: 2;
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 0.92fr)
+                minmax(420px, 1.08fr);
+
+            gap: 84px;
+
+            align-items: center;
+        }
+
+
+        /* =========================================================
+           HERO COPY
+        ========================================================= */
+
+        .solaris-hero-copy {
+            max-width: 650px;
+        }
+
+        .solaris-eyebrow {
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 9px 15px;
+
+            color: var(--cyan-soft);
+
+            background:
+                rgba(255, 255, 255, 0.07);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.13);
+
+            border-radius: 999px;
+
+            backdrop-filter: blur(12px);
+
+            font-size: 9px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.15em;
+
+            text-transform: uppercase;
+        }
+
+        .solaris-eyebrow i {
+            color: var(--cyan);
+
+            font-size: 8px;
+        }
+
+        .solaris-hero h1 {
+            max-width: 720px;
+
+            margin-top: 32px;
+
+            font-family: "Space Grotesk", sans-serif;
+
+            font-size:
+                clamp(54px, 6vw, 86px);
+
+            font-weight: 500;
+
+            line-height: 0.94;
+
+            letter-spacing: -0.065em;
+        }
+
+        .solaris-hero h1 span {
+            display: block;
+
+            color: #8be7f5;
+        }
+
+        .solaris-hero-lead {
+            max-width: 575px;
+
+            margin-top: 30px;
+
+            color:
+                rgba(255, 255, 255, 0.72);
+
+            font-size: 15px;
+
+            line-height: 1.9;
+        }
+
+        .solaris-hero-actions {
+            margin-top: 34px;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+        .solaris-hero-tags {
+            margin-top: 32px;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+        }
+
+        .solaris-hero-tag {
+            min-height: 33px;
+
+            padding: 0 13px;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            color:
+                rgba(255, 255, 255, 0.68);
+
+            background:
+                rgba(255, 255, 255, 0.055);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.09);
+
+            border-radius: 999px;
+
+            font-size: 9px;
+
+            font-weight: 600;
+        }
+
+        .solaris-hero-tag i {
+            color: var(--cyan);
+
+            font-size: 8px;
+        }
+
+
+        /* =========================================================
+           REAL IMAGE SYSTEM
+        ========================================================= */
+
+        .solaris-real-image {
+            position: relative;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: transparent;
+
+            border: none;
+
+            border-radius: 0;
+
+            box-shadow: none;
+
+            overflow: visible;
+        }
+
+        .solaris-real-image img {
+            width: 100%;
+            height: auto;
+
+            max-width: 100%;
+
+            display: block;
+
+            border: none;
+
+            border-radius: 0;
+
+            box-shadow: none;
+
+            object-fit: initial;
+
+            object-position: center;
+        }
+
+
+        /* =========================================================
+           PLACEHOLDERS
+        ========================================================= */
+
+        .solaris-image-placeholder {
+            position: relative;
+
+            min-height: 340px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            color: #53717f;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255, 255, 255, 0.96),
+                    rgba(231, 244, 248, 0.95)
+                );
+
+            border:
+                1px solid
+                rgba(0, 139, 182, 0.14);
+
+            border-radius: 32px;
+
+            overflow: hidden;
+        }
+
+        .solaris-image-placeholder::before {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            opacity: 0.38;
+
+            background-image:
+                linear-gradient(
+                    rgba(0, 139, 182, 0.08) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(0, 139, 182, 0.08) 1px,
+                    transparent 1px
+                );
+
+            background-size: 34px 34px;
+
+            pointer-events: none;
+        }
+
+        .solaris-image-placeholder::after {
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            right: -130px;
+            bottom: -145px;
+
+            border:
+                1px solid
+                rgba(0, 139, 182, 0.12);
+
+            border-radius: 50%;
+
+            box-shadow:
+                0 0 0 35px
+                rgba(0, 139, 182, 0.035),
+                0 0 0 70px
+                rgba(0, 139, 182, 0.02);
+        }
+
+        .solaris-placeholder-content {
+            position: relative;
+
+            z-index: 2;
+
+            padding: 32px;
+        }
+
+        .solaris-placeholder-content i {
+            width: 58px;
+            height: 58px;
+
+            margin:
+                0
+                auto
+                18px;
+
+            display: grid;
+
+            place-items: center;
+
+            color: var(--white);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--blue),
+                    var(--blue-mid)
+                );
+
+            border-radius: 50%;
+
+            font-size: 18px;
+
+            box-shadow:
+                0 15px 36px
+                rgba(0, 139, 182, 0.22);
+        }
+
+        .solaris-placeholder-content span {
+            display: block;
+
+            color: var(--blue);
+
+            font-size: 8px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.16em;
+        }
+
+        .solaris-placeholder-content strong {
+            display: block;
+
+            margin-top: 8px;
+
+            color: var(--text);
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size: 18px;
+
+            font-weight: 500;
+        }
+
+        .solaris-placeholder-content small {
+            display: block;
+
+            max-width: 290px;
+
+            margin:
+                9px
+                auto
+                0;
+
+            color: var(--muted);
+
+            font-size: 10px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================================================
+           HERO IMAGE
+        ========================================================= */
+
+        .solaris-hero-visual {
+            position: relative;
+
+            min-height: 570px;
+        }
+
+        .solaris-hero-image {
+            position: absolute;
+
+            inset:
+                34px
+                0
+                34px
+                30px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: transparent;
+
+            border: none;
+
+            box-shadow: none;
+        }
+
+        .solaris-hero-image img {
+            width: auto;
+            height: auto;
+
+            max-width: 100%;
+            max-height: 500px;
+
+            object-position: center;
+        }
+
+        .solaris-floating-card {
+            position: absolute;
+
+            z-index: 4;
+
+            padding: 16px 18px;
+
+            color: var(--white);
+
+            background:
+                rgba(2, 25, 38, 0.90);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.11);
+
+            border-radius: 16px;
+
+            backdrop-filter: blur(18px);
+
+            box-shadow:
+                0 20px 45px
+                rgba(0, 0, 0, 0.22);
+        }
+
+        .solaris-floating-card span {
+            display: block;
+
+            margin-bottom: 7px;
+
+            color: var(--cyan);
+
+            font-size: 6px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.16em;
+        }
+
+        .solaris-floating-card strong {
+            font-size: 10px;
+
+            font-weight: 600;
+        }
+
+        .solaris-floating-card-one {
+            top: 12px;
+            left: 0;
+        }
+
+        .solaris-floating-card-two {
+            right: -18px;
+            bottom: 18px;
+        }
+
+
+        /* =========================================================
+           COMMON
+        ========================================================= */
+
+        .solaris-section-kicker {
+            display: inline-flex;
+
+            align-items: center;
+
+            padding: 8px 14px;
+
+            margin-bottom: 24px;
+
+            color: var(--blue);
+
+            background: #e4f5fa;
+
+            border:
+                1px solid
+                rgba(0, 139, 182, 0.10);
+
+            border-radius: 999px;
+
+            font-size: 8px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.14em;
+
+            text-transform: uppercase;
+        }
+
+        .solaris-display-title {
+            max-width: 760px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            color: var(--text);
+
+            font-size:
+                clamp(44px, 5vw, 70px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -0.055em;
+        }
+
+        .solaris-display-title em {
+            display: block;
+
+            color: var(--blue);
+
+            font-style: normal;
+        }
+
+        .solaris-body-copy {
+            max-width: 600px;
+
+            margin-top: 28px;
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+            line-height: 1.95;
+        }
+
+        .solaris-body-copy +
+        .solaris-body-copy {
+            margin-top: 16px;
+        }
+
+
+        /* =========================================================
+           INTRO
+        ========================================================= */
+
+        .solaris-intro-section {
+            padding: 140px 0;
+
+            background: #ffffff;
+        }
+
+        .solaris-intro-layout {
+            display: grid;
+
+            grid-template-columns:
+                0.95fr
+                1.05fr;
+
+            gap: 95px;
+
+            align-items: center;
+        }
+
+        .solaris-intro-image {
+            width: 100%;
+        }
+
+        .solaris-mini-points {
+            margin-top: 34px;
+
+            display: grid;
+
+            grid-template-columns:
+                1fr
+                1fr;
+
+            gap: 12px;
+        }
+
+        .solaris-mini-point {
+            padding: 18px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 13px;
+
+            background: var(--off);
+
+            border:
+                1px solid
+                var(--line);
+
+            border-radius: 16px;
+        }
+
+        .solaris-mini-point i {
+            width: 35px;
+            height: 35px;
+
+            display: grid;
+
+            place-items: center;
+
+            flex: 0 0 auto;
+
+            color: var(--white);
+
+            background: var(--blue);
+
+            border-radius: 50%;
+
+            font-size: 11px;
+        }
+
+        .solaris-mini-point span {
+            color: var(--text);
+
+            font-size: 11px;
+
+            font-weight: 650;
+        }
+
+
+        /* =========================================================
+           PERFORMANCE
+        ========================================================= */
+
+        .solaris-performance {
+            padding: 0 0 130px;
+
+            background: #ffffff;
+        }
+
+        .solaris-performance-shell {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #057da4,
+                    #009cc6
+                );
+
+            border-radius: 30px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 30px 75px
+                rgba(0, 139, 182, 0.19);
+        }
+
+        .solaris-performance-item {
+            min-height: 180px;
+
+            padding: 28px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: space-between;
+
+            border-right:
+                1px solid
+                rgba(255, 255, 255, 0.14);
+        }
+
+        .solaris-performance-item:last-child {
+            border-right: none;
+        }
+
+        .solaris-performance-item span {
+            color:
+                rgba(255, 255, 255, 0.54);
+
+            font-size: 7px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.15em;
+        }
+
+        .solaris-performance-item strong {
+            color: var(--white);
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                clamp(25px, 2.5vw, 37px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -0.04em;
+        }
+
+        .solaris-performance-item small {
+            max-width: 180px;
+
+            color:
+                rgba(255, 255, 255, 0.68);
+
+            font-size: 9px;
+
+            line-height: 1.55;
+        }
+
+
+        /* =========================================================
+           ENGINEERING
+        ========================================================= */
+
+        .solaris-engineering {
+            position: relative;
+
+            padding: 145px 0;
+
+            color: var(--white);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--navy),
+                    var(--navy-mid)
+                );
+
+            overflow: hidden;
+        }
+
+        .solaris-engineering::before {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            opacity: 0.055;
+
+            background-image:
+                linear-gradient(
+                    rgba(255, 255, 255, 0.1) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.1) 1px,
+                    transparent 1px
+                );
+
+            background-size: 74px 74px;
+        }
+
+        .solaris-engineering-layout {
+            position: relative;
+
+            z-index: 2;
+
+            display: grid;
+
+            grid-template-columns:
+                1fr
+                0.95fr;
+
+            gap: 80px;
+
+            align-items: center;
+        }
+
+        .solaris-engineering
+        .solaris-section-kicker {
+            color: var(--cyan-soft);
+
+            background:
+                rgba(255, 255, 255, 0.07);
+
+            border-color:
+                rgba(255, 255, 255, 0.11);
+        }
+
+        .solaris-engineering
+        .solaris-display-title {
+            color: var(--white);
+        }
+
+        .solaris-engineering
+        .solaris-body-copy {
+            color:
+                rgba(255, 255, 255, 0.62);
+        }
+
+        .solaris-tech-list {
+            margin-top: 38px;
+
+            display: grid;
+
+            gap: 10px;
+        }
+
+        .solaris-tech-item {
+            padding: 20px;
+
+            display: grid;
+
+            grid-template-columns:
+                auto
+                1fr;
+
+            gap: 17px;
+
+            align-items: start;
+
+            background:
+                rgba(255, 255, 255, 0.055);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.09);
+
+            border-radius: 18px;
+        }
+
+        .solaris-tech-number {
+            width: 35px;
+            height: 35px;
+
+            display: grid;
+
+            place-items: center;
+
+            color: var(--cyan);
+
+            border:
+                1px solid
+                rgba(25, 197, 232, 0.25);
+
+            border-radius: 50%;
+
+            font-size: 8px;
+
+            font-weight: 800;
+        }
+
+        .solaris-tech-item strong {
+            display: block;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size: 17px;
+
+            font-weight: 500;
+        }
+
+        .solaris-tech-item p {
+            margin-top: 7px;
+
+            color:
+                rgba(255, 255, 255, 0.50);
+
+            font-size: 10px;
+
+            line-height: 1.7;
+        }
+
+        .solaris-engineering-image {
+            width: 100%;
+        }
+
+
+        /* =========================================================
+           RANGE
+        ========================================================= */
+
+        .solaris-range-section {
+            padding: 145px 0;
+
+            background: #f4f9fb;
+        }
+
+        .solaris-range-heading {
+            display: grid;
+
+            grid-template-columns:
+                1fr
+                0.75fr;
+
+            gap: 70px;
+
+            align-items: end;
+        }
+
+        .solaris-range-heading-copy {
+            padding-bottom: 6px;
+
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.85;
+        }
+
+        .solaris-range-grid {
+            margin-top: 70px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+        .solaris-product-card {
+            position: relative;
+
+            min-height: 610px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            color: var(--text);
+
+            background: #ffffff;
+
+            border:
+                1px solid
+                var(--line);
+
+            border-radius: 34px;
+
+            overflow: hidden;
+
+            box-shadow: var(--shadow);
+
+            transition:
+                transform
+                0.35s
+                var(--ease),
+                box-shadow
+                0.35s
+                ease;
+        }
+
+        .solaris-product-card:hover {
+            transform:
+                translateY(-8px);
+
+            box-shadow:
+                var(--shadow-lg);
+        }
+
+        .solaris-card-image {
+            width: 100%;
+
+            padding: 24px;
+
+            background: transparent;
+
+            border: none;
+
+            border-bottom:
+                1px solid
+                rgba(8, 53, 75, 0.08);
+
+            border-radius: 0;
+
+            box-shadow: none;
+        }
+
+        .solaris-card-image img {
+            width: 100%;
+            height: auto;
+
+            max-width: 100%;
+        }
+
+        .solaris-product-card-body {
+            flex: 1;
+
+            padding: 30px;
+
+            display: flex;
+
+            flex-direction: column;
+        }
+
+        .solaris-product-card-top {
+            display: flex;
+
+            align-items: center;
+
+            justify-content:
+                space-between;
+
+            gap: 20px;
+        }
+
+        .solaris-product-code {
+            color: var(--blue);
+
+            font-size: 7px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.16em;
+        }
+
+        .solaris-product-arrow {
+            width: 38px;
+            height: 38px;
+
+            display: grid;
+
+            place-items: center;
+
+            color: var(--blue);
+
+            background: #e9f7fb;
+
+            border-radius: 50%;
+
+            font-size: 10px;
+
+            transition:
+                transform
+                0.3s
+                var(--ease),
+                color
+                0.3s
+                ease,
+                background
+                0.3s
+                ease;
+        }
+
+        .solaris-product-card:hover
+        .solaris-product-arrow {
+            color: var(--white);
+
+            background: var(--blue);
+
+            transform:
+                translateX(4px);
+        }
+
+        .solaris-product-card h3 {
+            margin-top: 22px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                clamp(30px, 3vw, 43px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -0.05em;
+        }
+
+        .solaris-product-card p {
+            max-width: 480px;
+
+            margin-top: 17px;
+
+            color: var(--muted);
+
+            font-size: 12px;
+
+            line-height: 1.8;
+        }
+
+        .solaris-card-specs {
+            margin-top: auto;
+
+            padding-top: 28px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 8px;
+        }
+
+        .solaris-card-spec {
+            padding: 12px;
+
+            background: var(--off);
+
+            border:
+                1px solid
+                var(--line);
+
+            border-radius: 12px;
+        }
+
+        .solaris-card-spec span {
+            display: block;
+
+            color: var(--muted-light);
+
+            font-size: 6px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.12em;
+        }
+
+        .solaris-card-spec strong {
+            display: block;
+
+            margin-top: 6px;
+
+            color: var(--text);
+
+            font-size: 9px;
+
+            line-height: 1.35;
+        }
+
+
+        /* =========================================================
+           COMPARISON
+        ========================================================= */
+
+        .solaris-compare {
+            padding: 0 0 145px;
+
+            background: #f4f9fb;
+        }
+
+        .solaris-compare-shell {
+            padding: 46px;
+
+            background: #ffffff;
+
+            border:
+                1px solid
+                var(--line);
+
+            border-radius: 32px;
+
+            box-shadow:
+                var(--shadow);
+
+            overflow-x: auto;
+        }
+
+        .solaris-compare-head {
+            display: flex;
+
+            align-items: end;
+
+            justify-content:
+                space-between;
+
+            gap: 30px;
+
+            padding-bottom: 30px;
+
+            border-bottom:
+                1px solid
+                var(--line);
+        }
+
+        .solaris-compare-head h3 {
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size: 30px;
+
+            font-weight: 500;
+
+            letter-spacing: -0.04em;
+        }
+
+        .solaris-compare-head span {
+            color: var(--blue);
+
+            font-size: 7px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.16em;
+        }
+
+        .solaris-compare-table {
+            width: 100%;
+
+            min-width: 1180px;
+
+            border-collapse:
+                collapse;
+        }
+
+        .solaris-compare-table th,
+        .solaris-compare-table td {
+            padding: 21px 16px;
+
+            text-align: left;
+
+            border-bottom:
+                1px solid
+                var(--line);
+        }
+
+        .solaris-compare-table th {
+            color: var(--muted-light);
+
+            font-size: 7px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.13em;
+        }
+
+        .solaris-compare-table td {
+            color: var(--muted);
+
+            font-size: 11px;
+        }
+
+        .solaris-compare-table
+        td:first-child {
+            color: var(--text);
+
+            font-weight: 700;
+        }
+
+        .solaris-compare-table
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+
+        /* =========================================================
+           SUSTAINABILITY
+        ========================================================= */
+
+        .solaris-sustainability {
+            padding: 145px 0;
+
+            background: #ffffff;
+        }
+
+        .solaris-sustainability-layout {
+            display: grid;
+
+            grid-template-columns:
+                1.05fr
+                0.95fr;
+
+            gap: 90px;
+
+            align-items: center;
+        }
+
+        .solaris-sustainability-image {
+            width: 100%;
+        }
+
+        .solaris-benefits {
+            margin-top: 38px;
+
+            display: grid;
+
+            gap: 10px;
+        }
+
+        .solaris-benefit {
+            padding: 18px 20px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            background: var(--off);
+
+            border:
+                1px solid
+                var(--line);
+
+            border-radius: 16px;
+        }
+
+        .solaris-benefit i {
+            width: 36px;
+            height: 36px;
+
+            flex: 0 0 auto;
+
+            display: grid;
+
+            place-items: center;
+
+            color: var(--white);
+
+            background: var(--blue);
+
+            border-radius: 50%;
+
+            font-size: 10px;
+        }
+
+        .solaris-benefit strong {
+            display: block;
+
+            color: var(--text);
+
+            font-size: 11px;
+        }
+
+        .solaris-benefit span {
+            display: block;
+
+            margin-top: 4px;
+
+            color: var(--muted);
+
+            font-size: 9px;
+
+            line-height: 1.5;
+        }
+
+
+        /* =========================================================
+           APPLICATION
+        ========================================================= */
+
+        .solaris-application {
+            padding: 0 0 145px;
+
+            background: #ffffff;
+        }
+
+        .solaris-application-shell {
+            position: relative;
+
+            min-height: 570px;
+
+            padding: 65px;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            color: var(--white);
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(2, 24, 37, 0.96),
+                    rgba(3, 34, 51, 0.80),
+                    rgba(3, 34, 51, 0.32)
+                ),
+                linear-gradient(
+                    135deg,
+                    #0a354c,
+                    #008bb6
+                );
+
+            border-radius: 38px;
+
+            overflow: hidden;
+        }
+
+        .solaris-application-placeholder {
+            position: absolute;
+
+            inset: 0;
+
+            display: grid;
+
+            place-items: center;
+
+            opacity: 0.18;
+
+            pointer-events: none;
+        }
+
+        .solaris-application-placeholder span {
+            font-size: 9px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.18em;
+        }
+
+        .solaris-application-copy {
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 650px;
+        }
+
+        .solaris-application-copy span {
+            color: var(--cyan);
+
+            font-size: 8px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.16em;
+        }
+
+        .solaris-application-copy h2 {
+            margin-top: 18px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                clamp(42px, 5vw, 67px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -0.055em;
+        }
+
+        .solaris-application-copy p {
+            max-width: 560px;
+
+            margin-top: 22px;
+
+            color:
+                rgba(255, 255, 255, 0.67);
+
+            font-size: 13px;
+
+            line-height: 1.85;
+        }
+
+
+        /* =========================================================
+           FINAL CTA
+        ========================================================= */
+
+        .solaris-final {
+            padding: 0 0 100px;
+
+            background: #ffffff;
+        }
+
+        .solaris-final-card {
+            position: relative;
+
+            padding: 72px;
+
+            color: var(--white);
+
+            background:
+                linear-gradient(
+                    125deg,
+                    #007fa7,
+                    #00a4ce,
+                    #20c6e4
+                );
+
+            border-radius: 38px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 35px 90px
+                rgba(0, 139, 182, 0.24);
+        }
+
+        .solaris-final-card::after {
+            content: "";
+
+            position: absolute;
+
+            width: 430px;
+            height: 430px;
+
+            right: -110px;
+            bottom: -180px;
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.16);
+
+            border-radius: 50%;
+
+            box-shadow:
+                0 0 0 50px
+                rgba(255, 255, 255, 0.055),
+                0 0 0 100px
+                rgba(255, 255, 255, 0.025);
+        }
+
+        .solaris-final-content {
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 760px;
+        }
+
+        .solaris-final-content span {
+            font-size: 8px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.16em;
+        }
+
+        .solaris-final-content h2 {
+            margin-top: 18px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                clamp(42px, 5vw, 67px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -0.055em;
+        }
+
+        .solaris-final-content p {
+            max-width: 620px;
+
+            margin-top: 20px;
+
+            color:
+                rgba(255, 255, 255, 0.78);
+
+            font-size: 13px;
+
+            line-height: 1.8;
+        }
+
+        .solaris-final-actions {
+            margin-top: 30px;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+
+        /* =========================================================
+           RESPONSIVE
+        ========================================================= */
+
+        @media (max-width: 1180px) {
+
+            .solaris-hero-layout {
+                gap: 45px;
+            }
+
+            .solaris-range-heading {
+                grid-template-columns: 1fr;
+
+                gap: 24px;
+            }
+
+            .solaris-performance-shell {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .solaris-performance-item:nth-child(2) {
+                border-right: none;
+            }
+
+            .solaris-performance-item:nth-child(-n + 2) {
+                border-bottom:
+                    1px solid
+                    rgba(255, 255, 255, 0.14);
+            }
+
+        }
+
+
+        @media (max-width: 980px) {
+
+            .solaris-hero {
+                min-height: auto;
+
+                padding:
+                    160px
+                    0
+                    80px;
+            }
+
+            .solaris-hero-layout,
+            .solaris-intro-layout,
+            .solaris-engineering-layout,
+            .solaris-sustainability-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .solaris-hero-visual {
+                min-height: 520px;
+            }
+
+            .solaris-hero-image {
+                inset: 20px 0;
+            }
+
+            .solaris-intro-layout,
+            .solaris-engineering-layout,
+            .solaris-sustainability-layout {
+                gap: 55px;
+            }
+
+            .solaris-range-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .solaris-hero {
+                padding:
+                    135px
+                    0
+                    60px;
+            }
+
+            .solaris-hero h1 {
+                font-size:
+                    clamp(48px, 14vw, 68px);
+            }
+
+            .solaris-hero-layout {
+                gap: 45px;
+            }
+
+            .solaris-hero-visual {
+                min-height: 430px;
+            }
+
+            .solaris-hero-image {
+                inset: 0;
+            }
+
+            .solaris-hero-image img {
+                max-height: 380px;
+            }
+
+            .solaris-floating-card-one {
+                left: 10px;
+                top: -12px;
+            }
+
+            .solaris-floating-card-two {
+                right: 10px;
+                bottom: -12px;
+            }
+
+            .solaris-intro-section,
+            .solaris-engineering,
+            .solaris-range-section,
+            .solaris-sustainability {
+                padding:
+                    95px
+                    0;
+            }
+
+            .solaris-performance {
+                padding-bottom: 95px;
+            }
+
+            .solaris-intro-image,
+            .solaris-engineering-image,
+            .solaris-sustainability-image {
+                width: 100%;
+            }
+
+            .solaris-mini-points {
+                grid-template-columns: 1fr;
+            }
+
+            .solaris-performance-shell {
+                grid-template-columns: 1fr;
+            }
+
+            .solaris-performance-item {
+                min-height: 155px;
+
+                border-right: none;
+
+                border-bottom:
+                    1px solid
+                    rgba(255, 255, 255, 0.14);
+            }
+
+            .solaris-performance-item:last-child {
+                border-bottom: none;
+            }
+
+            .solaris-card-specs {
+                grid-template-columns: 1fr;
+            }
+
+            .solaris-product-card {
+                min-height: auto;
+            }
+
+            .solaris-card-image {
+                width: 100%;
+
+                padding: 18px;
+            }
+
+            .solaris-compare {
+                padding-bottom: 95px;
+
+                overflow-x: auto;
+            }
+
+            .solaris-compare-shell {
+                padding: 28px 20px;
+
+                overflow-x: auto;
+            }
+
+            .solaris-compare-head {
+                align-items: flex-start;
+
+                flex-direction: column;
+            }
+
+            .solaris-compare-table {
+                min-width: 1180px;
+            }
+
+            .solaris-application {
+                padding-bottom: 95px;
+            }
+
+            .solaris-application-shell {
+                min-height: 500px;
+
+                padding: 38px 26px;
+
+                border-radius: 28px;
+            }
+
+            .solaris-final {
+                padding-bottom: 70px;
+            }
+
+            .solaris-final-card {
+                padding: 52px 28px;
+
+                border-radius: 28px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="solaris-page">
+
+
+    <!-- =========================================================
+         SCROLL PROGRESS
+    ========================================================== -->
+
+    <div id="scrollProgress"></div>
+
+
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
+
+    <header
+        class="site-header"
+        id="siteHeader"
+    >
+
+        <div class="nav-shell">
+
+
+            <a
+                href="index.html"
+                class="brand"
+                aria-label="ESBD Home"
+            >
+
+                <img
+                    src="images/logo.png"
+                    alt="ESBD"
+                >
+
+            </a>
+
+
+            <div class="nav-pill">
+
+                <nav
+                    class="desktop-nav"
+                    aria-label="Primary navigation"
+                >
+
+                    <a href="clients.html">
+                        Clients
+                    </a>
+
+                    <a href="features.html">
+                        Features
+                    </a>
+
+                    <a href="products.html">
+                        Products
+                    </a>
+
+
+                    <!-- SOLARIS -->
+
+                    <div class="nav-dropdown">
+
+                        <a
+                            href="solaris.html"
+                            class="nav-dropdown-toggle"
+                            aria-current="page"
+                        >
+
+                            Solaris
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </a>
+
+
+                        <div class="nav-dropdown-menu">
+
+                            <a href="solaris-5-10-25.html">
+                                Solaris 5, 10 &amp; 25
+                            </a>
+
+                            <a href="solaris-s20.html">
+                                Solaris S20
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PALLET PORTER -->
+
+                    <div class="nav-dropdown">
+
+                        <a
+                            href="pallet-porter.html"
+                            class="nav-dropdown-toggle"
+                        >
+
+                            Pallet Porter
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </a>
+
+
+                        <div class="nav-dropdown-menu">
+
+                            <a href="single-pallet-porter-reusable.html">
+                                Single Pallet Porter – Reusable
+                            </a>
+
+                            <a href="single-pallet-porter-recyclable.html">
+                                Single Pallet Porter – Recyclable
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="why-us.html">
+                        Why Us
+                    </a>
+
+
+                    <a
+                        href="contact.html"
+                        class="nav-cta"
+                    >
+
+                        Contact Us
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+                </nav>
+
+
+                <button
+                    class="menu-btn"
+                    id="menuButton"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                >
+
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             MOBILE
+        ====================================================== -->
+
+        <div
+            class="mobile-drawer"
+            id="mobileDrawer"
+        >
+
+            <a href="clients.html">
+
+                <span>
+                    01
+                </span>
+
+                Clients
+
+            </a>
+
+
+            <a href="features.html">
+
+                <span>
+                    02
+                </span>
+
+                Features
+
+            </a>
+
+
+            <a href="products.html">
+
+                <span>
+                    03
+                </span>
+
+                Products
+
+            </a>
+
+
+            <details class="mobile-submenu">
+
+                <summary>
+
+                    <span class="mobile-nav-number">
+                        04
+                    </span>
+
+                    <strong>
+                        Solaris
+                    </strong>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </summary>
+
+
+                <div class="mobile-submenu-links">
+
+                    <a href="solaris.html">
+                        Solaris Overview
+                    </a>
+
+                    <a href="solaris-5-10-25.html">
+                        Solaris 5, 10 &amp; 25
+                    </a>
+
+                    <a href="solaris-s20.html">
+                        Solaris S20
+                    </a>
+
+                </div>
+
+            </details>
+
+
+            <details class="mobile-submenu">
+
+                <summary>
+
+                    <span class="mobile-nav-number">
+                        05
+                    </span>
+
+                    <strong>
+                        Pallet Porter
+                    </strong>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </summary>
+
+
+                <div class="mobile-submenu-links">
+
+                    <a href="pallet-porter.html">
+                        Pallet Porter Overview
+                    </a>
+
+                    <a href="single-pallet-porter-reusable.html">
+                        Single Pallet Porter – Reusable
+                    </a>
+
+                    <a href="single-pallet-porter-recyclable.html">
+                        Single Pallet Porter – Recyclable
+                    </a>
+
+                </div>
+
+            </details>
+
+
+            <a href="why-us.html">
+
+                <span>
+                    06
+                </span>
+
+                Why Us
+
+            </a>
+
+
+            <a
+                href="contact.html"
+                class="mobile-drawer-cta"
+            >
+
+                Contact Us
+
+                <span>
+                    ↗
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         MAIN
+    ========================================================== -->
+
+    <main>
+
+
+        <!-- =====================================================
+             HERO
+             IMAGE 01
+        ====================================================== -->
+
+        <section class="solaris-hero">
+
+            <div class="solaris-hero-grid"></div>
+
+            <div class="solaris-hero-glow"></div>
+
+
+            <div class="container">
+
+                <div class="solaris-hero-layout">
+
+
+                    <div class="solaris-hero-copy reveal-left">
+
+                        <div class="solaris-eyebrow">
+
+                            <i class="fa-solid fa-temperature-half"></i>
+
+                            Temperature Protection / Solaris
+
+                        </div>
+
+
+                        <h1>
+
+                            Protect the load.
+
+                            <span>
+                                Lose the plastic.
+                            </span>
+
+                        </h1>
+
+
+                        <p class="solaris-hero-lead">
+
+                            Solaris protects temperature-sensitive palletised
+                            goods with a paper-based thermal barrier designed
+                            as an eco-conscious alternative to conventional
+                            plastic and foil thermal covers — without
+                            compromising cargo protection.
+
+                        </p>
+
+
+                        <div class="solaris-hero-actions">
+
+                            <a
+                                href="#solaris-range"
+                                class="btn btn-primary"
+                            >
+
+                                Explore the Range
+
+                                <i class="fa-solid fa-arrow-down"></i>
+
+                            </a>
+
+
+                            <a
+                                href="contact.html"
+                                class="btn btn-glass"
+                            >
+
+                                Talk to ESBD
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="solaris-hero-tags">
+
+                            <span class="solaris-hero-tag">
+
+                                <i class="fa-solid fa-temperature-half"></i>
+
+                                Reliable Thermal Protection
+
+                            </span>
+
+
+                            <span class="solaris-hero-tag">
+
+                                <i class="fa-solid fa-recycle"></i>
+
+                                100% Recyclable
+
+                            </span>
+
+
+                            <span class="solaris-hero-tag">
+
+                                <i class="fa-solid fa-shield-halved"></i>
+
+                                Protect Cargo
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="solaris-hero-visual reveal-right">
+
+
+                        <div
+                            class="solaris-real-image
+                                   solaris-hero-image"
+                        >
+
+                            <img
+                                src="images/IMAGE PLACEHOLDER 01.png"
+                                alt="Solaris thermal pallet protection"
+                            >
+
+                        </div>
+
+
+                        <div
+                            class="solaris-floating-card
+                                   solaris-floating-card-one"
+                        >
+
+                            <span>
+                                MATERIAL
+                            </span>
+
+                            <strong>
+                                100% Paper-Based
+                            </strong>
+
+                        </div>
+
+
+                        <div
+                            class="solaris-floating-card
+                                   solaris-floating-card-two"
+                        >
+
+                            <span>
+                                RANGE
+                            </span>
+
+                            <strong>
+                                Solaris 5 / 10 / 25 / S20
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             WHAT IS SOLARIS
+             IMAGE 02
+        ====================================================== -->
+
+        <section class="solaris-intro-section">
+
+            <div class="container">
+
+                <div class="solaris-intro-layout">
+
+
+                    <div
+                        class="solaris-real-image
+                               solaris-intro-image
+                               reveal-left"
+                    >
+
+                        <img
+                            src="images/IMAGE PLACEHOLDER 02.png"
+                            alt="Solaris thermal protection in transit"
+                        >
+
+                    </div>
+
+
+                    <div class="reveal-right">
+
+                        <div class="solaris-section-kicker">
+
+                            01 / What is Solaris?
+
+                        </div>
+
+
+                        <h2 class="solaris-display-title">
+
+                            Thermal protection.
+
+                            <em>
+                                Built beyond temperature.
+                            </em>
+
+                        </h2>
+
+
+                        <p class="solaris-body-copy">
+
+                            Solaris creates a protected environment around
+                            temperature-sensitive palletised goods while also
+                            helping shield cargo from the wider risks that can
+                            appear during transit.
+
+                        </p>
+
+
+                        <p class="solaris-body-copy">
+
+                            Constructed purely from paper, the system combines
+                            a white reflective external coating with
+                            micro-convective air-pocket insulation to deliver
+                            thermal performance, physical protection and a
+                            fully recyclable alternative to conventional
+                            plastic and foil covers.
+
+                        </p>
+
+
+                        <div class="solaris-mini-points">
+
+
+                            <div class="solaris-mini-point">
+
+                                <i class="fa-solid fa-sun"></i>
+
+                                <span>
+                                    Solar, UV &amp; wind exposure
+                                </span>
+
+                            </div>
+
+
+                            <div class="solaris-mini-point">
+
+                                <i class="fa-solid fa-droplet"></i>
+
+                                <span>
+                                    Water-resistant protection
+                                </span>
+
+                            </div>
+
+
+                            <div class="solaris-mini-point">
+
+                                <i class="fa-solid fa-shield-halved"></i>
+
+                                <span>
+                                    Tear &amp; rough-handling resistance
+                                </span>
+
+                            </div>
+
+
+                            <div class="solaris-mini-point">
+
+                                <i class="fa-solid fa-snowflake"></i>
+
+                                <span>
+                                    Freeze &amp; contamination protection
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PERFORMANCE
+        ====================================================== -->
+
+        <section class="solaris-performance">
+
+            <div class="container">
+
+                <div class="solaris-performance-shell reveal">
+
+
+                    <div class="solaris-performance-item">
+
+                        <span>
+                            MATERIAL
+                        </span>
+
+                        <strong>
+                            100% Paper
+                        </strong>
+
+                        <small>
+                            Fully recyclable paper-based insulation.
+                        </small>
+
+                    </div>
+
+
+                    <div class="solaris-performance-item">
+
+                        <span>
+                            HOT STRESS
+                        </span>
+
+                        <strong>
+                            Up to 12h
+                        </strong>
+
+                        <small>
+                            Range-dependent performance at 40°C.
+                        </small>
+
+                    </div>
+
+
+                    <div class="solaris-performance-item">
+
+                        <span>
+                            COLD STRESS
+                        </span>
+
+                        <strong>
+                            Up to 7.75h
+                        </strong>
+
+                        <small>
+                            Range-dependent performance at -10°C.
+                        </small>
+
+                    </div>
+
+
+                    <div class="solaris-performance-item">
+
+                        <span>
+                            STACKING
+                        </span>
+
+                        <strong>
+                            Up to 500kg
+                        </strong>
+
+                        <small>
+                            Available with structural Solaris S20.
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ENGINEERING
+             IMAGE 03
+        ====================================================== -->
+
+        <section class="solaris-engineering">
+
+            <div class="container">
+
+                <div class="solaris-engineering-layout">
+
+
+                    <div class="reveal-left">
+
+                        <div class="solaris-section-kicker">
+
+                            02 / The System
+
+                        </div>
+
+
+                        <h2 class="solaris-display-title">
+
+                            Engineered in paper.
+                            Built to perform.
+
+                        </h2>
+
+
+                        <p class="solaris-body-copy">
+
+                            Solaris combines specialist paper engineering with
+                            reflective and insulating layers to protect
+                            temperature-sensitive cargo through demanding
+                            transport conditions.
+
+                        </p>
+
+
+                        <p class="solaris-body-copy">
+
+                            Stringent testing has demonstrated thermal
+                            performance comparable with conventional plastic
+                            thermal covers — providing a recyclable alternative
+                            without giving up the protection your cargo needs.
+
+                        </p>
+
+
+                        <div class="solaris-tech-list">
+
+
+                            <div class="solaris-tech-item">
+
+                                <div class="solaris-tech-number">
+                                    01
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        100% Paper Construction
+                                    </strong>
+
+                                    <p>
+
+                                        Solaris covers are constructed purely
+                                        from paper and designed to be fully
+                                        recyclable after use.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="solaris-tech-item">
+
+                                <div class="solaris-tech-number">
+                                    02
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Reflective External Coating
+                                    </strong>
+
+                                    <p>
+
+                                        A white reflective outer surface helps
+                                        manage thermal exposure from solar and
+                                        environmental heat.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="solaris-tech-item">
+
+                                <div class="solaris-tech-number">
+                                    03
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Micro-Convective Air Pockets
+                                    </strong>
+
+                                    <p>
+
+                                        Air-pocket wall insulation adds another
+                                        protective layer around the palletised
+                                        load.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="solaris-real-image
+                               solaris-engineering-image
+                               reveal-right"
+                    >
+
+                        <img
+                            src="images/IMAGE PLACEHOLDER 03.jpg"
+                            alt="Solaris layered paper thermal protection construction"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             RANGE
+        ====================================================== -->
+
+        <section
+            class="solaris-range-section"
+            id="solaris-range"
+        >
+
+            <div class="container">
+
+
+                <div class="solaris-range-heading">
+
+                    <div>
+
+                        <div class="solaris-section-kicker">
+
+                            03 / Solaris Range
+
+                        </div>
+
+
+                        <h2 class="solaris-display-title">
+
+                            The right cover.
+
+                            <em>
+                                For the right journey.
+                            </em>
+
+                        </h2>
+
+                    </div>
+
+
+                    <p class="solaris-range-heading-copy">
+
+                        Solaris 5, 10 and 25 provide progressively higher
+                        levels of paper-based thermal insulation, while
+                        Solaris S20 adds structural stacking capability
+                        for operations that also need to maximise freight
+                        cube.
+
+                    </p>
+
+                </div>
+
+
+                <div class="solaris-range-grid">
+
+
+                    <!-- SOLARIS 5 -->
+
+                    <a
+                        href="solaris-5-10-25.html"
+                        class="solaris-product-card reveal"
+                    >
+
+                        <div
+                            class="solaris-real-image
+                                   solaris-card-image"
+                        >
+
+                            <img
+                                src="images/IMAGE PLACEHOLDER 04.jpg"
+                                alt="Solaris 5 thermal pallet protection"
+                            >
+
+                        </div>
+
+
+                        <div class="solaris-product-card-body">
+
+                            <div class="solaris-product-card-top">
+
+                                <span class="solaris-product-code">
+
+                                    SOLARIS / 05
+
+                                </span>
+
+
+                                <div class="solaris-product-arrow">
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </div>
+
+                            </div>
+
+
+                            <h3>
+                                Solaris 5
+                            </h3>
+
+
+                            <p>
+
+                                Six layers of tear- and water-resistant
+                                speciality paper laminated to embossed paper,
+                                delivering lightweight thermal protection for
+                                temperature-sensitive palletised goods.
+
+                            </p>
+
+
+                            <div class="solaris-card-specs">
+
+                                <div class="solaris-card-spec">
+
+                                    <span>
+                                        WALL
+                                    </span>
+
+                                    <strong>
+                                        5mm
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="solaris-card-spec">
+
+                                    <span>
+                                        40°C
+                                    </span>
+
+                                    <strong>
+                                        7.5 Hours
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="solaris-card-spec">
+
+                                    <span>
+                                        -10°C
+                                    </span>
+
+                                    <strong>
+                                        4.25 Hours
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- SOLARIS 10 -->
+
+                    <a
+                        href="solaris-5-10-25.html"
+                        class="solaris-product-card reveal delay-1"
+                    >
+
+                        <div
+                            class="solaris-real-image
+                                   solaris-card-image"
+                        >
+
+                            <img
+                                src="images/IMAGE PLACEHOLDER 05.jpg"
+                                alt="Solaris 10 thermal pallet protection"
+                            >
+
+                        </div>
+
+
+                        <div class="solaris-product-card-body">
+
+                            <div class="solaris-product-card-top">
+
+                                <span class="solaris-product-code">
+
+                                    SOLARIS / 10
+
+                                </span>
+
+
+                                <div class="solaris-product-arrow">
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </div>
+
+                            </div>
+
+
+                            <h3>
+                                Solaris 10
+                            </h3>
+
+
+                            <p>
+
+                                Twelve layers of tear- and water-resistant
+                                speciality paper laminated to embossed paper
+                                for increased thermal protection during
+                                demanding transit conditions.
+
+                            </p>
+
+
+                            <div class="solaris-card-specs">
+
+                                <div class="solaris-card-spec">
+
+                                    <span>
+                                        WALL
+                                    </span>
+
+                                    <strong>
+                                        9mm
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="solaris-card-spec">
+
+                                    <span>
+                                        40°C
+                                    </span>
+
+                                    <strong>
+                                        9 Hours
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="solaris-card-spec">
+
+                                    <span>
+                                        -10°C
+                                    </span>
+
+                                    <strong>
+                                        4.6 Hours
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- SOLARIS 25 -->
+
+                    <a
+                        href="solaris-5-10-25.html"
+                        class="solaris-product-card reveal"
+                    >
+
+                        <div
+                            class="solaris-real-image
+                                   solaris-card-image"
+                        >
+
+                            <img
+                                src="images/IMAGE PLACEHOLDER 06.jpg"
+                                alt="Solaris 25 thermal pallet protection"
+                            >
+
+                        </div>
+
+
+                        <div class="solaris-product-card-body">
+
+                            <div class="solaris-product-card-top">
+
+                                <span class="solaris-product-code">
+
+                                    SOLARIS / 25
+
+                                </span>
+
+
+                                <div class="solaris-product-arrow">
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </div>
+
+                            </div>
+
+
+                            <h3>
+                                Solaris 25
+                            </h3>
+
+
+                            <p>
+
+                                Twenty layers of tear- and water-resistant
+                                speciality paper laminated to embossed paper,
+                                providing the highest insulation level within
+                                the standard Solaris 5 / 10 / 25 range.
+
+                            </p>
+
+
+                            <div class="solaris-card-specs">
+
+                                <div class="solaris-card-spec">
+
+                                    <span>
+                                        WALL
+                                    </span>
+
+                                    <strong>
+                                        25mm
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="solaris-card-spec">
+
+                                    <span>
+                                        40°C
+                                    </span>
+
+                                    <strong>
+                                        10 Hours
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="solaris-card-spec">
+
+                                    <span>
+                                        -10°C
+                                    </span>
+
+                                    <strong>
+                                        7.75 Hours
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- SOLARIS S20 -->
+
+                    <a
+                        href="solaris-s20.html"
+                        class="solaris-product-card reveal delay-1"
+                    >
+
+                        <div
+                            class="solaris-real-image
+                                   solaris-card-image"
+                        >
+
+                            <img
+                                src="images/IMAGE PLACEHOLDER 07.jpg"
+                                alt="Solaris S20 structural thermal pallet protection"
+                            >
+
+                        </div>
+
+
+                        <div class="solaris-product-card-body">
+
+                            <div class="solaris-product-card-top">
+
+                                <span class="solaris-product-code">
+
+                                    SOLARIS / S20
+
+                                </span>
+
+
+                                <div class="solaris-product-arrow">
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </div>
+
+                            </div>
+
+
+                            <h3>
+                                Solaris S20
+                            </h3>
+
+
+                            <p>
+
+                                Structural corrugated water-resistant
+                                cardboard laminated to embossed paper,
+                                combining thermal protection with the ability
+                                to stack pallets and maximise freight capacity.
+
+                            </p>
+
+
+                            <div class="solaris-card-specs">
+
+                                <div class="solaris-card-spec">
+
+                                    <span>
+                                        WALL
+                                    </span>
+
+                                    <strong>
+                                        35mm
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="solaris-card-spec">
+
+                                    <span>
+                                        40°C
+                                    </span>
+
+                                    <strong>
+                                        12 Hours
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="solaris-card-spec">
+
+                                    <span>
+                                        STACKING
+                                    </span>
+
+                                    <strong>
+                                        Up to 500kg
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             RANGE COMPARISON
+        ====================================================== -->
+
+        <section class="solaris-compare">
+
+            <div class="container">
+
+                <div class="solaris-compare-shell reveal">
+
+                    <div class="solaris-compare-head">
+
+                        <h3>
+                            Solaris at a glance.
+                        </h3>
+
+                        <span>
+                            RANGE COMPARISON
+                        </span>
+
+                    </div>
+
+
+                    <table class="solaris-compare-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    PRODUCT
+                                </th>
+
+                                <th>
+                                    INSULATION
+                                </th>
+
+                                <th>
+                                    WALL
+                                </th>
+
+                                <th>
+                                    40°C HOT STRESS
+                                </th>
+
+                                <th>
+                                    -10°C COLD STRESS
+                                </th>
+
+                                <th>
+                                    STACKING
+                                </th>
+
+                                <th>
+                                    DIMENSIONS
+                                </th>
+
+                                <th>
+                                    WEIGHT
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Solaris 5
+                                </td>
+
+                                <td>
+                                    6 layers, tear &amp; water-resistant speciality paper laminated to embossed paper
+                                </td>
+
+                                <td>
+                                    5mm
+                                </td>
+
+                                <td>
+                                    7.5 hours
+                                </td>
+
+                                <td>
+                                    4.25 hours
+                                </td>
+
+                                <td>
+                                    No
+                                </td>
+
+                                <td>
+                                    Euro / Standard / US pallet sizes, 450–1500mm heights
+                                </td>
+
+                                <td>
+                                    2kg
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Solaris 10
+                                </td>
+
+                                <td>
+                                    12 layers, tear &amp; water-resistant speciality paper laminated to embossed paper
+                                </td>
+
+                                <td>
+                                    9mm
+                                </td>
+
+                                <td>
+                                    9 hours
+                                </td>
+
+                                <td>
+                                    4.6 hours
+                                </td>
+
+                                <td>
+                                    No
+                                </td>
+
+                                <td>
+                                    Euro / Standard / US pallet sizes, 450–1500mm heights
+                                </td>
+
+                                <td>
+                                    3kg
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Solaris 25
+                                </td>
+
+                                <td>
+                                    20 layers, tear &amp; water-resistant speciality paper laminated to embossed paper
+                                </td>
+
+                                <td>
+                                    25mm
+                                </td>
+
+                                <td>
+                                    10 hours
+                                </td>
+
+                                <td>
+                                    7.75 hours
+                                </td>
+
+                                <td>
+                                    No
+                                </td>
+
+                                <td>
+                                    Euro / Standard / US pallet sizes, 450–1500mm heights
+                                </td>
+
+                                <td>
+                                    6.3kg
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Solaris S20
+                                </td>
+
+                                <td>
+                                    Structural corrugated water-resistant cardboard laminated to embossed paper
+                                </td>
+
+                                <td>
+                                    35mm
+                                </td>
+
+                                <td>
+                                    12 hours
+                                </td>
+
+                                <td>
+                                    7 hours
+                                </td>
+
+                                <td>
+                                    Yes — up to 500kg
+                                </td>
+
+                                <td>
+                                    Stackable S20 format
+                                </td>
+
+                                <td>
+                                    14kg
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             WHY CHOOSE SOLARIS
+             IMAGE 08
+        ====================================================== -->
+
+        <section class="solaris-sustainability">
+
+            <div class="container">
+
+                <div class="solaris-sustainability-layout">
+
+
+                    <div class="reveal-left">
+
+                        <div class="solaris-section-kicker">
+
+                            04 / Why Solaris?
+
+                        </div>
+
+
+                        <h2 class="solaris-display-title">
+
+                            Reduce the plastic.
+
+                            <em>
+                                Keep the protection.
+                            </em>
+
+                        </h2>
+
+
+                        <p class="solaris-body-copy">
+
+                            Solaris is designed to offer the thermal performance
+                            required for temperature-sensitive freight while
+                            replacing conventional plastic and foil cover
+                            materials with a recyclable paper-based system.
+
+                        </p>
+
+
+                        <p class="solaris-body-copy">
+
+                            The result is a solution that protects cargo,
+                            supports plastic reduction goals and — with Solaris
+                            S20 — can also unlock more freight capacity through
+                            pallet stacking across land, sea and air.
+
+                        </p>
+
+
+                        <div class="solaris-benefits">
+
+
+                            <div class="solaris-benefit">
+
+                                <i class="fa-solid fa-temperature-half"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Reliable Thermal Protection
+                                    </strong>
+
+                                    <span>
+                                        Tested performance for demanding hot and cold stress conditions.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="solaris-benefit">
+
+                                <i class="fa-solid fa-recycle"></i>
+
+                                <div>
+
+                                    <strong>
+                                        100% Recyclable Paper Insulation
+                                    </strong>
+
+                                    <span>
+                                        Paper-only construction provides a simpler end-of-life pathway.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="solaris-benefit">
+
+                                <i class="fa-solid fa-leaf"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Reduce Plastic
+                                    </strong>
+
+                                    <span>
+                                        Replace conventional plastic and foil thermal covers with paper-based protection.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="solaris-benefit">
+
+                                <i class="fa-solid fa-shield-halved"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Protect Cargo
+                                    </strong>
+
+                                    <span>
+                                        Help shield palletised goods from thermal exposure and transit hazards.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="solaris-benefit">
+
+                                <i class="fa-solid fa-boxes-stacked"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Maximise Cube
+                                    </strong>
+
+                                    <span>
+                                        Solaris S20 enables pallet stacking with loads up to 500kg.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="solaris-real-image
+                               solaris-sustainability-image
+                               reveal-right"
+                    >
+
+                        <img
+                            src="images/IMAGE PLACEHOLDER 08.png"
+                            alt="Solaris sustainable paper-based thermal protection"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PROTECT AGAINST THE UNEXPECTED
+             PLACEHOLDER 09 REMAINS
+        ====================================================== -->
+
+        <section class="solaris-application">
+
+            <div class="container">
+
+                <div class="solaris-application-shell reveal">
+
+
+                    <div class="solaris-application-placeholder">
+
+                        <span>
+
+                            IMAGE PLACEHOLDER 09 /
+                            FULL-WIDTH SOLARIS APPLICATION IMAGE
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="solaris-application-copy">
+
+                        <span>
+                            BEYOND TEMPERATURE
+                        </span>
+
+
+                        <h2>
+
+                            Protect against
+                            the unexpected.
+
+                        </h2>
+
+
+                        <p>
+
+                            Solaris helps protect palletised cargo against
+                            more than temperature alone — including solar,
+                            UV and wind exposure, tearing, airborne
+                            contamination, freezing conditions, water and
+                            rough handling throughout the journey.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FINAL CTA
+        ====================================================== -->
+
+        <section class="solaris-final">
+
+            <div class="container">
+
+                <div class="solaris-final-card reveal">
+
+                    <div class="solaris-final-content">
+
+                        <span>
+                            PAPER-BASED THERMAL PROTECTION
+                        </span>
+
+
+                        <h2>
+
+                            Protect the load.
+                            Reduce the plastic.
+
+                        </h2>
+
+
+                        <p>
+
+                            Talk to ESBD about your temperature profile,
+                            pallet format and freight route. We can help
+                            identify the Solaris solution that protects your
+                            cargo while reducing reliance on conventional
+                            plastic and foil thermal covers.
+
+                        </p>
+
+
+                        <div class="solaris-final-actions">
+
+                            <a
+                                href="contact.html"
+                                class="btn btn-white"
+                            >
+
+                                Talk to ESBD
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+
+                            <a
+                                href="solaris-5-10-25.html"
+                                class="btn btn-outline-white"
+                            >
+
+                                Solaris 5, 10 &amp; 25
+
+                            </a>
+
+
+                            <a
+                                href="solaris-s20.html"
+                                class="btn btn-outline-white"
+                            >
+
+                                Solaris S20
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-shell">
+
+
+                <div class="footer-main">
+
+
+                    <div class="footer-brand">
+
+                        <a
+                            href="index.html"
+                            aria-label="ESBD Home"
+                        >
+
+                            <img
+                                src="images/logo.png"
+                                alt="ESBD"
+                            >
+
+                        </a>
+
+
+                        <p>
+
+                            Reusable thermal packaging solutions
+                            supporting temperature-sensitive
+                            cold-chain distribution.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="footer-col">
+
+                        <span>
+                            NAVIGATION
+                        </span>
+
+                        <a href="clients.html">
+                            Clients
+                        </a>
+
+                        <a href="features.html">
+                            Features
+                        </a>
+
+                        <a href="products.html">
+                            Products
+                        </a>
+
+                        <a href="why-us.html">
+                            Why Us
+                        </a>
+
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-col">
+
+                        <span>
+                            PRODUCTS
+                        </span>
+
+                        <a href="solaris.html">
+                            Solaris
+                        </a>
+
+                        <a href="pallet-porter.html">
+                            Pallet Porter
+                        </a>
+
+                        <a href="top-loader-boxes.html">
+                            Top Loader Boxes
+                        </a>
+
+                        <a href="full-pallet-loader.html">
+                            Full Pallet Loader
+                        </a>
+
+                        <a href="eco-thermal-blankets.html">
+                            Eco Thermal Blankets
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-col">
+
+                        <span>
+                            CONNECT
+                        </span>
+
+                        <a href="contact.html">
+
+                            Contact ESBD ↗
+
+                        </a>
+
+
+                        <a
+                            href="https://www.linkedin.com/company/es-business-development/"
+                            class="footer-linkedin"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="ES Business Development on LinkedIn"
+                            title="LinkedIn"
+                        >
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.352V9h3.414v1.561h.047c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.371 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9H7.12v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+
+                            </svg>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-bottom">
+
+                    <span>
+
+                        © <span id="currentYear"></span>
+                        ESBD. All rights reserved.
+
+                    </span>
+
+                    <span>
+                        Taking your packaging further.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         BACK TO TOP
+    ========================================================== -->
+
+    <button
+        id="backToTop"
+        type="button"
+        aria-label="Back to top"
+    >
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

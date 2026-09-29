@@ -1,0 +1,3078 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Solaris S20 | ESBD Stackable Thermal Protection</title>
+
+    <meta
+        name="description"
+        content="Discover Solaris S20 from ESBD, a stackable paper-based thermal pallet cover providing structural protection, thermal performance and up to 500kg stacking capacity."
+    >
+
+
+    <!-- =========================================================
+         FONTS
+    ========================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================================
+         ICONS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+
+    <!-- =========================================================
+         GLOBAL ESBD CSS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- =========================================================
+         SOLARIS S20 PAGE CSS
+    ========================================================== -->
+
+    <style>
+
+        /* =========================================================
+           PAGE
+        ========================================================= */
+
+        .s20-page {
+            background: #f4f9fb;
+        }
+
+        .s20-page main {
+            overflow: hidden;
+        }
+
+
+        /* =========================================================
+           COMMON
+        ========================================================= */
+
+        .s20-kicker {
+            display: inline-flex;
+
+            align-items: center;
+
+            padding: 8px 14px;
+
+            margin-bottom: 24px;
+
+            color: var(--blue);
+
+            background: #e4f5fa;
+
+            border:
+                1px solid
+                rgba(0, 139, 182, 0.10);
+
+            border-radius: 999px;
+
+            font-size: 8px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.14em;
+
+            text-transform: uppercase;
+        }
+
+
+        .s20-title {
+            max-width: 800px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            color: var(--text);
+
+            font-size:
+                clamp(44px, 5vw, 70px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -0.055em;
+        }
+
+
+        .s20-title em {
+            display: block;
+
+            color: var(--blue);
+
+            font-style: normal;
+        }
+
+
+        .s20-copy {
+            max-width: 640px;
+
+            margin-top: 28px;
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+            line-height: 1.95;
+        }
+
+
+        .s20-copy +
+        .s20-copy {
+            margin-top: 16px;
+        }
+
+
+        /* =========================================================
+           NATURAL IMAGES
+           NO PILLS / NO FRAME
+        ========================================================= */
+
+        .s20-image {
+            position: relative;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background: transparent;
+
+            border: none;
+
+            border-radius: 0;
+
+            box-shadow: none;
+
+            overflow: visible;
+        }
+
+
+        .s20-image img {
+            width: 100%;
+            height: auto;
+
+            max-width: 100%;
+
+            display: block;
+
+            border: none;
+
+            border-radius: 0;
+
+            box-shadow: none;
+
+            object-fit: initial;
+
+            object-position: center;
+        }
+
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .s20-hero {
+            position: relative;
+
+            min-height: 100svh;
+
+            padding:
+                180px
+                0
+                90px;
+
+            display: flex;
+
+            align-items: center;
+
+            color: var(--white);
+
+            background:
+
+                radial-gradient(
+                    circle at 76% 35%,
+                    rgba(25, 197, 232, 0.16),
+                    transparent 28%
+                ),
+
+                radial-gradient(
+                    circle at 20% 82%,
+                    rgba(0, 139, 182, 0.14),
+                    transparent 34%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #031a29 0%,
+                    #062b40 56%,
+                    #07364d 100%
+                );
+
+            overflow: hidden;
+        }
+
+
+        .s20-hero-grid {
+            position: absolute;
+
+            inset: 0;
+
+            opacity: 0.065;
+
+            background-image:
+
+                linear-gradient(
+                    rgba(255, 255, 255, 0.12) 1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.12) 1px,
+                    transparent 1px
+                );
+
+            background-size: 72px 72px;
+
+            pointer-events: none;
+        }
+
+
+        .s20-hero-glow {
+            position: absolute;
+
+            width: 620px;
+            height: 620px;
+
+            right: -170px;
+            top: -160px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(25, 197, 232, 0.15),
+                    transparent 68%
+                );
+
+            pointer-events: none;
+        }
+
+
+        .s20-hero-layout {
+            position: relative;
+
+            z-index: 2;
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 0.92fr)
+                minmax(420px, 1.08fr);
+
+            gap: 84px;
+
+            align-items: center;
+        }
+
+
+        .s20-hero-copy {
+            max-width: 670px;
+        }
+
+
+        .s20-eyebrow {
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 9px 15px;
+
+            color: var(--cyan-soft);
+
+            background:
+                rgba(255, 255, 255, 0.07);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.13);
+
+            border-radius: 999px;
+
+            backdrop-filter: blur(12px);
+
+            font-size: 9px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.15em;
+
+            text-transform: uppercase;
+        }
+
+
+        .s20-eyebrow i {
+            color: var(--cyan);
+
+            font-size: 8px;
+        }
+
+
+        .s20-hero h1 {
+            max-width: 780px;
+
+            margin-top: 32px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                clamp(54px, 6vw, 86px);
+
+            font-weight: 500;
+
+            line-height: 0.94;
+
+            letter-spacing: -0.065em;
+        }
+
+
+        .s20-hero h1 span {
+            display: block;
+
+            color: #8be7f5;
+        }
+
+
+        .s20-hero-lead {
+            max-width: 620px;
+
+            margin-top: 30px;
+
+            color:
+                rgba(255, 255, 255, 0.72);
+
+            font-size: 15px;
+
+            line-height: 1.9;
+        }
+
+
+        .s20-hero-actions {
+            margin-top: 34px;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+
+        .s20-hero-tags {
+            margin-top: 32px;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+        }
+
+
+        .s20-hero-tag {
+            min-height: 33px;
+
+            padding: 0 13px;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            color:
+                rgba(255, 255, 255, 0.68);
+
+            background:
+                rgba(255, 255, 255, 0.055);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.09);
+
+            border-radius: 999px;
+
+            font-size: 9px;
+
+            font-weight: 600;
+        }
+
+
+        .s20-hero-tag i {
+            color: var(--cyan);
+
+            font-size: 8px;
+        }
+
+
+        .s20-hero-visual {
+            position: relative;
+
+            min-height: 570px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .s20-hero-image {
+            position: absolute;
+
+            inset:
+                34px
+                0
+                34px
+                30px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .s20-hero-image img {
+            width: auto;
+            height: auto;
+
+            max-width: 100%;
+            max-height: 500px;
+        }
+
+
+        .s20-floating-card {
+            position: absolute;
+
+            z-index: 4;
+
+            padding: 16px 18px;
+
+            color: var(--white);
+
+            background:
+                rgba(2, 25, 38, 0.90);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.11);
+
+            border-radius: 16px;
+
+            backdrop-filter: blur(18px);
+
+            box-shadow:
+                0 20px 45px
+                rgba(0, 0, 0, 0.22);
+        }
+
+
+        .s20-floating-card span {
+            display: block;
+
+            margin-bottom: 7px;
+
+            color: var(--cyan);
+
+            font-size: 6px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.16em;
+        }
+
+
+        .s20-floating-card strong {
+            font-size: 10px;
+
+            font-weight: 600;
+        }
+
+
+        .s20-floating-one {
+            top: 12px;
+            left: 0;
+        }
+
+
+        .s20-floating-two {
+            right: -18px;
+            bottom: 18px;
+        }
+
+
+        /* =========================================================
+           INTRO
+        ========================================================= */
+
+        .s20-intro {
+            padding: 140px 0;
+
+            background: #ffffff;
+        }
+
+
+        .s20-intro-layout {
+            display: grid;
+
+            grid-template-columns:
+                0.95fr
+                1.05fr;
+
+            gap: 95px;
+
+            align-items: center;
+        }
+
+
+        .s20-intro-image {
+            width: 100%;
+        }
+
+
+        .s20-points {
+            margin-top: 34px;
+
+            display: grid;
+
+            grid-template-columns:
+                1fr
+                1fr;
+
+            gap: 12px;
+        }
+
+
+        .s20-point {
+            padding: 18px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 13px;
+
+            background: var(--off);
+
+            border:
+                1px solid
+                var(--line);
+
+            border-radius: 16px;
+        }
+
+
+        .s20-point i {
+            width: 35px;
+            height: 35px;
+
+            flex: 0 0 auto;
+
+            display: grid;
+
+            place-items: center;
+
+            color: var(--white);
+
+            background: var(--blue);
+
+            border-radius: 50%;
+
+            font-size: 11px;
+        }
+
+
+        .s20-point span {
+            color: var(--text);
+
+            font-size: 11px;
+
+            font-weight: 650;
+        }
+
+
+        /* =========================================================
+           PERFORMANCE
+        ========================================================= */
+
+        .s20-performance {
+            padding:
+                0
+                0
+                130px;
+
+            background: #ffffff;
+        }
+
+
+        .s20-performance-shell {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #057da4,
+                    #009cc6
+                );
+
+            border-radius: 30px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 30px 75px
+                rgba(0, 139, 182, 0.19);
+        }
+
+
+        .s20-performance-item {
+            min-height: 190px;
+
+            padding: 28px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: space-between;
+
+            border-right:
+                1px solid
+                rgba(255, 255, 255, 0.14);
+        }
+
+
+        .s20-performance-item:last-child {
+            border-right: none;
+        }
+
+
+        .s20-performance-item span {
+            color:
+                rgba(255, 255, 255, 0.54);
+
+            font-size: 7px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.15em;
+        }
+
+
+        .s20-performance-item strong {
+            color: var(--white);
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                clamp(25px, 2.5vw, 37px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -0.04em;
+        }
+
+
+        .s20-performance-item small {
+            max-width: 190px;
+
+            color:
+                rgba(255, 255, 255, 0.68);
+
+            font-size: 9px;
+
+            line-height: 1.55;
+        }
+
+
+        /* =========================================================
+           STACKING SECTION
+        ========================================================= */
+
+        .s20-stacking {
+            position: relative;
+
+            padding: 145px 0;
+
+            color: var(--white);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--navy),
+                    var(--navy-mid)
+                );
+
+            overflow: hidden;
+        }
+
+
+        .s20-stacking::before {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            opacity: 0.055;
+
+            background-image:
+
+                linear-gradient(
+                    rgba(255, 255, 255, 0.1) 1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.1) 1px,
+                    transparent 1px
+                );
+
+            background-size: 74px 74px;
+        }
+
+
+        .s20-stacking-layout {
+            position: relative;
+
+            z-index: 2;
+
+            display: grid;
+
+            grid-template-columns:
+                0.95fr
+                1.05fr;
+
+            gap: 85px;
+
+            align-items: center;
+        }
+
+
+        .s20-stacking
+        .s20-kicker {
+            color: var(--cyan-soft);
+
+            background:
+                rgba(255, 255, 255, 0.07);
+
+            border-color:
+                rgba(255, 255, 255, 0.11);
+        }
+
+
+        .s20-stacking
+        .s20-title {
+            color: var(--white);
+        }
+
+
+        .s20-stacking
+        .s20-copy {
+            color:
+                rgba(255, 255, 255, 0.62);
+        }
+
+
+        .s20-stack-image {
+            width: 100%;
+        }
+
+
+        .s20-stack-image img {
+            max-height: 620px;
+
+            object-fit: contain;
+        }
+
+
+        .s20-stack-list {
+            margin-top: 38px;
+
+            display: grid;
+
+            gap: 10px;
+        }
+
+
+        .s20-stack-item {
+            padding: 20px;
+
+            display: grid;
+
+            grid-template-columns:
+                auto
+                1fr;
+
+            gap: 17px;
+
+            align-items: start;
+
+            background:
+                rgba(255, 255, 255, 0.055);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.09);
+
+            border-radius: 18px;
+        }
+
+
+        .s20-stack-number {
+            width: 35px;
+            height: 35px;
+
+            display: grid;
+
+            place-items: center;
+
+            color: var(--cyan);
+
+            border:
+                1px solid
+                rgba(25, 197, 232, 0.25);
+
+            border-radius: 50%;
+
+            font-size: 8px;
+
+            font-weight: 800;
+        }
+
+
+        .s20-stack-item strong {
+            display: block;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size: 17px;
+
+            font-weight: 500;
+        }
+
+
+        .s20-stack-item p {
+            margin-top: 7px;
+
+            color:
+                rgba(255, 255, 255, 0.50);
+
+            font-size: 10px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================================================
+           BENEFITS
+        ========================================================= */
+
+        .s20-benefits-section {
+            padding: 145px 0;
+
+            background: #f4f9fb;
+        }
+
+
+        .s20-benefits-layout {
+            display: grid;
+
+            grid-template-columns:
+                1.05fr
+                0.95fr;
+
+            gap: 90px;
+
+            align-items: center;
+        }
+
+
+        .s20-benefit-image {
+            width: 100%;
+        }
+
+
+        .s20-benefits {
+            margin-top: 38px;
+
+            display: grid;
+
+            gap: 10px;
+        }
+
+
+        .s20-benefit {
+            padding: 18px 20px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            background: #ffffff;
+
+            border:
+                1px solid
+                var(--line);
+
+            border-radius: 16px;
+        }
+
+
+        .s20-benefit i {
+            width: 36px;
+            height: 36px;
+
+            flex: 0 0 auto;
+
+            display: grid;
+
+            place-items: center;
+
+            color: var(--white);
+
+            background: var(--blue);
+
+            border-radius: 50%;
+
+            font-size: 10px;
+        }
+
+
+        .s20-benefit strong {
+            display: block;
+
+            color: var(--text);
+
+            font-size: 11px;
+        }
+
+
+        .s20-benefit span {
+            display: block;
+
+            margin-top: 4px;
+
+            color: var(--muted);
+
+            font-size: 9px;
+
+            line-height: 1.5;
+        }
+
+
+        /* =========================================================
+           FACT FILE
+        ========================================================= */
+
+        .s20-facts {
+            padding: 145px 0;
+
+            background: #ffffff;
+        }
+
+
+        .s20-facts-shell {
+            display: grid;
+
+            grid-template-columns:
+                0.8fr
+                1.2fr;
+
+            gap: 70px;
+
+            padding: 55px;
+
+            background: #f4f9fb;
+
+            border:
+                1px solid
+                var(--line);
+
+            border-radius: 32px;
+
+            box-shadow: var(--shadow);
+        }
+
+
+        .s20-facts-intro {
+            align-self: start;
+        }
+
+
+        .s20-facts-intro h3 {
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                clamp(32px, 4vw, 48px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -0.05em;
+        }
+
+
+        .s20-facts-intro p {
+            margin-top: 20px;
+
+            color: var(--muted);
+
+            font-size: 12px;
+
+            line-height: 1.8;
+        }
+
+
+        .s20-fact-list {
+            display: grid;
+
+            gap: 0;
+        }
+
+
+        .s20-fact-row {
+            padding: 20px 0;
+
+            display: grid;
+
+            grid-template-columns:
+                0.85fr
+                1.15fr;
+
+            gap: 30px;
+
+            border-bottom:
+                1px solid
+                var(--line);
+        }
+
+
+        .s20-fact-row:first-child {
+            padding-top: 0;
+        }
+
+
+        .s20-fact-row:last-child {
+            padding-bottom: 0;
+
+            border-bottom: none;
+        }
+
+
+        .s20-fact-row span {
+            color: var(--muted-light);
+
+            font-size: 7px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.12em;
+
+            text-transform: uppercase;
+        }
+
+
+        .s20-fact-row strong {
+            color: var(--text);
+
+            font-size: 11px;
+
+            font-weight: 650;
+
+            line-height: 1.65;
+        }
+
+
+        /* =========================================================
+           FREIGHT / APPLICATION
+        ========================================================= */
+
+        .s20-application {
+            padding:
+                0
+                0
+                145px;
+
+            background: #ffffff;
+        }
+
+
+        .s20-application-shell {
+            position: relative;
+
+            min-height: 570px;
+
+            padding: 65px;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            color: var(--white);
+
+            border-radius: 38px;
+
+            overflow: hidden;
+
+            background: #073149;
+        }
+
+
+        .s20-application-image {
+            position: absolute;
+
+            inset: 0;
+        }
+
+
+        .s20-application-image img {
+            width: 100%;
+            height: 100%;
+
+            display: block;
+
+            object-fit: cover;
+
+            object-position: center;
+        }
+
+
+        .s20-application-overlay {
+            position: absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(2, 24, 37, 0.96),
+                    rgba(3, 34, 51, 0.80),
+                    rgba(3, 34, 51, 0.28)
+                );
+        }
+
+
+        .s20-application-copy {
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 700px;
+        }
+
+
+        .s20-application-copy span {
+            color: var(--cyan);
+
+            font-size: 8px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.16em;
+        }
+
+
+        .s20-application-copy h2 {
+            margin-top: 18px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                clamp(42px, 5vw, 67px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -0.055em;
+        }
+
+
+        .s20-application-copy p {
+            max-width: 610px;
+
+            margin-top: 22px;
+
+            color:
+                rgba(255, 255, 255, 0.67);
+
+            font-size: 13px;
+
+            line-height: 1.85;
+        }
+
+
+        /* =========================================================
+           FINAL CTA
+        ========================================================= */
+
+        .s20-final {
+            padding:
+                0
+                0
+                100px;
+
+            background: #ffffff;
+        }
+
+
+        .s20-final-card {
+            position: relative;
+
+            padding: 72px;
+
+            color: var(--white);
+
+            background:
+                linear-gradient(
+                    125deg,
+                    #007fa7,
+                    #00a4ce,
+                    #20c6e4
+                );
+
+            border-radius: 38px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 35px 90px
+                rgba(0, 139, 182, 0.24);
+        }
+
+
+        .s20-final-card::after {
+            content: "";
+
+            position: absolute;
+
+            width: 430px;
+            height: 430px;
+
+            right: -110px;
+            bottom: -180px;
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.16);
+
+            border-radius: 50%;
+
+            box-shadow:
+
+                0 0 0 50px
+                rgba(255, 255, 255, 0.055),
+
+                0 0 0 100px
+                rgba(255, 255, 255, 0.025);
+        }
+
+
+        .s20-final-content {
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 800px;
+        }
+
+
+        .s20-final-content span {
+            font-size: 8px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.16em;
+        }
+
+
+        .s20-final-content h2 {
+            margin-top: 18px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                clamp(42px, 5vw, 67px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -0.055em;
+        }
+
+
+        .s20-final-content p {
+            max-width: 640px;
+
+            margin-top: 20px;
+
+            color:
+                rgba(255, 255, 255, 0.78);
+
+            font-size: 13px;
+
+            line-height: 1.8;
+        }
+
+
+        .s20-final-actions {
+            margin-top: 30px;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+
+        /* =========================================================
+           RESPONSIVE
+        ========================================================= */
+
+        @media (max-width: 1180px) {
+
+            .s20-hero-layout {
+                gap: 45px;
+            }
+
+
+            .s20-performance-shell {
+                grid-template-columns:
+                    1fr
+                    1fr;
+            }
+
+
+            .s20-performance-item:nth-child(2) {
+                border-right: none;
+            }
+
+
+            .s20-performance-item:nth-child(-n + 2) {
+                border-bottom:
+                    1px solid
+                    rgba(255, 255, 255, 0.14);
+            }
+
+        }
+
+
+        @media (max-width: 980px) {
+
+            .s20-hero {
+                min-height: auto;
+
+                padding:
+                    160px
+                    0
+                    80px;
+            }
+
+
+            .s20-hero-layout,
+            .s20-intro-layout,
+            .s20-stacking-layout,
+            .s20-benefits-layout,
+            .s20-facts-shell {
+                grid-template-columns: 1fr;
+            }
+
+
+            .s20-hero-visual {
+                min-height: 500px;
+            }
+
+
+            .s20-hero-image {
+                inset: 20px 0;
+            }
+
+
+            .s20-intro-layout,
+            .s20-stacking-layout,
+            .s20-benefits-layout {
+                gap: 55px;
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .s20-hero {
+                padding:
+                    135px
+                    0
+                    60px;
+            }
+
+
+            .s20-hero h1 {
+                font-size:
+                    clamp(46px, 13vw, 66px);
+            }
+
+
+            .s20-hero-visual {
+                min-height: 400px;
+            }
+
+
+            .s20-hero-image {
+                inset: 0;
+            }
+
+
+            .s20-hero-image img {
+                max-height: 380px;
+            }
+
+
+            .s20-floating-one {
+                left: 10px;
+                top: -12px;
+            }
+
+
+            .s20-floating-two {
+                right: 10px;
+                bottom: -12px;
+            }
+
+
+            .s20-intro,
+            .s20-stacking,
+            .s20-benefits-section,
+            .s20-facts {
+                padding:
+                    95px
+                    0;
+            }
+
+
+            .s20-points {
+                grid-template-columns: 1fr;
+            }
+
+
+            .s20-performance {
+                padding-bottom: 95px;
+            }
+
+
+            .s20-performance-shell {
+                grid-template-columns: 1fr;
+            }
+
+
+            .s20-performance-item {
+                min-height: 155px;
+
+                border-right: none;
+
+                border-bottom:
+                    1px solid
+                    rgba(255, 255, 255, 0.14);
+            }
+
+
+            .s20-performance-item:last-child {
+                border-bottom: none;
+            }
+
+
+            .s20-facts-shell {
+                padding: 32px 24px;
+
+                gap: 40px;
+            }
+
+
+            .s20-fact-row {
+                grid-template-columns: 1fr;
+
+                gap: 8px;
+            }
+
+
+            .s20-application {
+                padding-bottom: 95px;
+            }
+
+
+            .s20-application-shell {
+                min-height: 500px;
+
+                padding: 38px 26px;
+
+                border-radius: 28px;
+            }
+
+
+            .s20-final {
+                padding-bottom: 70px;
+            }
+
+
+            .s20-final-card {
+                padding: 52px 28px;
+
+                border-radius: 28px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="s20-page">
+
+
+    <!-- =========================================================
+         SCROLL PROGRESS
+    ========================================================== -->
+
+    <div id="scrollProgress"></div>
+
+
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
+
+    <header
+        class="site-header"
+        id="siteHeader"
+    >
+
+        <div class="nav-shell">
+
+
+            <a
+                href="index.html"
+                class="brand"
+                aria-label="ESBD Home"
+            >
+
+                <img
+                    src="images/logo.png"
+                    alt="ESBD"
+                >
+
+            </a>
+
+
+            <div class="nav-pill">
+
+                <nav
+                    class="desktop-nav"
+                    aria-label="Primary navigation"
+                >
+
+                    <a href="clients.html">
+                        Clients
+                    </a>
+
+                    <a href="features.html">
+                        Features
+                    </a>
+
+                    <a href="products.html">
+                        Products
+                    </a>
+
+
+                    <!-- SOLARIS -->
+
+                    <div class="nav-dropdown">
+
+                        <a
+                            href="solaris.html"
+                            class="nav-dropdown-toggle"
+                        >
+
+                            Solaris
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </a>
+
+
+                        <div class="nav-dropdown-menu">
+
+                            <a href="solaris-5-10-25.html">
+                                Solaris 5, 10 &amp; 25
+                            </a>
+
+                            <a
+                                href="solaris-s20.html"
+                                aria-current="page"
+                            >
+                                Solaris S20
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PALLET PORTER -->
+
+                    <div class="nav-dropdown">
+
+                        <a
+                            href="pallet-porter.html"
+                            class="nav-dropdown-toggle"
+                        >
+
+                            Pallet Porter
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </a>
+
+
+                        <div class="nav-dropdown-menu">
+
+                            <a href="single-pallet-porter-reusable.html">
+                                Single Pallet Porter – Reusable
+                            </a>
+
+                            <a href="single-pallet-porter-recyclable.html">
+                                Single Pallet Porter – Recyclable
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="why-us.html">
+                        Why Us
+                    </a>
+
+
+                    <a
+                        href="contact.html"
+                        class="nav-cta"
+                    >
+
+                        Contact Us
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+                </nav>
+
+
+                <button
+                    class="menu-btn"
+                    id="menuButton"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                >
+
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             MOBILE DRAWER
+        ====================================================== -->
+
+        <div
+            class="mobile-drawer"
+            id="mobileDrawer"
+        >
+
+            <a href="clients.html">
+
+                <span>
+                    01
+                </span>
+
+                Clients
+
+            </a>
+
+
+            <a href="features.html">
+
+                <span>
+                    02
+                </span>
+
+                Features
+
+            </a>
+
+
+            <a href="products.html">
+
+                <span>
+                    03
+                </span>
+
+                Products
+
+            </a>
+
+
+            <details class="mobile-submenu">
+
+                <summary>
+
+                    <span class="mobile-nav-number">
+                        04
+                    </span>
+
+                    <strong>
+                        Solaris
+                    </strong>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </summary>
+
+
+                <div class="mobile-submenu-links">
+
+                    <a href="solaris.html">
+                        Solaris Overview
+                    </a>
+
+                    <a href="solaris-5-10-25.html">
+                        Solaris 5, 10 &amp; 25
+                    </a>
+
+                    <a href="solaris-s20.html">
+                        Solaris S20
+                    </a>
+
+                </div>
+
+            </details>
+
+
+            <details class="mobile-submenu">
+
+                <summary>
+
+                    <span class="mobile-nav-number">
+                        05
+                    </span>
+
+                    <strong>
+                        Pallet Porter
+                    </strong>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </summary>
+
+
+                <div class="mobile-submenu-links">
+
+                    <a href="pallet-porter.html">
+                        Pallet Porter Overview
+                    </a>
+
+                    <a href="single-pallet-porter-reusable.html">
+                        Single Pallet Porter – Reusable
+                    </a>
+
+                    <a href="single-pallet-porter-recyclable.html">
+                        Single Pallet Porter – Recyclable
+                    </a>
+
+                </div>
+
+            </details>
+
+
+            <a href="why-us.html">
+
+                <span>
+                    06
+                </span>
+
+                Why Us
+
+            </a>
+
+
+            <a
+                href="contact.html"
+                class="mobile-drawer-cta"
+            >
+
+                Contact Us
+
+                <span>
+                    ↗
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         MAIN
+    ========================================================== -->
+
+    <main>
+
+
+        <!-- =====================================================
+             HERO
+             REUSED SOLARIS IMAGE 03
+        ====================================================== -->
+
+        <section class="s20-hero">
+
+            <div class="s20-hero-grid"></div>
+
+            <div class="s20-hero-glow"></div>
+
+
+            <div class="container">
+
+                <div class="s20-hero-layout">
+
+
+                    <div class="s20-hero-copy reveal-left">
+
+                        <div class="s20-eyebrow">
+
+                            <i class="fa-solid fa-boxes-stacked"></i>
+
+                            Solaris / S20
+
+                        </div>
+
+
+                        <h1>
+
+                            Thermal protection.
+
+                            <span>
+                                Built to stack.
+                            </span>
+
+                        </h1>
+
+
+                        <p class="s20-hero-lead">
+
+                            Solaris S20 combines the thermal protection
+                            of the Solaris range with structural strength
+                            that allows pallets to be stacked.
+
+                            Protect temperature-sensitive cargo, maximise
+                            available cube and unlock more freight capacity
+                            from the same transport space.
+
+                        </p>
+
+
+                        <div class="s20-hero-actions">
+
+                            <a
+                                href="#s20-stacking"
+                                class="btn btn-primary"
+                            >
+
+                                See How It Stacks
+
+                                <i class="fa-solid fa-arrow-down"></i>
+
+                            </a>
+
+
+                            <a
+                                href="contact.html"
+                                class="btn btn-glass"
+                            >
+
+                                Talk to ESBD
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="s20-hero-tags">
+
+                            <span class="s20-hero-tag">
+
+                                <i class="fa-solid fa-layer-group"></i>
+
+                                Stackable
+
+                            </span>
+
+
+                            <span class="s20-hero-tag">
+
+                                <i class="fa-solid fa-weight-hanging"></i>
+
+                                Up to 500kg
+
+                            </span>
+
+
+                            <span class="s20-hero-tag">
+
+                                <i class="fa-solid fa-recycle"></i>
+
+                                100% Recyclable
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="s20-hero-visual reveal-right">
+
+
+                        <div
+                            class="s20-image
+                                   s20-hero-image"
+                        >
+
+                            <img
+                                src="images/IMAGE PLACEHOLDER 03.jpg"
+                                alt="Solaris paper-based thermal pallet protection"
+                            >
+
+                        </div>
+
+
+                        <div
+                            class="s20-floating-card
+                                   s20-floating-one"
+                        >
+
+                            <span>
+                                WALL THICKNESS
+                            </span>
+
+                            <strong>
+                                35mm
+                            </strong>
+
+                        </div>
+
+
+                        <div
+                            class="s20-floating-card
+                                   s20-floating-two"
+                        >
+
+                            <span>
+                                STACK LOAD
+                            </span>
+
+                            <strong>
+                                Up to 500kg
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             INTRO
+             REUSED SOLARIS IMAGE 01
+        ====================================================== -->
+
+        <section class="s20-intro">
+
+            <div class="container">
+
+                <div class="s20-intro-layout">
+
+
+                    <div
+                        class="s20-image
+                               s20-intro-image
+                               reveal-left"
+                    >
+
+                        <img
+                            src="images/IMAGE PLACEHOLDER 01.png"
+                            alt="Solaris thermal pallet protection"
+                        >
+
+                    </div>
+
+
+                    <div class="reveal-right">
+
+                        <div class="s20-kicker">
+
+                            01 / Stackable Thermal Protection
+
+                        </div>
+
+
+                        <h2 class="s20-title">
+
+                            Protect the load.
+
+                            <em>
+                                Then build above it.
+                            </em>
+
+                        </h2>
+
+
+                        <p class="s20-copy">
+
+                            Solaris S20 provides the paper-based thermal
+                            protection of the Solaris range while adding a
+                            rigid structural shell around the pallet.
+
+                        </p>
+
+
+                        <p class="s20-copy">
+
+                            Constructed from corrugated, water-resistant
+                            cardboard laminated to insulating embossed paper,
+                            S20 is designed to withstand freight handling,
+                            impacts and crushing while supporting an additional
+                            load above the protected pallet.
+
+                        </p>
+
+
+                        <div class="s20-points">
+
+
+                            <div class="s20-point">
+
+                                <i class="fa-solid fa-temperature-half"></i>
+
+                                <span>
+                                    Reliable thermal protection
+                                </span>
+
+                            </div>
+
+
+                            <div class="s20-point">
+
+                                <i class="fa-solid fa-recycle"></i>
+
+                                <span>
+                                    100% recyclable paper insulation
+                                </span>
+
+                            </div>
+
+
+                            <div class="s20-point">
+
+                                <i class="fa-solid fa-shield-halved"></i>
+
+                                <span>
+                                    Structural cargo protection
+                                </span>
+
+                            </div>
+
+
+                            <div class="s20-point">
+
+                                <i class="fa-solid fa-boxes-stacked"></i>
+
+                                <span>
+                                    Maximise available cube
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PERFORMANCE STRIP
+        ====================================================== -->
+
+        <section class="s20-performance">
+
+            <div class="container">
+
+                <div class="s20-performance-shell reveal">
+
+
+                    <div class="s20-performance-item">
+
+                        <span>
+                            HOT STRESS / 40°C
+                        </span>
+
+                        <strong>
+                            12h
+                        </strong>
+
+                        <small>
+                            WHO hot stress temperature profile performance.
+                        </small>
+
+                    </div>
+
+
+                    <div class="s20-performance-item">
+
+                        <span>
+                            COLD STRESS / -10°C
+                        </span>
+
+                        <strong>
+                            7h
+                        </strong>
+
+                        <small>
+                            WHO cold stress temperature profile performance.
+                        </small>
+
+                    </div>
+
+
+                    <div class="s20-performance-item">
+
+                        <span>
+                            STACKING
+                        </span>
+
+                        <strong>
+                            500kg
+                        </strong>
+
+                        <small>
+                            Maximum supported load stacked above each unit.
+                        </small>
+
+                    </div>
+
+
+                    <div class="s20-performance-item">
+
+                        <span>
+                            WALL
+                        </span>
+
+                        <strong>
+                            35mm
+                        </strong>
+
+                        <small>
+                            Structural corrugated thermal protection system.
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             STACKING
+             ATTACHED IMAGE USED HERE
+        ====================================================== -->
+
+        <section
+            class="s20-stacking"
+            id="s20-stacking"
+        >
+
+            <div class="container">
+
+                <div class="s20-stacking-layout">
+
+
+                    <div
+                        class="s20-image
+                               s20-stack-image
+                               reveal-left"
+                    >
+
+                        <!--
+                            ATTACHED S20 STACKING RENDER
+
+                            Put the uploaded image inside /images
+                            using this exact filename:
+                            render_n17_XS20_stacked_4_row_REV_2.png
+                        -->
+
+                        <img
+                            src="images/render_n17_XS20_stacked_4_row_REV_2.png"
+                            alt="Solaris S20 stackable thermal pallet covers supporting palletised goods"
+                        >
+
+                    </div>
+
+
+                    <div class="reveal-right">
+
+                        <div class="s20-kicker">
+
+                            02 / Structural Protection
+
+                        </div>
+
+
+                        <h2 class="s20-title">
+
+                            One protected pallet.
+
+                            <em>
+                                Another level above it.
+                            </em>
+
+                        </h2>
+
+
+                        <p class="s20-copy">
+
+                            The structural strength of Solaris S20 allows
+                            another palletised load to be positioned above
+                            the protected goods.
+
+                            This turns unused vertical space into usable
+                            freight capacity without placing the weight of
+                            the upper load directly onto the cargo below.
+
+                        </p>
+
+
+                        <div class="s20-stack-list">
+
+
+                            <div class="s20-stack-item">
+
+                                <div class="s20-stack-number">
+                                    01
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Structural Corrugated Shell
+                                    </strong>
+
+                                    <p>
+
+                                        The rigid outer construction forms
+                                        a protective structure around the
+                                        temperature-sensitive load.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="s20-stack-item">
+
+                                <div class="s20-stack-number">
+                                    02
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Up to 500kg Above
+                                    </strong>
+
+                                    <p>
+
+                                        The S20 structure is designed to
+                                        support loads of up to 500kg stacked
+                                        above each protected pallet.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="s20-stack-item">
+
+                                <div class="s20-stack-number">
+                                    03
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        More Freight per Journey
+                                    </strong>
+
+                                    <p>
+
+                                        By using vertical space, operations
+                                        can increase freight utilisation
+                                        across land, sea and air transport.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             BENEFITS
+             REUSED SOLARIS IMAGE 02
+        ====================================================== -->
+
+        <section class="s20-benefits-section">
+
+            <div class="container">
+
+                <div class="s20-benefits-layout">
+
+
+                    <div class="reveal-left">
+
+                        <div class="s20-kicker">
+
+                            03 / Why Solaris S20?
+
+                        </div>
+
+
+                        <h2 class="s20-title">
+
+                            Thermal protection.
+
+                            <em>
+                                Structural efficiency.
+                            </em>
+
+                        </h2>
+
+
+                        <p class="s20-copy">
+
+                            S20 is designed for cold-chain operations that
+                            need more than a thermal cover.
+
+                            It combines recyclable paper-based insulation
+                            with a rigid protective structure that helps
+                            safeguard cargo and make better use of available
+                            freight space.
+
+                        </p>
+
+
+                        <div class="s20-benefits">
+
+
+                            <div class="s20-benefit">
+
+                                <i class="fa-solid fa-temperature-half"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Reliable Thermal Protection
+                                    </strong>
+
+                                    <span>
+                                        Protect temperature-sensitive cargo against extreme excursions.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="s20-benefit">
+
+                                <i class="fa-solid fa-recycle"></i>
+
+                                <div>
+
+                                    <strong>
+                                        100% Recyclable Paper Insulation
+                                    </strong>
+
+                                    <span>
+                                        A paper-based alternative to thick plastic and foil covers.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="s20-benefit">
+
+                                <i class="fa-solid fa-ban"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Reduce Plastic
+                                    </strong>
+
+                                    <span>
+                                        Replace conventional plastic-based thermal cover construction.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="s20-benefit">
+
+                                <i class="fa-solid fa-shield-halved"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Protect Cargo
+                                    </strong>
+
+                                    <span>
+                                        Structural protection helps resist impact, crushing and handling risk.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="s20-benefit">
+
+                                <i class="fa-solid fa-boxes-stacked"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Maximise Cube
+                                    </strong>
+
+                                    <span>
+                                        Create usable freight space above the protected pallet.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="s20-image
+                               s20-benefit-image
+                               reveal-right"
+                    >
+
+                        <img
+                            src="images/IMAGE PLACEHOLDER 02.png"
+                            alt="Solaris thermal protection for palletised freight"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FACT FILE
+        ====================================================== -->
+
+        <section class="s20-facts">
+
+            <div class="container">
+
+                <div class="s20-facts-shell reveal">
+
+
+                    <div class="s20-facts-intro">
+
+                        <div class="s20-kicker">
+
+                            04 / Fact File
+
+                        </div>
+
+
+                        <h3>
+                            Solaris S20.
+                        </h3>
+
+
+                        <p>
+
+                            The structural member of the Solaris range,
+                            combining paper-based thermal insulation with
+                            stackable pallet protection.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="s20-fact-list">
+
+
+                        <div class="s20-fact-row">
+
+                            <span>
+                                Thermal Protection Material
+                            </span>
+
+                            <strong>
+
+                                Structural corrugated water-resistant
+                                cardboard laminated to embossed paper
+
+                            </strong>
+
+                        </div>
+
+
+                        <div class="s20-fact-row">
+
+                            <span>
+                                Wall Thickness
+                            </span>
+
+                            <strong>
+                                35mm
+                            </strong>
+
+                        </div>
+
+
+                        <div class="s20-fact-row">
+
+                            <span>
+                                40°C Hot Stress
+                            </span>
+
+                            <strong>
+                                12 hours
+                            </strong>
+
+                        </div>
+
+
+                        <div class="s20-fact-row">
+
+                            <span>
+                                -10°C Cold Stress
+                            </span>
+
+                            <strong>
+                                7 hours
+                            </strong>
+
+                        </div>
+
+
+                        <div class="s20-fact-row">
+
+                            <span>
+                                Stacking
+                            </span>
+
+                            <strong>
+                                Yes — up to 500kg
+                            </strong>
+
+                        </div>
+
+
+                        <div class="s20-fact-row">
+
+                            <span>
+                                Dimensions
+                            </span>
+
+                            <strong>
+
+                                Available in Euro, Standard and
+                                US pallet sizes
+
+                            </strong>
+
+                        </div>
+
+
+                        <div class="s20-fact-row">
+
+                            <span>
+                                Weight
+                            </span>
+
+                            <strong>
+                                14kg
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FREIGHT APPLICATION
+             REUSES SOLARIS IMAGE 08
+        ====================================================== -->
+
+        <section class="s20-application">
+
+            <div class="container">
+
+                <div class="s20-application-shell reveal">
+
+
+                    <div class="s20-application-image">
+
+                        <img
+                            src="images/IMAGE PLACEHOLDER 08.png"
+                            alt="Cold-chain freight and logistics"
+                        >
+
+                    </div>
+
+
+                    <div class="s20-application-overlay"></div>
+
+
+                    <div class="s20-application-copy">
+
+                        <span>
+                            LAND / SEA / AIR
+                        </span>
+
+
+                        <h2>
+
+                            Protect more.
+                            Carry more.
+
+                        </h2>
+
+
+                        <p>
+
+                            Solaris S20 brings thermal protection and
+                            payload optimisation together.
+
+                            Its stackable structure allows cold-chain
+                            operations to make better use of available
+                            transport cube while continuing to protect
+                            temperature-sensitive palletised goods.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FINAL CTA
+        ====================================================== -->
+
+        <section class="s20-final">
+
+            <div class="container">
+
+                <div class="s20-final-card reveal">
+
+                    <div class="s20-final-content">
+
+                        <span>
+                            SOLARIS S20 / STACKABLE THERMAL PROTECTION
+                        </span>
+
+
+                        <h2>
+
+                            What if thermal protection
+                            could create more capacity?
+
+                        </h2>
+
+
+                        <p>
+
+                            Talk to ESBD about your pallet dimensions,
+                            temperature profile, freight configuration
+                            and stacking requirements.
+
+                            We can help determine where Solaris S20 can
+                            protect the cargo while improving how much
+                            freight your existing transport space can carry.
+
+                        </p>
+
+
+                        <div class="s20-final-actions">
+
+                            <a
+                                href="contact.html"
+                                class="btn btn-white"
+                            >
+
+                                Talk to ESBD
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+
+                            <a
+                                href="solaris.html"
+                                class="btn btn-outline-white"
+                            >
+
+                                Solaris Overview
+
+                            </a>
+
+
+                            <a
+                                href="solaris-5-10-25.html"
+                                class="btn btn-outline-white"
+                            >
+
+                                Solaris 5, 10 &amp; 25
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-shell">
+
+
+                <div class="footer-main">
+
+
+                    <div class="footer-brand">
+
+                        <a
+                            href="index.html"
+                            aria-label="ESBD Home"
+                        >
+
+                            <img
+                                src="images/logo.png"
+                                alt="ESBD"
+                            >
+
+                        </a>
+
+
+                        <p>
+
+                            Reusable thermal packaging solutions
+                            supporting temperature-sensitive
+                            cold-chain distribution.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="footer-col">
+
+                        <span>
+                            NAVIGATION
+                        </span>
+
+                        <a href="clients.html">
+                            Clients
+                        </a>
+
+                        <a href="features.html">
+                            Features
+                        </a>
+
+                        <a href="products.html">
+                            Products
+                        </a>
+
+                        <a href="why-us.html">
+                            Why Us
+                        </a>
+
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-col">
+
+                        <span>
+                            PRODUCTS
+                        </span>
+
+                        <a href="solaris.html">
+                            Solaris
+                        </a>
+
+                        <a href="solaris-5-10-25.html">
+                            Solaris 5, 10 &amp; 25
+                        </a>
+
+                        <a href="solaris-s20.html">
+                            Solaris S20
+                        </a>
+
+                        <a href="pallet-porter.html">
+                            Pallet Porter
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-col">
+
+                        <span>
+                            CONNECT
+                        </span>
+
+                        <a href="contact.html">
+                            Contact ESBD ↗
+                        </a>
+
+
+                        <a
+                            href="https://www.linkedin.com/company/es-business-development/"
+                            class="footer-linkedin"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="ES Business Development on LinkedIn"
+                            title="LinkedIn"
+                        >
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.352V9h3.414v1.561h.047c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.371 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9H7.12v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+
+                            </svg>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-bottom">
+
+                    <span>
+
+                        © <span id="currentYear"></span>
+                        ESBD. All rights reserved.
+
+                    </span>
+
+                    <span>
+                        Taking your packaging further.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         BACK TO TOP
+    ========================================================== -->
+
+    <button
+        id="backToTop"
+        type="button"
+        aria-label="Back to top"
+    >
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
