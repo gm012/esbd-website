@@ -1,0 +1,1 @@
+Replace these HTML files and launch.css in your existing updated ESBD website folder. Keep the other files in place. Refresh your browser cache after uploading. This package changes only the footer placement and appearance.
