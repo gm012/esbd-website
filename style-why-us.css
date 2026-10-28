@@ -199,7 +199,7 @@
 
     font-weight: 500;
 
-    line-height: 0.94;
+    line-height: 1.12;
 
     letter-spacing:
         -0.065em;
@@ -222,13 +222,7 @@
 
     margin-top: 31px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.62
-        );
+    color: rgba(255,255,255,0.72);
 
     font-size: 14px;
 
@@ -383,15 +377,9 @@
     justify-content:
         space-between;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.42
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -475,7 +463,7 @@
 
     color: var(--cyan);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -511,15 +499,9 @@
 
 .why-system-core > span {
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.38
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -576,15 +558,9 @@
 
     display: block;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.28
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 6px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -597,15 +573,9 @@
 
     margin-top: 5px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.72
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: 600;
 
@@ -696,7 +666,7 @@
 
     font-weight: 500;
 
-    line-height: 0.98;
+    line-height: 1.12;
 
     letter-spacing:
         -0.06em;
@@ -860,7 +830,7 @@
 
     color: var(--muted-light);
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -873,13 +843,7 @@
 .why-principle-blue
 .why-principle-number {
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.45
-        );
+    color: rgba(255,255,255,0.72);
 
 }
 
@@ -1119,7 +1083,7 @@
 
     color: var(--blue);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1151,7 +1115,7 @@
 
     font-weight: 500;
 
-    line-height: 1.05;
+    line-height: 1.12;
 
     letter-spacing:
         -0.045em;
@@ -1177,13 +1141,7 @@
 .why-principle-blue
 .why-principle-copy p {
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.72
-        );
+    color: rgba(255,255,255,0.72);
 
 }
 
@@ -1293,7 +1251,7 @@
 
     font-weight: 500;
 
-    line-height: 0.95;
+    line-height: 1.12;
 
     letter-spacing:
         -0.065em;
@@ -1310,13 +1268,7 @@
         0
         34px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.60
-        );
+    color: rgba(255,255,255,0.72);
 
     font-size: 14px;
 
@@ -1414,15 +1366,9 @@
 
     margin-bottom: auto;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.26
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1460,15 +1406,9 @@
 
     margin-top: 10px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.57
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 11px;
+    font-size: 12px;
 
     line-height: 1.55;
 
@@ -1523,7 +1463,7 @@
 
     font-weight: 500;
 
-    line-height: 0.98;
+    line-height: 1.12;
 
     letter-spacing:
         -0.06em;
@@ -1740,7 +1680,7 @@
 
     color: var(--muted-light);
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1750,13 +1690,7 @@
 .industry-card-blue
 .industry-number {
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.45
-        );
+    color: rgba(255,255,255,0.72);
 
 }
 
@@ -1774,7 +1708,7 @@
 
     color: var(--blue);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1806,7 +1740,7 @@
 
     font-weight: 500;
 
-    line-height: 1.08;
+    line-height: 1.12;
 
     letter-spacing:
         -0.045em;
@@ -1921,7 +1855,7 @@
 
     color: var(--blue);
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1950,7 +1884,7 @@
 
     font-weight: 500;
 
-    line-height: 1;
+    line-height: 1.12;
 
     letter-spacing:
         -0.055em;
@@ -2034,7 +1968,7 @@
 
     border-radius: 999px;
 
-    font-size: 10px;
+    font-size: 12px;
 
     font-weight: 700;
 
@@ -2149,7 +2083,7 @@
 
     font-weight: 500;
 
-    line-height: 0.97;
+    line-height: 1.12;
 
     letter-spacing:
         -0.06em;
@@ -2163,13 +2097,7 @@
 
     margin-top: 20px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.75
-        );
+    color: rgba(255,255,255,0.75);
 
     font-size: 13px;
 
@@ -2211,7 +2139,7 @@
 
     border-radius: 999px;
 
-    font-size: 10px;
+    font-size: 12px;
 
     font-weight: 700;
 

@@ -2442,13 +2442,16 @@ const finderLabels = {
         reuse: "REUSABILITY",
         monitoring: "MONITORING & REPORTING",
         compliance: "QUALITY / COMPLIANCE",
-        branding: "BRANDING / CUSTOMISATION"
+        branding: "BRANDING / CUSTOMISATION", capacity: "PAYLOAD CAPACITY"
     }
 
 };
 
 
 const finderProducts = {
+    solaris: { title: "Solaris", image: "images/IMAGE PLACEHOLDER 02.webp", page: "solaris.html" },
+    porter: { title: "Pallet Porter", image: "images/cargo.png", page: "pallet-porter.html" },
+    reusablePorter: { title: "Single Pallet Porter – Reusable", image: "images/cargo.png", page: "single-pallet-porter-reusable.html" },
 
     topLoader: {
         title: "Top Loader Boxes",
@@ -2723,100 +2726,42 @@ function updateFinderSummary() {
 // =========================================================
 
 function getFinderRecommendation() {
-
-    let primary =
-        finderProducts.topLoader;
-
-    if (
-        finderAnswers.load ===
-        "pallet"
-    ) {
-
-        primary =
-            finderProducts.pallet;
-
-    } else if (
-        finderAnswers.load ===
-        "oversized"
-    ) {
-
-        primary =
-            finderProducts.blanket;
-
+    const { cargo, temperature, load, priority } = finderAnswers;
+    let primary = load === "pallet" ? finderProducts.pallet :
+        load === "oversized" ? finderProducts.blanket : finderProducts.topLoader;
+    // This routes an enquiry, never qualifies packaging for a temperature profile.
+    if (load === "pallet" && temperature === "ambient") primary = finderProducts.solaris;
+    if (temperature === "unknown" || cargo === "chemicals" || priority === "branding") {
+        primary = finderProducts.customised;
     }
-
-
     let support = null;
-
-    if (
-        finderAnswers.priority ===
-        "monitoring"
-    ) {
-
-        support =
-            finderProducts.reporting;
-
-    } else if (
-        finderAnswers.priority ===
-        "compliance"
-    ) {
-
-        support =
-            finderProducts.quality;
-
-    } else if (
-        finderAnswers.priority ===
-        "branding"
-    ) {
-
-        support =
-            finderProducts.customised;
-
-    }
-
-
-    const cargoLabel =
-        finderLabels.cargo[
-            finderAnswers.cargo
-        ] || "YOUR PRODUCT";
-
-    const temperatureLabel =
-        finderLabels.temperature[
-            finderAnswers.temperature
-        ] || "YOUR THERMAL REQUIREMENT";
-
-    const loadLabel =
-        finderLabels.load[
-            finderAnswers.load
-        ] || "YOUR LOAD FORMAT";
-
-
-    let reason =
-        `Based on ${loadLabel.toLowerCase()} as the load format, ` +
-        `${primary.title} is the most relevant ESBD solution to discuss first. ` +
-        `Your ${temperatureLabel.toLowerCase()} requirement and ${cargoLabel.toLowerCase()} ` +
-        `profile can then be validated with ESBD before a final specification is made.`;
-
-
-    if (
-        finderAnswers.priority ===
-        "reuse"
-    ) {
-
-        reason +=
-            " Reusability should remain a core requirement during that validation.";
-
-    }
-
-
-    return {
-        primary,
-        support,
-        reason
+    if (priority === "monitoring") support = finderProducts.reporting;
+    else if (priority === "compliance" || cargo === "pharma") support = finderProducts.quality;
+    if (load === "pallet" && priority === "capacity") support = finderProducts.porter;
+    if (load === "pallet" && priority === "reuse" && cargo !== "pharma") support = finderProducts.reusablePorter;
+    const cargoNotes = {
+        pharma: "For pharmaceuticals, ask ESBD to confirm qualification evidence and handling requirements.",
+        food: "For food shipments, discuss product sensitivity, hygiene and the receiving conditions.",
+        chemicals: "Chemical compatibility and handling restrictions need specialist assessment before choosing packaging.",
+        general: "Discuss the sensitivity and handling requirements of the goods."
     };
-
+    const temperatureNotes = {
+        "2-8": "Your 2–8°C requirement needs a validated pack-out for the full journey duration.",
+        chilled: "Confirm the exact chilled range and required hold time before selecting a configuration.",
+        ambient: "Discuss the ambient exposure, route and duration to establish the protection required.",
+        unknown: "ESBD first needs to establish the required temperature range and journey duration."
+    };
+    const priorityNotes = {
+        reuse: "Discuss recovery, cleaning and the return cycle before selecting a reusable system.",
+        monitoring: "Include monitoring equipment and the reporting required at each handover.",
+        compliance: "Confirm the checks, records and applicable qualification requirements.",
+        branding: "Share approved artwork and any custom dimensions or identification requirements.",
+        capacity: load === "pallet" ? "Pallet Porter is an additional payload option to discuss; it does not replace thermal protection." : "Confirm the pallet configuration with ESBD before considering a second-level payload system."
+    };
+    const reason = `${finderLabels.load[load] || "Your load"}: ${primary.title} is a starting point for discussion. ` +
+        `${cargoNotes[cargo] || ""} ${temperatureNotes[temperature] || ""} ${priorityNotes[priority] || ""}`;
+    return { primary, support, reason };
 }
-
 
 // =========================================================
 // FINDER / RESULT RENDER
@@ -2846,8 +2791,7 @@ function renderFinderResult() {
         finderResultImage.src =
             recommendation.primary.image;
 
-        finderResultImage.alt =
-            recommendation.primary.title;
+        finderResultImage.alt = recommendation.primary === finderProducts.solaris ? "ESBD-branded pallet cover render" : "";
 
     }
 

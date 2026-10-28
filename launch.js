@@ -67,13 +67,32 @@
     });
   }
   // Pause controls for decorative motion, including reduced-motion visitors.
+  const utilities = document.createElement('div'); utilities.className = 'footer-utilities';
+  const footer = document.querySelector('.footer-shell');
+  if (footer) { footer.append(utilities); const top = document.querySelector('#backToTop'); if (top) utilities.append(top); }
   const videos = [...document.querySelectorAll('video')];
   if (videos.length) {
     const button = document.createElement('button'); button.className = 'motion-toggle'; button.type = 'button';
-    let paused = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    function update() { button.textContent = paused ? 'Play background motion' : 'Pause background motion'; videos.forEach(v => { if (paused) { v.autoplay = false; v.pause(); } else v.play().catch(() => {}); }); }
-    videos.forEach(v => v.addEventListener('play', () => { if (paused) v.pause(); }));
-    button.addEventListener('click', () => { paused = !paused; update(); }); document.body.append(button); update();
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+    let paused = reduced.matches || matchMedia('(max-width: 767px)').matches || Boolean(navigator.connection?.saveData);
+    const visible = new Set();
+    function play(video) {
+      const source = video.querySelector('source[data-src]');
+      if (source && !source.hasAttribute('src')) { source.src = source.dataset.src; video.load(); }
+      video.play().catch(() => {});
+    }
+    function update() {
+      button.textContent = paused ? 'Play background motion' : 'Pause background motion';
+      button.setAttribute('aria-pressed', String(!paused));
+      videos.forEach(video => { if (paused || !visible.has(video)) video.pause(); else play(video); });
+    }
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if (entry.isIntersecting) visible.add(entry.target); else visible.delete(entry.target); });
+      update();
+    }, {rootMargin: '100px'});
+    videos.forEach(video => { observer.observe(video); video.addEventListener('play', () => { if (paused) video.pause(); }); });
+    reduced.addEventListener('change', event => { if (event.matches) { paused = true; update(); } });
+    button.addEventListener('click', () => { paused = !paused; update(); }); (footer ? utilities : document.body).append(button); update();
   }
   document.querySelectorAll('img').forEach(img => { if (img.getBoundingClientRect().top > innerHeight * 1.5) img.loading = 'lazy'; });
   const menu = document.querySelector('#menuButton'), drawer = document.querySelector('#mobileDrawer');

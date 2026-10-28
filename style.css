@@ -489,7 +489,7 @@ button {
 
     font-family: "Inter", sans-serif;
 
-    font-size: 9px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -591,7 +591,7 @@ button {
 
     color: var(--blue);
 
-    font-size: 8px;
+    font-size: 12px;
 
     transition:
         transform 0.25s ease;
@@ -697,7 +697,7 @@ button {
 
     border-radius: 12px;
 
-    font-size: 11px;
+    font-size: 12px;
 
     font-weight: 600;
 
@@ -773,7 +773,7 @@ button {
 
     font-family: "Inter", sans-serif;
 
-    font-size: 9px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -886,7 +886,7 @@ button {
 
     border-radius: 999px;
 
-    font-size: 11px;
+    font-size: 12px;
 
     font-weight: 700;
 
@@ -1192,7 +1192,7 @@ button {
 
     backdrop-filter: blur(12px);
 
-    font-size: 9px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1214,7 +1214,7 @@ button {
 
     font-weight: 500;
 
-    line-height: 0.99;
+    line-height: 1.12;
 
     letter-spacing: -0.055em;
 
@@ -1260,7 +1260,7 @@ button {
 
     margin-top: 18px;
 
-    color: rgba(255, 255, 255, 0.61);
+    color: rgba(255,255,255,0.72);
 
     font-size: 13px;
 
@@ -1304,7 +1304,7 @@ button {
 
     gap: 8px;
 
-    color: rgba(255, 255, 255, 0.68);
+    color: rgba(255,255,255,0.72);
 
     background: rgba(255, 255, 255, 0.055);
 
@@ -1314,7 +1314,7 @@ button {
 
     backdrop-filter: blur(10px);
 
-    font-size: 9px;
+    font-size: 12px;
 
     font-weight: 600;
 
@@ -1422,9 +1422,9 @@ button {
 
 .dashboard-top span {
 
-    color: rgba(255, 255, 255, 0.28);
+    color: rgba(255,255,255,0.72);
 
-    font-size: 6px;
+    font-size: 12px;
 
     font-weight: 700;
 
@@ -1497,7 +1497,7 @@ button {
 
     color: var(--cyan);
 
-    font-size: 6px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1565,9 +1565,9 @@ button {
 
     margin-bottom: 5px;
 
-    color: rgba(255, 255, 255, 0.28);
+    color: rgba(255,255,255,0.72);
 
-    font-size: 6px;
+    font-size: 12px;
 
     font-weight: 700;
 
@@ -1579,7 +1579,7 @@ button {
 
     color: var(--white);
 
-    font-size: 8px;
+    font-size: 12px;
 
     letter-spacing: 0.07em;
 
@@ -1646,7 +1646,7 @@ button {
 
     color: var(--cyan);
 
-    font-size: 6px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1656,7 +1656,7 @@ button {
 
 .floating-performance strong {
 
-    font-size: 10px;
+    font-size: 12px;
 
 }
 
@@ -1671,7 +1671,7 @@ button {
 
     align-items: center;
 
-    font-size: 9px;
+    font-size: 12px;
 
     animation-duration: 8s;
 
@@ -1715,7 +1715,7 @@ button {
 
     color: var(--blue);
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1731,7 +1731,7 @@ button {
 
     color: var(--muted);
 
-    font-size: 10px;
+    font-size: 12px;
 
 }
 
@@ -1819,7 +1819,7 @@ button {
 
     border-radius: 999px;
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1976,7 +1976,7 @@ button {
 
     color: var(--muted-light);
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1986,7 +1986,7 @@ button {
 
 .benefit-blue .benefit-number {
 
-    color: rgba(255, 255, 255, 0.66);
+    color: rgba(255,255,255,0.72);
 
 }
 
@@ -2018,7 +2018,7 @@ button {
 
 .benefit-blue .benefit-copy p {
 
-    color: rgba(255, 255, 255, 0.78);
+    color: rgba(255,255,255,0.78);
 
 }
 
@@ -2461,7 +2461,7 @@ button {
 
     color: var(--blue);
 
-    font-size: 11px;
+    font-size: 12px;
 
     font-weight: 700;
 
@@ -2736,7 +2736,7 @@ button {
 
     color: rgba(183, 241, 251, 0.95);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -2794,7 +2794,7 @@ button {
 
     backdrop-filter: blur(8px);
 
-    font-size: 11px;
+    font-size: 12px;
 
     transition:
         background 0.25s ease,
@@ -2917,7 +2917,7 @@ button {
 
     color: var(--cyan);
 
-    font-size: 10px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -2933,7 +2933,7 @@ button {
 
     font-family: "Space Grotesk", sans-serif;
 
-    color: rgba(255, 255, 255, 0.12);
+    color: rgba(255,255,255,0.72);
 
     font-size: clamp(58px, 7vw, 105px);
 
@@ -2961,7 +2961,7 @@ button {
 
     font-weight: 500;
 
-    line-height: 1;
+    line-height: 1.12;
 
     letter-spacing: -0.055em;
 
@@ -2973,7 +2973,7 @@ button {
 
     margin: 25px 0 32px;
 
-    color: rgba(255, 255, 255, 0.60);
+    color: rgba(255,255,255,0.72);
 
     font-size: 14px;
 
@@ -3075,7 +3075,7 @@ button {
 
     font-weight: 500;
 
-    line-height: 1;
+    line-height: 1.12;
 
     letter-spacing: -0.055em;
 
@@ -3087,7 +3087,7 @@ button {
 
     margin-top: 22px;
 
-    color: rgba(255, 255, 255, 0.80);
+    color: rgba(255,255,255,0.8);
 
     font-size: 14px;
 
@@ -3234,7 +3234,7 @@ button {
 
     color: var(--muted-light);
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -3335,7 +3335,7 @@ button {
 
     border-top: 1px solid var(--line);
 
-    font-size: 9px;
+    font-size: 12px;
 
 }
 
@@ -3738,7 +3738,7 @@ button {
 
     .eyebrow {
 
-        font-size: 7px;
+        font-size: 12px;
 
         line-height: 1.4;
 
@@ -3750,7 +3750,7 @@ button {
 
         font-size: clamp(40px, 11.7vw, 51px);
 
-        line-height: 1;
+        line-height: 1.12;
 
     }
 
@@ -3850,7 +3850,7 @@ button {
 
         padding: 12px 14px;
 
-        font-size: 8px;
+        font-size: 12px;
 
     }
 
@@ -4116,8 +4116,8 @@ button {
 }
 
 .alto-transition-index {
-    color: rgba(255, 255, 255, 0.40);
-    font-size: 8px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.20em;
     text-transform: uppercase;
@@ -4210,8 +4210,8 @@ button {
 }
 
 .lab-live-temp-label {
-    color: rgba(255,255,255,0.28);
-    font-size: 6px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.15em;
 }
@@ -4404,7 +4404,7 @@ button {
     background: rgba(255,255,255,0.055);
     border: 1px solid rgba(255,255,255,0.10);
     border-radius: 999px;
-    font-size: 8px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -4415,7 +4415,7 @@ button {
     font-family: "Space Grotesk", sans-serif;
     font-size: clamp(46px, 5.4vw, 78px);
     font-weight: 500;
-    line-height: 0.95;
+    line-height: 1.12;
     letter-spacing: -0.06em;
 }
 
@@ -4435,14 +4435,14 @@ button {
 
 .journey-instruction span {
     color: var(--cyan);
-    font-size: 7px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.17em;
 }
 
 .journey-instruction small {
-    color: rgba(255,255,255,0.42);
-    font-size: 9px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     letter-spacing: 0.04em;
 }
 
@@ -4473,8 +4473,8 @@ button {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgba(255,255,255,0.08);
-    color: rgba(255,255,255,0.30);
-    font-size: 7px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.16em;
 }
@@ -4562,7 +4562,7 @@ button {
     display: grid;
     justify-items: center;
     gap: 5px;
-    color: rgba(255,255,255,0.34);
+    color: rgba(255,255,255,0.72);
     text-align: center;
 }
 
@@ -4595,15 +4595,15 @@ button {
 
 .journey-node-index {
     margin-top: 8px;
-    color: rgba(255,255,255,0.24);
-    font-size: 6px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.14em;
 }
 
 .journey-node strong {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: -0.02em;
 }
@@ -4755,13 +4755,13 @@ button {
 
 .journey-temp-badge strong {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: 500;
 }
 
 .journey-temp-badge span {
     color: var(--cyan);
-    font-size: 5px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.13em;
 }
@@ -4809,7 +4809,7 @@ button {
 
 .journey-stage-copy > span {
     color: var(--cyan);
-    font-size: 7px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.16em;
 }
@@ -4819,15 +4819,15 @@ button {
     font-family: "Space Grotesk", sans-serif;
     font-size: clamp(25px, 2.6vw, 36px);
     font-weight: 500;
-    line-height: 1;
+    line-height: 1.12;
     letter-spacing: -0.045em;
 }
 
 .journey-stage-copy p {
     max-width: 620px;
     margin-top: 12px;
-    color: rgba(255,255,255,0.50);
-    font-size: 11px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     line-height: 1.75;
 }
 
@@ -4859,15 +4859,15 @@ button {
 }
 
 .journey-telemetry-cell > span {
-    color: rgba(255,255,255,0.28);
-    font-size: 6px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.14em;
 }
 
 .journey-telemetry-cell > strong {
     color: var(--white);
-    font-size: 9px;
+    font-size: 12px;
     letter-spacing: 0.09em;
 }
 
@@ -4988,7 +4988,7 @@ button {
             0
             11px;
 
-        font-size: 6px;
+        font-size: 12px;
     }
 
     .journey-heading h2 {
@@ -5001,7 +5001,7 @@ button {
                 48px
             );
 
-        line-height: 0.92;
+        line-height: 1.12;
     }
 
     .journey-instruction {
@@ -5034,7 +5034,7 @@ button {
             0
             16px;
 
-        font-size: 6px;
+        font-size: 12px;
     }
 
     /* =============================================
@@ -5088,11 +5088,11 @@ button {
     .journey-node-index {
         margin-top: 6px;
 
-        font-size: 5px;
+        font-size: 12px;
     }
 
     .journey-node strong {
-        font-size: 7px;
+        font-size: 12px;
     }
 
     /* =============================================
@@ -5132,7 +5132,7 @@ button {
     }
 
     .journey-temp-badge strong {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     /* =============================================
@@ -5167,7 +5167,7 @@ button {
     }
 
     .journey-stage-copy > span {
-        font-size: 6px;
+        font-size: 12px;
     }
 
     .journey-stage-copy h3 {
@@ -5184,7 +5184,7 @@ button {
     .journey-stage-copy p {
         margin-top: 8px;
 
-        font-size: 10px;
+        font-size: 12px;
 
         line-height: 1.6;
     }
@@ -5255,11 +5255,11 @@ button {
     }
 
     .journey-telemetry-cell > span {
-        font-size: 5px;
+        font-size: 12px;
     }
 
     .journey-telemetry-cell > strong {
-        font-size: 7px;
+        font-size: 12px;
     }
 
     .journey-mini-trace {
@@ -5286,7 +5286,7 @@ button {
     }
 
     .journey-kicker {
-        font-size: 7px;
+        font-size: 12px;
     }
 
     .journey-heading h2 {
@@ -5356,7 +5356,7 @@ button {
     }
 
     .journey-stage-copy p {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .journey-telemetry {
@@ -5492,7 +5492,7 @@ button {
     background: rgba(255, 255, 255, 0.055);
     border: 1px solid rgba(255, 255, 255, 0.10);
     border-radius: 999px;
-    font-size: 8px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -5503,7 +5503,7 @@ button {
     font-family: "Space Grotesk", sans-serif;
     font-size: clamp(48px, 5.6vw, 80px);
     font-weight: 500;
-    line-height: 0.95;
+    line-height: 1.12;
     letter-spacing: -0.06em;
 }
 
@@ -5516,7 +5516,7 @@ button {
 .finder-heading > p {
     max-width: 600px;
     margin-top: 24px;
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba(255,255,255,0.72);
     font-size: 14px;
     line-height: 1.85;
 }
@@ -5551,8 +5551,8 @@ button {
 }
 
 .finder-system-label {
-    color: rgba(255, 255, 255, 0.31);
-    font-size: 7px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.16em;
 }
@@ -5570,10 +5570,10 @@ button {
     padding: 0 8px;
     display: grid;
     place-items: center;
-    color: rgba(255, 255, 255, 0.24);
+    color: rgba(255,255,255,0.72);
     border: 1px solid rgba(255, 255, 255, 0.07);
     border-radius: 999px;
-    font-size: 6px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.10em;
     transition:
@@ -5644,7 +5644,7 @@ button {
 .finder-step-eyebrow,
 .finder-result-eyebrow {
     color: var(--cyan);
-    font-size: 7px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.17em;
 }
@@ -5657,14 +5657,14 @@ button {
     font-family: "Space Grotesk", sans-serif;
     font-size: clamp(35px, 3.7vw, 55px);
     font-weight: 500;
-    line-height: 1;
+    line-height: 1.12;
     letter-spacing: -0.055em;
 }
 
 .finder-step-copy {
     max-width: 610px;
     margin-top: 14px;
-    color: rgba(255, 255, 255, 0.48);
+    color: rgba(255,255,255,0.72);
     font-size: 12px;
     line-height: 1.75;
 }
@@ -5770,16 +5770,16 @@ button {
 }
 
 .finder-option small {
-    color: rgba(255, 255, 255, 0.38);
-    font-size: 8px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     line-height: 1.5;
 }
 
 .finder-option > i {
     position: relative;
     z-index: 1;
-    color: rgba(255, 255, 255, 0.22);
-    font-size: 10px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     transition:
         color 0.25s ease,
         transform 0.3s var(--ease);
@@ -5807,8 +5807,8 @@ button {
     display: inline-flex;
     align-items: center;
     gap: 9px;
-    color: rgba(255, 255, 255, 0.56);
-    font-size: 8px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.08em;
     transition:
@@ -5828,8 +5828,8 @@ button {
 }
 
 #finderStepStatus {
-    color: rgba(255, 255, 255, 0.26);
-    font-size: 6px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.14em;
 }
@@ -5862,15 +5862,15 @@ button {
 }
 
 .finder-live-head > span {
-    color: rgba(255, 255, 255, 0.26);
-    font-size: 6px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.16em;
 }
 
 .finder-live-head > strong {
     color: var(--cyan);
-    font-size: 6px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.13em;
 }
@@ -5957,15 +5957,15 @@ button {
 }
 
 .finder-live-values span {
-    color: rgba(255, 255, 255, 0.22);
-    font-size: 5px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.15em;
 }
 
 .finder-live-values strong {
-    color: rgba(255, 255, 255, 0.72);
-    font-size: 8px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.06em;
 }
@@ -5983,14 +5983,14 @@ button {
 
 .finder-live-footer span {
     color: var(--cyan);
-    font-size: 5px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.14em;
 }
 
 .finder-live-footer small {
-    color: rgba(255, 255, 255, 0.27);
-    font-size: 7px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     line-height: 1.55;
 }
 
@@ -6074,7 +6074,7 @@ button {
 
 .finder-analysis-copy > span {
     color: var(--cyan);
-    font-size: 7px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.16em;
 }
@@ -6093,8 +6093,8 @@ button {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: rgba(255, 255, 255, 0.48);
-    font-size: 9px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
 }
 
 .finder-analysis-lines i {
@@ -6120,7 +6120,7 @@ button {
 .finder-result-copy > p {
     max-width: 590px;
     margin-top: 16px;
-    color: rgba(255, 255, 255, 0.51);
+    color: rgba(255,255,255,0.72);
     font-size: 12px;
     line-height: 1.75;
 }
@@ -6137,8 +6137,8 @@ button {
 .finder-result-support > span {
     display: block;
     margin-bottom: 6px;
-    color: rgba(255, 255, 255, 0.25);
-    font-size: 5px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.15em;
 }
@@ -6228,8 +6228,8 @@ button {
 
 .finder-result-status span {
     display: block;
-    color: rgba(255, 255, 255, 0.22);
-    font-size: 5px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.14em;
 }
@@ -6238,15 +6238,15 @@ button {
     display: block;
     margin-top: 5px;
     color: var(--cyan);
-    font-size: 7px;
+    font-size: 12px;
     letter-spacing: 0.07em;
 }
 
 .finder-disclaimer {
     grid-column: 1 / -1;
     margin-top: -8px;
-    color: rgba(255, 255, 255, 0.24);
-    font-size: 7px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     line-height: 1.6;
 }
 
@@ -6359,7 +6359,7 @@ button {
         min-width: 31px;
         height: 25px;
         padding: 0 7px;
-        font-size: 5px;
+        font-size: 12px;
     }
 
     .finder-main {
@@ -6378,7 +6378,7 @@ button {
     }
 
     .finder-step-copy {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .finder-options {
@@ -6407,7 +6407,7 @@ button {
     }
 
     .finder-option small {
-        font-size: 7px;
+        font-size: 12px;
     }
 
     .finder-controls {
@@ -6557,7 +6557,7 @@ button {
     }
 
     .finder-live-values strong {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 }
@@ -6724,14 +6724,14 @@ button {
 
 .product-lab-meta span {
     color: rgba(3, 42, 61, 0.48);
-    font-size: 5px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.15em;
 }
 
 .product-lab-meta strong {
     color: var(--blue);
-    font-size: 7px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.08em;
 }
@@ -6856,7 +6856,7 @@ button {
     background: rgba(0, 139, 182, 0.07);
     border: 1px solid rgba(0, 139, 182, 0.11);
     border-radius: 999px;
-    font-size: 7px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -6867,7 +6867,7 @@ button {
     font-family: "Space Grotesk", sans-serif;
     font-size: clamp(48px, 5.4vw, 74px);
     font-weight: 500;
-    line-height: 0.94;
+    line-height: 1.12;
     letter-spacing: -0.06em;
 }
 
@@ -6918,7 +6918,7 @@ button {
 .calculator-panel-head span,
 .calculator-result-head span {
     color: var(--blue);
-    font-size: 6px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.15em;
 }
@@ -6968,7 +6968,7 @@ button {
 
 .calculator-field-copy small {
     color: var(--muted-light);
-    font-size: 9px;
+    font-size: 12px;
     line-height: 1.5;
 }
 
@@ -7020,7 +7020,7 @@ button {
 .calculator-currency-input > span {
     flex: 0 0 auto;
     color: var(--blue);
-    font-size: 6px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.10em;
 }
@@ -7044,11 +7044,11 @@ button {
 .calculator-note i {
     margin-top: 2px;
     color: var(--blue);
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .calculator-note p {
-    font-size: 9px;
+    font-size: 12px;
     line-height: 1.6;
 }
 
@@ -7086,8 +7086,8 @@ button {
 }
 
 .calculator-result-head strong {
-    color: rgba(255, 255, 255, 0.38);
-    font-size: 6px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     letter-spacing: 0.12em;
 }
 
@@ -7097,8 +7097,8 @@ button {
 
 .calculator-hero-result > span {
     display: block;
-    color: rgba(255, 255, 255, 0.32);
-    font-size: 6px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.15em;
 }
@@ -7117,8 +7117,8 @@ button {
 .calculator-hero-result > small {
     display: block;
     margin-top: 11px;
-    color: rgba(255, 255, 255, 0.39);
-    font-size: 8px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
 }
 
 .calculator-results-grid {
@@ -7140,14 +7140,14 @@ button {
 }
 
 .calculator-results-grid span {
-    color: rgba(255, 255, 255, 0.23);
-    font-size: 5px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.12em;
 }
 
 .calculator-results-grid strong {
-    color: rgba(255, 255, 255, 0.86);
+    color: rgba(255,255,255,0.86);
     font-family: "Space Grotesk", sans-serif;
     font-size: 15px;
     font-weight: 500;
@@ -7178,15 +7178,15 @@ button {
 }
 
 .calculator-disclaimer strong {
-    color: rgba(255, 255, 255, 0.66);
-    font-size: 8px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
 }
 
 .calculator-disclaimer p {
     max-width: 570px;
     margin-top: 7px;
-    color: rgba(255, 255, 255, 0.26);
-    font-size: 7px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     line-height: 1.65;
 }
 
@@ -7265,7 +7265,7 @@ button {
     border: 1px solid rgba(25, 197, 232, 0.16);
     border-radius: 999px;
     background: rgba(25, 197, 232, 0.05);
-    font-size: 6px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.15em;
 }
@@ -7276,7 +7276,7 @@ button {
     font-family: "Space Grotesk", sans-serif;
     font-size: clamp(50px, 5.6vw, 78px);
     font-weight: 500;
-    line-height: 0.92;
+    line-height: 1.12;
     letter-spacing: -0.06em;
 }
 
@@ -7313,7 +7313,7 @@ button {
 
 .finale-step > span {
     color: var(--cyan);
-    font-size: 6px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.12em;
 }
@@ -7326,8 +7326,8 @@ button {
 }
 
 .finale-step > small {
-    color: rgba(255, 255, 255, 0.42);
-    font-size: 8px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     line-height: 1.55;
 }
 
@@ -7381,8 +7381,8 @@ button {
 
 .finale-center span,
 .finale-center small {
-    color: rgba(255, 255, 255, 0.32);
-    font-size: 6px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.16em;
 }
@@ -7441,8 +7441,8 @@ button {
 
 .finale-stage-readout span {
     display: block;
-    color: rgba(255, 255, 255, 0.26);
-    font-size: 5px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.14em;
 }
@@ -7451,7 +7451,7 @@ button {
     display: block;
     margin-top: 5px;
     color: var(--cyan);
-    font-size: 8px;
+    font-size: 12px;
     letter-spacing: 0.10em;
 }
 
@@ -7479,8 +7479,8 @@ button {
     display: inline-flex;
     align-items: center;
     gap: 9px;
-    color: rgba(255, 255, 255, 0.28);
-    font-size: 6px;
+    color: rgba(255,255,255,0.72);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.14em;
     opacity: calc(0.2 + var(--finale-progress));
@@ -7621,7 +7621,7 @@ button {
     }
 
     .calculator-field-copy strong {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .calculator-number-wrap {
@@ -7684,7 +7684,7 @@ button {
     }
 
     .finale-step > small {
-        font-size: 6px;
+        font-size: 12px;
     }
 
     .finale-visual {
@@ -7813,7 +7813,7 @@ button {
     }
 
     .journey-kicker {
-        font-size: 7px;
+        font-size: 12px;
     }
 
     .journey-heading h2 {
@@ -7928,7 +7928,7 @@ button {
     .journey-stage-copy p {
         margin-top: 8px;
 
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1.55;
     }
 

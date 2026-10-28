@@ -1,0 +1,111 @@
+/* ESBD review, 28 October 2026. Retains the approved fonts and colour palette. */
+:root { --muted: #536d7a; --text-muted: #536d7a; }
+main h1, main h2, main h3 { line-height: 1.12; }
+.footer-brand img { width: 220px; max-width: 100%; height: auto; }
+.footer-brand p, .footer-col a, .footer-bottom, .calculator-disclaimer, .finder-disclaimer { font-size: 14px; line-height: 1.7; }
+.footer-col > span { font-size: 12px; color: #536d7a; }
+.footer-bottom { color: #536d7a; }
+.footer { padding-bottom: 100px; }
+.footer-shell { padding-bottom: 36px; }
+.launch-footer-links { padding-bottom: 20px; }
+.product-floating-label { position: relative; inset: auto; width: fit-content; margin: 18px 0 0 auto; }
+.visual-bottom > div { min-width: 0; }
+.visual-bottom strong { overflow-wrap: anywhere; font-size: 14px; line-height: 1.5; }
+.product-pillar { justify-content: flex-start; }
+.pillar-copy { margin-top: auto; }
+.pillar-copy h3 { min-height: 2.3em; }
+.pillar-copy p { min-height: 5.7em; }
+.feature-card-copy h3 { min-height: 1.2em; }
+.feature-card-copy p { min-height: 5.4em; }
+.journey-stage-field { overflow: visible; }
+.journey-temp-badge { top: -57px; min-width: 106px; }
+.journey-temp-badge strong { font-size: 15px; }
+.journey-temp-badge span { font-size: 10px; }
+.journey-panel { overflow: visible; }
+.journey-node strong { font-size: 13px; }
+.journey-stage-copy p { font-size: 14px; line-height: 1.65; }
+.products-hero { min-height: 0; padding: 155px 0 65px; }
+.products-hero-container { gap: 50px; align-items: center; }
+.products-hero-copy h1 { font-size: clamp(40px,4.6vw,68px); }
+.products-hero-index { max-width: 350px; }
+.products-hero-index p { font-size: 16px; }
+.products-hero-index .btn { margin-top: 24px; }
+.product-range { padding: 60px 0 80px; scroll-margin-top: 100px; }
+.products-section-head { gap: 30px; align-items: start; }
+.products-section-head h2 { font-size: clamp(30px,3vw,44px); }
+.review-catalogue { margin-top: 32px; position: relative; z-index: 2; }
+.catalogue-group-title { font-size: 22px; margin: 28px 0 16px; }
+.catalogue-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+.catalogue-services { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.catalogue-card { position: relative; display: flex; flex-direction: column; padding: 22px 26px; color: #092b3d; background: #fff; border: 1px solid #cee1e9; border-radius: 20px; text-decoration: none; transition: border-color .2s,box-shadow .2s; }
+.catalogue-card:hover { border-color: #007fa5; box-shadow: 0 8px 26px #07324712; }
+.catalogue-category { display: block; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #006c8e; }
+.catalogue-card h3 { font-size: clamp(21px,2vw,28px); margin: 12px 0 8px; }
+.catalogue-card p { font-size: 14px; line-height: 1.6; color: #536d7a; margin-bottom: 16px; }
+.catalogue-link { display: flex; justify-content: space-between; margin-top: auto; font-size: 14px; font-weight: 700; color: #006c8e; }
+.products-hero-index > .catalogue-category { color: #9be7f5; }
+.specification-brief { margin-top: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+.specification-brief > div { padding: 22px 0; border-top: 1px solid #cadde5; }
+.specification-brief dt { font-size: 17px; font-weight: 700; color: #082c3f; margin-bottom: 10px; }
+.specification-brief dd { margin: 0; font-size: 15px; line-height: 1.7; color: #536d7a; }
+/* Remove empty photo columns after rejected imagery is removed. */
+.solaris-engineering-layout, .solaris-detail-protection-layout,
+.solaris-detail-steps-layout, .porter-intro-layout, .porter-system-layout,
+.porter-process-layout, .porter-sustainability-layout,
+.reusable-handling-layout, .recyclable-handling-layout { grid-template-columns: 1fr; }
+.solaris-application { min-height: 0; padding: 70px 0; background: #052b3f; }
+.solaris-application-placeholder:empty { display: none; }
+.solaris-application-content { position: relative; inset: auto; }
+.porter-application { min-height: 0; background: #052b3f; }
+.porter-application-content { position: relative; inset: auto; padding: 70px 0; }
+.finder-result-options { margin: 20px 0; padding-left: 20px; font-size: 15px; line-height: 1.7; }
+.finder-result-options a { color: inherit; text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 1000px) {
+ .catalogue-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+ .products-hero-container { grid-template-columns: 1fr; gap: 24px; }
+ .products-hero-index { max-width: none; }
+ .products-hero-index p { margin-top: 12px; }
+ .product-pillar h3, .pillar-copy p, .feature-card-copy p { min-height: 0; }
+}
+@media (max-width: 600px) {
+ .catalogue-grid, .catalogue-services, .specification-brief { grid-template-columns: 1fr; }
+ .products-hero { padding: 130px 0 45px; }
+ .catalogue-card { padding: 22px; }
+ .product-range { padding: 45px 0 60px; }
+ .product-floating-label { margin-right: 0; }
+ .journey-temp-badge { min-width: 90px; }
+ .journey-temp-badge strong { font-size: 14px; }
+ .journey-temp-badge span { font-size: 9px; }
+ .footer { padding-bottom: 125px; }
+}
+
+.review-text-hero { grid-template-columns: 1fr; }
+.review-text-hero > div { max-width: 1000px; }
+.review-text-hero h1 { max-width: 1000px; }
+.review-text-hero p { max-width: 780px; }
+.review-text-hero + div { min-width: 0; }
+.solaris-application-image { display: none; }
+.product-detail-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+.product-overview { scroll-margin-top: 95px; }
+
+.journey-system-bar { display: grid; grid-template-columns: minmax(0,1fr) auto auto; align-items: center; gap: 14px; }
+.journey-system-bar > span { white-space: normal; }
+.journey-system-bar .journey-temp-badge { position: static; transform: none; min-width: 98px; padding: 6px 10px; box-shadow: none; }
+.journey-stage-field { overflow: hidden; }
+.footer-utilities { display: flex; align-items: center; gap: 18px; justify-content: flex-end; padding-top: 12px; }
+.footer-utilities .motion-toggle { position: static; max-width: none; background: #f2f8fa; color: #164358; border-color: #cadde5; }
+@media(max-width:600px) {
+ .journey-system-bar { gap: 8px; }
+ .journey-system-bar .journey-temp-badge { min-width: 82px; padding: 5px 7px; }
+ .footer-utilities #backToTop { position: static; width: 42px; height: 42px; opacity: 1; visibility: visible; pointer-events: auto; transform: none; flex-shrink: 0; }
+ .footer { padding-bottom: 40px; }
+}
+
+/* Keep the journey heading and temperature fully inside their header. */
+.journey-system-bar { height: auto; min-height: 64px; padding-top: 12px; padding-bottom: 12px; }
+.journey-system-bar > span { line-height: 1.4; }
+.journey-system-bar .journey-temp-badge { line-height: 1.2; }
+/* The essential return control remains visible even when icon fonts fail. */
+#backToTop i { display: none; }
+#backToTop::after { content: "↑"; font: 26px/1 Arial, sans-serif; color: #fff; }
+

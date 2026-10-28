@@ -198,15 +198,9 @@
 
     gap: 10px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.47
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 9px;
+    font-size: 12px;
 
     font-weight: 700;
 
@@ -241,7 +235,7 @@
 
     color: var(--cyan);
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -283,7 +277,7 @@
 
     border-radius: 50%;
 
-    font-size: 7px;
+    font-size: 12px;
 
 }
 
@@ -305,7 +299,7 @@
 
     font-weight: 500;
 
-    line-height: 0.90;
+    line-height: 1.12;
 
     letter-spacing:
         -0.07em;
@@ -328,13 +322,7 @@
 
     margin-top: 32px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.82
-        );
+    color: rgba(255,255,255,0.82);
 
     font-family:
         "Space Grotesk",
@@ -358,13 +346,7 @@
 
     margin-top: 18px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.50
-        );
+    color: rgba(255,255,255,0.72);
 
     font-size: 13px;
 
@@ -526,15 +508,9 @@
     justify-content:
         space-between;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.42
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -675,15 +651,9 @@
 
     display: block;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.30
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 6px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -699,15 +669,9 @@
 
     margin-top: 5px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.76
-        );
+    color: rgba(255,255,255,0.76);
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: 600;
 
@@ -774,7 +738,7 @@
 
     color: var(--blue);
 
-    font-size: 6px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -887,7 +851,7 @@
 
     font-weight: 500;
 
-    line-height: 0.98;
+    line-height: 1.12;
 
     letter-spacing:
         -0.06em;
@@ -998,7 +962,7 @@
 
     color: var(--blue);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1065,7 +1029,7 @@
 
     color: var(--muted-light);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1080,7 +1044,7 @@
 
     color: var(--blue);
 
-    font-size: 6px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1222,7 +1186,7 @@
 
     font-weight: 500;
 
-    line-height: 0.95;
+    line-height: 1.12;
 
     letter-spacing:
         -0.065em;
@@ -1241,13 +1205,7 @@
 
     max-width: 470px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.60
-        );
+    color: rgba(255,255,255,0.72);
 
     font-size: 14px;
 
@@ -1370,15 +1328,9 @@
 
     z-index: 3;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.34
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1591,7 +1543,7 @@
 
     color: var(--cyan);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1621,7 +1573,7 @@
 
     font-weight: 500;
 
-    line-height: 1.05;
+    line-height: 1.12;
 
     letter-spacing:
         -0.045em;
@@ -1635,13 +1587,7 @@
 
     margin-top: 15px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.58
-        );
+    color: rgba(255,255,255,0.72);
 
     font-size: 12px;
 
@@ -1653,13 +1599,7 @@
 .product-pillar-blue
 .pillar-copy p {
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.75
-        );
+    color: rgba(255,255,255,0.75);
 
 }
 
@@ -1790,7 +1730,7 @@
 
     color: var(--blue);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1819,7 +1759,7 @@
 
     font-weight: 500;
 
-    line-height: 1;
+    line-height: 1.12;
 
     letter-spacing:
         -0.055em;
@@ -1889,7 +1829,7 @@
 
     color: var(--muted-light);
 
-    font-size: 6px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1902,7 +1842,7 @@
 
     color: var(--blue);
 
-    font-size: 6px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1920,7 +1860,7 @@
 
     color: var(--text);
 
-    font-size: 9px;
+    font-size: 12px;
 
     font-weight: 700;
 
@@ -1937,7 +1877,7 @@
             0.35
         );
 
-    font-size: 9px;
+    font-size: 12px;
 
 }
 
@@ -1982,7 +1922,7 @@
 
     border-radius: 999px;
 
-    font-size: 10px;
+    font-size: 12px;
 
     font-weight: 700;
 
@@ -2056,7 +1996,7 @@
 
     color: var(--muted-light);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -2076,7 +2016,7 @@
 
     color: var(--blue);
 
-    font-size: 9px;
+    font-size: 12px;
 
     font-weight: 700;
 
@@ -2210,13 +2150,7 @@
 
 .next-product-number {
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.38
-        );
+    color: rgba(255,255,255,0.72);
 
     font-family:
         "Space Grotesk",
@@ -2311,7 +2245,7 @@
 
     color: var(--cyan-soft);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -2338,7 +2272,7 @@
 
     font-weight: 500;
 
-    line-height: 1;
+    line-height: 1.12;
 
     letter-spacing:
         -0.055em;
@@ -2468,7 +2402,7 @@
 
     font-weight: 500;
 
-    line-height: 0.97;
+    line-height: 1.12;
 
     letter-spacing:
         -0.06em;
@@ -2482,13 +2416,7 @@
 
     margin-top: 20px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.75
-        );
+    color: rgba(255,255,255,0.75);
 
     font-size: 13px;
 
@@ -2530,7 +2458,7 @@
 
     border-radius: 999px;
 
-    font-size: 10px;
+    font-size: 12px;
 
     font-weight: 700;
 

@@ -199,7 +199,7 @@
 
     font-weight: 500;
 
-    line-height: 0.94;
+    line-height: 1.12;
 
     letter-spacing:
         -0.065em;
@@ -222,13 +222,7 @@
 
     margin-top: 31px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.61
-        );
+    color: rgba(255,255,255,0.72);
 
     font-size: 14px;
 
@@ -370,15 +364,9 @@
     justify-content:
         space-between;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.43
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -462,7 +450,7 @@
 
     color: var(--cyan);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -498,15 +486,9 @@
 
 .system-core span {
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.40
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 6px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -539,13 +521,7 @@
 
     text-align: center;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.62
-        );
+    color: rgba(255,255,255,0.72);
 
     background:
         rgba(
@@ -566,7 +542,7 @@
 
     border-radius: 12px;
 
-    font-size: 6px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -660,7 +636,7 @@
 
     font-weight: 500;
 
-    line-height: 0.98;
+    line-height: 1.12;
 
     letter-spacing:
         -0.06em;
@@ -810,7 +786,7 @@
 
     color: var(--muted-light);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -823,13 +799,7 @@
 .feature-measurable
 .feature-card-top {
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.58
-        );
+    color: rgba(255,255,255,0.72);
 
 }
 
@@ -1479,13 +1449,7 @@ span:nth-child(5) {
 .feature-measurable
 .feature-card-copy p {
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.75
-        );
+    color: rgba(255,255,255,0.75);
 
 }
 
@@ -1605,7 +1569,7 @@ span:nth-child(5) {
 
     font-weight: 500;
 
-    line-height: 0.95;
+    line-height: 1.12;
 
     letter-spacing:
         -0.065em;
@@ -1624,13 +1588,7 @@ span:nth-child(5) {
 
     max-width: 470px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.60
-        );
+    color: rgba(255,255,255,0.72);
 
     font-size: 14px;
 
@@ -1735,15 +1693,9 @@ span:nth-child(5) {
 
 .risk-index {
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.30
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1801,15 +1753,9 @@ span:nth-child(5) {
 
     margin-top: 13px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.66
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 11px;
+    font-size: 12px;
 
     line-height: 1.55;
 
@@ -1967,7 +1913,7 @@ span:nth-child(5) {
 
     color: var(--blue);
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1994,7 +1940,7 @@ span:nth-child(5) {
 
     font-weight: 500;
 
-    line-height: 1;
+    line-height: 1.12;
 
     letter-spacing:
         -0.055em;
@@ -2055,7 +2001,7 @@ span:nth-child(5) {
 
     border-radius: 999px;
 
-    font-size: 10px;
+    font-size: 12px;
 
     font-weight: 700;
 
@@ -2183,7 +2129,7 @@ span:nth-child(5) {
 
     font-weight: 500;
 
-    line-height: 0.98;
+    line-height: 1.12;
 
     letter-spacing:
         -0.06em;
@@ -2197,13 +2143,7 @@ span:nth-child(5) {
 
     margin-top: 21px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.76
-        );
+    color: rgba(255,255,255,0.76);
 
     font-size: 13px;
 
@@ -2245,7 +2185,7 @@ span:nth-child(5) {
 
     border-radius: 999px;
 
-    font-size: 10px;
+    font-size: 12px;
 
     font-weight: 700;
 

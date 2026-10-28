@@ -199,7 +199,7 @@
 
     font-weight: 500;
 
-    line-height: 0.94;
+    line-height: 1.12;
 
     letter-spacing:
         -0.065em;
@@ -222,13 +222,7 @@
 
     margin-top: 31px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.61
-        );
+    color: rgba(255,255,255,0.72);
 
     font-size: 14px;
 
@@ -260,7 +254,7 @@
 
     color: var(--cyan);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -294,13 +288,7 @@
 
     margin-top: 22px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.56
-        );
+    color: rgba(255,255,255,0.72);
 
     font-size: 12px;
 
@@ -333,15 +321,9 @@
 
 .products-hero-index small {
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.33
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -438,7 +420,7 @@
 
     font-weight: 500;
 
-    line-height: 0.98;
+    line-height: 1.12;
 
     letter-spacing: -0.06em;
 
@@ -710,7 +692,7 @@
 
     color: var(--blue);
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -888,15 +870,9 @@
 
     display: block;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.58
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1083,7 +1059,7 @@
 
     color: var(--cyan);
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1098,13 +1074,7 @@
 
     margin-top: 15px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.11
-        );
+    color: rgba(255,255,255,0.72);
 
     font-family:
         "Space Grotesk",
@@ -1132,15 +1102,9 @@
 
     margin-top: 20px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.36
-        );
+    color: rgba(255,255,255,0.72);
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1171,7 +1135,7 @@
 
     font-weight: 500;
 
-    line-height: 0.98;
+    line-height: 1.12;
 
     letter-spacing: -0.06em;
 
@@ -1187,13 +1151,7 @@
         0
         34px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.61
-        );
+    color: rgba(255,255,255,0.72);
 
     font-size: 14px;
 
@@ -1314,7 +1272,7 @@
 
     color: var(--blue);
 
-    font-size: 8px;
+    font-size: 12px;
 
     font-weight: 800;
 
@@ -1340,7 +1298,7 @@
 
     font-weight: 500;
 
-    line-height: 1;
+    line-height: 1.12;
 
     letter-spacing: -0.055em;
 
@@ -1400,7 +1358,7 @@
 
     border-radius: 999px;
 
-    font-size: 10px;
+    font-size: 12px;
 
     font-weight: 700;
 
@@ -1528,7 +1486,7 @@
 
     font-weight: 500;
 
-    line-height: 0.97;
+    line-height: 1.12;
 
     letter-spacing: -0.06em;
 
@@ -1541,13 +1499,7 @@
 
     margin-top: 21px;
 
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.76
-        );
+    color: rgba(255,255,255,0.76);
 
     font-size: 13px;
 
@@ -1589,7 +1541,7 @@
 
     border-radius: 999px;
 
-    font-size: 10px;
+    font-size: 12px;
 
     font-weight: 700;
 
