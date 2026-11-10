@@ -1664,14 +1664,6 @@ function updateJourneyFromScroll() {
 
 
 
-    const position =
-
-        10 +
-
-        progress * 80;
-
-
-
     const stageIndex =
 
         Math.min(
@@ -1690,16 +1682,6 @@ function updateJourneyFromScroll() {
 
 
 
-    journeySection.style.setProperty(
-
-        "--journey-position",
-
-        `${position}%`
-
-    );
-
-
-
     if (
 
         stageIndex !==
@@ -1708,7 +1690,7 @@ function updateJourneyFromScroll() {
 
     ) {
 
-        setJourneyStage(stageIndex);
+        setJourneyStage(stageIndex, 10 + 80 * stageIndex / (journeyStageNames.length - 1));
 
     }
 
